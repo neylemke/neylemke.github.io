@@ -13,7 +13,7 @@ I am  using  the following  configurations:
 -  I am using  a small machine type
 -  The machine should  have a  fixed permanent IP
 
-![Machine Conf][machineconf.png]
+![Machine Conf](machineconf.png)
 
 The next step  is to start the instance and connect to the instance  (the command can be obtained clicking on the 
 the 3 dots close to ssh). 
