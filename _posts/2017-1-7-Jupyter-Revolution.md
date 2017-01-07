@@ -1,3 +1,8 @@
+---
+layout: post
+title:  Jupyter Revolution
+---
+
 # Jupyter Revolution
 
 In this  page I will describe the process of installing a GCE machine capable of running 
