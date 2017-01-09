@@ -5,22 +5,24 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Jan 2017 14:53:39 -0200</pubDate>
-    <lastBuildDate>Mon, 09 Jan 2017 14:53:39 -0200</lastBuildDate>
+    <pubDate>Mon, 09 Jan 2017 15:45:27 -0200</pubDate>
+    <lastBuildDate>Mon, 09 Jan 2017 15:45:27 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Slide Example</title>
         <description>&lt;section data-markdown=&quot;&quot;&gt;
 ## Overview
-
 [reveal.js](https://github.com/hakimel/reveal.js/) enables you to create
 beautiful interactive slide decks using HTML. This presentation will show you
 how to integrate it with [Jekyll](http://jekyllrb.com/)
 &lt;/section&gt;
 
 &lt;section data-markdown=&quot;&quot;&gt;
-## Teste
+## Source 
+The instruction were obtained at:
+
+[reveal.js + Jeckill](http://luugiathuy.com/2015/04/jekyll-create-slides-with-revealjs/) 
 &lt;/section&gt;
 
 </description>
@@ -29,7 +31,7 @@ how to integrate it with [Jekyll](http://jekyllrb.com/)
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/09/slide-example/</guid>
         
         
-        <category>Technical</category>
+        <category>Slide</category>
         
       </item>
     
