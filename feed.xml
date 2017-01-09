@@ -5,9 +5,104 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Jan 2017 12:05:02 -0200</pubDate>
-    <lastBuildDate>Mon, 09 Jan 2017 12:05:02 -0200</lastBuildDate>
+    <pubDate>Mon, 09 Jan 2017 14:53:39 -0200</pubDate>
+    <lastBuildDate>Mon, 09 Jan 2017 14:53:39 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Slide Example</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+## Overview
+
+[reveal.js](https://github.com/hakimel/reveal.js/) enables you to create
+beautiful interactive slide decks using HTML. This presentation will show you
+how to integrate it with [Jekyll](http://jekyllrb.com/)
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+## Teste
+&lt;/section&gt;
+
+</description>
+        <pubDate>Mon, 09 Jan 2017 14:36:17 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/09/slide-example/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/09/slide-example/</guid>
+        
+        
+        <category>Technical</category>
+        
+      </item>
+    
+      <item>
+        <title>Using jupyter to  generate Presentations on reveal.js</title>
+        <description>&lt;p&gt;In this post I will describe the configuration and instalation of 
+a system to produce slides using reveal.js. 
+The great advantage of using this system is that you can produce 
+interactive presentations that could be used as teaching tools for 
+compouter science, physics, etc  classes.&lt;/p&gt;
+
+&lt;p&gt;What you need to have installed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;conda&lt;/li&gt;
+  &lt;li&gt;jupyter or jupyter lab&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first step is to install &lt;a href=&quot;https://github.com/damianavila/RISE&quot;&gt;RISE&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install --yes -c damianavila82 rise
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will install rise and all the tools need to use reveal.js on jupyter.
+The next step is to enable RISE nbextension, that means a small interface adjustment to jupyter so you can generate live presentaions.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter nbextension install rise --py --sys-prefix
+jupyter nbextension &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;rise --py --sys-prefix
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Start jupyter&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter notebook
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You will see a new icon on jupyter interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/risise.png&quot; alt=&quot;rise&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To start using the system just go to Cell Toolbar -&amp;gt; Slide.&lt;/p&gt;
+
+&lt;p&gt;A very useful trick is to start your presentation notebook using:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;notebook.services.config&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ConfigManager&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;IPython.paths&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;locate_profile&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ConfigManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profile_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;locate_profile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_ipython&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'livereveal'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;s&quot;&gt;'theme'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'beige'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;s&quot;&gt;'transition'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'zoom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+              &lt;span class=&quot;s&quot;&gt;'start_slideshow_at'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'selected'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So you can change &lt;code class=&quot;highlighter-rouge&quot;&gt;reveal.js&lt;/code&gt; configuration. You can try the system by downloading &lt;a href=&quot;https://github.com/neylemke/FISCOMPYTHON/blob/master/Slide.ipynb&quot;&gt;this&lt;/a&gt;. 
+You have to run all cells so the last command works.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Jan 2017 13:38:43 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</guid>
+        
+        
+        <category>Technical</category>
+        
+        <category>Paper</category>
+        
+      </item>
     
       <item>
         <title>Installing Jekyll</title>
