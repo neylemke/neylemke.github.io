@@ -5,15 +5,71 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Jan 2017 22:51:26 -0200</pubDate>
-    <lastBuildDate>Sun, 08 Jan 2017 22:51:26 -0200</lastBuildDate>
+    <pubDate>Sun, 08 Jan 2017 23:31:48 -0200</pubDate>
+    <lastBuildDate>Sun, 08 Jan 2017 23:31:48 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
-        <title>Jupyter Revolutions</title>
-        <description>&lt;h1 id=&quot;jupyter-revolution&quot;&gt;Jupyter Revolution&lt;/h1&gt;
+        <title>Installing Jekyll</title>
+        <description>&lt;p&gt;Jekyll is an wonderful tool that allows us to generate 
+static html pages that can be used at github. The entire process 
+seems easier if you follow the github pages protocol. But I found it 
+rather difficult to follow.&lt;/p&gt;
 
-&lt;p&gt;In this  page I will describe the process of installing a GCE machine capable of running 
+&lt;p&gt;The process that I suggest is the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Create a directory for your blog blogdir&lt;/li&gt;
+  &lt;li&gt;Choose a Theme for Jekyll &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;themes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Install the theme under blogdir&lt;/li&gt;
+  &lt;li&gt;Create a project at GitHub called &lt;yourusername&gt;.github.io&lt;/yourusername&gt;&lt;/li&gt;
+  &lt;li&gt;Clone the page using one of the prefined themes or not under blogdir (this dir is called &lt;githubdir&gt;)&lt;/githubdir&gt;&lt;/li&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby&lt;/a&gt; (jekyll is based on ruby)&lt;/li&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Install dependencies for your theme&lt;/li&gt;
+  &lt;li&gt;Configure the theme on the local filesystem&lt;/li&gt;
+  &lt;li&gt;Buid your page using your theme
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build 
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Generate a page or a blog post&lt;/li&gt;
+  &lt;li&gt;Start the server
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You can edit your page and keep the server running, since changes will cause 
+a new buid&lt;/li&gt;
+  &lt;li&gt;Test the page using the browser &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Build the page using jekyll setting the output to the github cloned page
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build -d &amp;lt;githubdir&amp;gt;  
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Commit and push your changes
+    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add -all
+git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;description&quot;&lt;/span&gt;
+git push
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 08 Jan 2017 23:03:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</guid>
+        
+        
+        <category>Technical</category>
+        
+        <category>Paper</category>
+        
+      </item>
+    
+      <item>
+        <title>Jupyter Revolutions</title>
+        <description>&lt;p&gt;In this  page I will describe the process of installing a GCE machine capable of running 
 &lt;a href=&quot;https://github.com/jupyterlab/jupyterlab&quot;&gt;Jupyter  Lab&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The first step  is to create  an  account on Google Compute Engine create a Project 

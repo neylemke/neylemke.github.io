@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Reference`</title>
+	<title>Installing Jekyll</title>
 
 	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
 	<link rel="icon" href="/styles/images/favicon.jpg">
 
 	<link rel="stylesheet" href="/styles/css/index.css">
 	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
-	<link rel="canonical" href="/reference/">
+	<link rel="canonical" href="/2017/01/08/installing-jekyll/">
 	<link rel="alternate" type="application/rss+xml" title="DataScience2SB" href="/feed.xml">
 	
 	<meta name="description" content="">
@@ -89,8 +89,8 @@
   <div class="container">
   	
   		<!--
-		    <h1>Reference`</h1>
-		    <p>Post on  by <a href="/about">Ney Lemke</a></p>
+		    <h1>Installing Jekyll</h1>
+		    <p>Post on Jan 08, 2017 by <a href="/about">Ney Lemke</a></p>
 		-->
 		    <h1></h1>
     
@@ -101,7 +101,8 @@
 <div class="banner">
   <div class="container">
   	
-    	Data Science for Systems Biology
+    	<a href="/categories/#TechnicalPaper-ref">TechnicalPaper</a>	/
+    	<a href="/tag/#-ref"></a>
     
   </div>
 </div>
@@ -156,15 +157,59 @@
       <div class="panel docs-content">
         <div class="wrapper">
             <header class="post-header">
-              <h1 class="post-title">Reference`</h1>
+              <h1 class="post-title">Installing Jekyll</h1>
               <!--
-                <p class="post-meta"></p>
+                <p class="post-meta">Jan 8, 2017</p>
               -->
-              <div class="meta">Posted on <span class="postdate"></span> By <a target="_blank" href="http://www.lbbc.unesp.br">Ney Lemke</a></div>
+              <div class="meta">Posted on <span class="postdate">Jan 08, 2017</span> By <a target="_blank" href="http://www.lbbc.unesp.br">Ney Lemke</a></div>
               <br />
             </header>
             <article class="post-content">
-              
+              <p>Jekyll is an wonderful tool that allows us to generate 
+static html pages that can be used at github. The entire process 
+seems easier if you follow the github pages protocol. But I found it 
+rather difficult to follow.</p>
+
+<p>The process that I suggest is the following:</p>
+
+<ul>
+  <li>Create a directory for your blog blogdir</li>
+  <li>Choose a Theme for Jekyll <a href="http://jekyllthemes.org">themes</a></li>
+  <li>Install the theme under blogdir</li>
+  <li>Create a project at GitHub called <yourusername>.github.io</yourusername></li>
+  <li>Clone the page using one of the prefined themes or not under blogdir (this dir is called <githubdir>)</githubdir></li>
+  <li>Install <a href="https://www.ruby-lang.org/en/">ruby</a> (jekyll is based on ruby)</li>
+  <li>Install <a href="https://jekyllrb.com">Jekyll</a></li>
+  <li>Install dependencies for your theme</li>
+  <li>Configure the theme on the local filesystem</li>
+  <li>Buid your page using your theme
+    <div class="language-shell highlighter-rouge"><pre class="highlight"><code>jekyll build 
+</code></pre>
+    </div>
+  </li>
+  <li>Generate a page or a blog post</li>
+  <li>Start the server
+    <div class="language-shell highlighter-rouge"><pre class="highlight"><code>jekyll serve --watch
+</code></pre>
+    </div>
+  </li>
+  <li>You can edit your page and keep the server running, since changes will cause 
+a new buid</li>
+  <li>Test the page using the browser <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a></li>
+  <li>Build the page using jekyll setting the output to the github cloned page
+    <div class="language-shell highlighter-rouge"><pre class="highlight"><code>jekyll build -d &lt;githubdir&gt;  
+</code></pre>
+    </div>
+  </li>
+  <li>Commit and push your changes
+    <div class="language-shell highlighter-rouge"><pre class="highlight"><code>git add -all
+git commit -m <span class="s2">"description"</span>
+git push
+</code></pre>
+    </div>
+  </li>
+</ul>
+
             </article>
         </div>
       </div>
