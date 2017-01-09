@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Jan 2017 23:31:48 -0200</pubDate>
-    <lastBuildDate>Sun, 08 Jan 2017 23:31:48 -0200</lastBuildDate>
+    <pubDate>Sun, 08 Jan 2017 23:40:39 -0200</pubDate>
+    <lastBuildDate>Sun, 08 Jan 2017 23:40:39 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -19,11 +19,11 @@ rather difficult to follow.&lt;/p&gt;
 &lt;p&gt;The process that I suggest is the following:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Create a directory for your blog blogdir&lt;/li&gt;
+  &lt;li&gt;Create a directory for your blog &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Choose a Theme for Jekyll &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;themes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Install the theme under blogdir&lt;/li&gt;
-  &lt;li&gt;Create a project at GitHub called &lt;yourusername&gt;.github.io&lt;/yourusername&gt;&lt;/li&gt;
-  &lt;li&gt;Clone the page using one of the prefined themes or not under blogdir (this dir is called &lt;githubdir&gt;)&lt;/githubdir&gt;&lt;/li&gt;
+  &lt;li&gt;Install the theme under  &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Create a project at GitHub called &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Clone the page using one of the prefined themes or not under &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir &lt;/code&gt;(this dir is called &lt;code class=&quot;highlighter-rouge&quot;&gt;githubdir&lt;/code&gt;)&lt;/li&gt;
   &lt;li&gt;Install &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby&lt;/a&gt; (jekyll is based on ruby)&lt;/li&gt;
   &lt;li&gt;Install &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Install dependencies for your theme&lt;/li&gt;
