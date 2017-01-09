@@ -47,9 +47,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <!--
       <a href="/" class="navbar-brand">
         <img src="/styles/images/logo.jpg">
-      </a>
+      </a> -->
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">    
@@ -176,7 +177,7 @@ the 3 dots close to ssh).</p>
 <p>Before using this command you have to install  gcloud SDK (<a href="https://cloud.google.com/sdk/downloads">instructions</a>) and be sure you have
 python2 on your system.  I am using pyenv to guarantee that.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pyenv <span class="nb">local </span>2.7.8
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>pyenv <span class="nb">local </span>2.7.8
 gcloud config <span class="nb">set </span>project  &lt;myproject&gt;
 gcloud auth login
 <span class="c">#This  sets the  firewall rules</span>
@@ -188,9 +189,9 @@ gcloud compute --project &lt;myproject&gt; ssh --zone <span class="s2">"us-centr
 
 <p>The next step is to install anaconda.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>apt-get install bzip2
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apt-get install bzip2
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-sudo bash Miniconda2-latest-Linux-x86_64.sh
+sudo shell Miniconda2-latest-Linux-x86_64.sh
 conda install --yes scikit-learn
 conda install --yes pandas
 conda install --yes jupyter
@@ -200,7 +201,7 @@ conda install --yes -c conda-forge jupyterlab
 
 <p>I am also  installing some extra-packages</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>conda install --yes mpld3
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>conda install --yes mpld3
 conda install --yes numba
 conda install --yes seaborn
 conda install --yes -c conda-forge jupyter_contrib_nbextensions
@@ -213,7 +214,7 @@ jupyter nbextension <span class="nb">enable </span>vega --py --sys-prefix
 
 <p>Then you can start the Jupyter Lab  using:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>jupyter lab --ip<span class="o">=</span><span class="k">*</span>  --port<span class="o">=</span>8888 --no-browser &amp;
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code>jupyter lab --ip<span class="o">=</span><span class="k">*</span>  --port<span class="o">=</span>8888 --no-browser &amp;
 </code></pre>
 </div>
 

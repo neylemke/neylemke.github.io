@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 08 Jan 2017 19:11:50 -0200</pubDate>
-    <lastBuildDate>Sun, 08 Jan 2017 19:11:50 -0200</lastBuildDate>
+    <pubDate>Sun, 08 Jan 2017 22:51:26 -0200</pubDate>
+    <lastBuildDate>Sun, 08 Jan 2017 22:51:26 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -36,7 +36,7 @@ the 3 dots close to ssh).&lt;/p&gt;
 &lt;p&gt;Before using this command you have to install  gcloud SDK (&lt;a href=&quot;https://cloud.google.com/sdk/downloads&quot;&gt;instructions&lt;/a&gt;) and be sure you have
 python2 on your system.  I am using pyenv to guarantee that.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pyenv &lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;2.7.8
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pyenv &lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;2.7.8
 gcloud config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;project  &amp;lt;myproject&amp;gt;
 gcloud auth login
 &lt;span class=&quot;c&quot;&gt;#This  sets the  firewall rules&lt;/span&gt;
@@ -48,9 +48,9 @@ gcloud compute --project &amp;lt;myproject&amp;gt; ssh --zone &lt;span class=&qu
 
 &lt;p&gt;The next step is to install anaconda.&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install bzip2
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install bzip2
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-sudo bash Miniconda2-latest-Linux-x86_64.sh
+sudo shell Miniconda2-latest-Linux-x86_64.sh
 conda install --yes scikit-learn
 conda install --yes pandas
 conda install --yes jupyter
@@ -60,7 +60,7 @@ conda install --yes -c conda-forge jupyterlab
 
 &lt;p&gt;I am also  installing some extra-packages&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install --yes mpld3
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install --yes mpld3
 conda install --yes numba
 conda install --yes seaborn
 conda install --yes -c conda-forge jupyter_contrib_nbextensions
@@ -73,7 +73,7 @@ jupyter nbextension &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;vega --
 
 &lt;p&gt;Then you can start the Jupyter Lab  using:&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter lab --ip&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  --port&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;8888 --no-browser &amp;amp;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter lab --ip&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  --port&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;8888 --no-browser &amp;amp;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
