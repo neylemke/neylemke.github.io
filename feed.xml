@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 20:15:56 -0200</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 20:15:56 -0200</lastBuildDate>
+    <pubDate>Wed, 18 Jan 2017 20:24:22 -0200</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 20:24:22 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -175,25 +175,39 @@ ok after starting the service you should see 2 process running one for jupyetrhu
 &lt;p&gt;You can insert new users using the jupyterhub interface. But you have to add the users on gcloud and create the &lt;code class=&quot;highlighter-rouge&quot;&gt;notebooks&lt;/code&gt; directory for each one. Now you can extend your installation by includind new kernels and installing &lt;code class=&quot;highlighter-rouge&quot;&gt;nbextensions&lt;/code&gt;. To guarantee that your users could use these improvements install them system wise. The extensions should be 
 at &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/share/jupyter/nbextensions&lt;/code&gt; and the kernels at &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/share/jupyter/kernels&lt;/code&gt;.&lt;/p&gt;
 
+&lt;p&gt;To install &lt;code class=&quot;highlighter-rouge&quot;&gt;nbextensions&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; pip3 install --yes jupyter_contrib_nbextensions
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 &lt;p&gt;A very nice aspect on this is that you can use jupyter terminal to adduser  and execute other administrative tasks
 using only your browser.&lt;/p&gt;
 
-&lt;p&gt;In order to guarantee that jupyter  will work perfectly you should install $\LaTex$.&lt;/p&gt;
+&lt;p&gt;In order to guarantee that jupyter  will work perfectly you should install LaTeX.&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install texlive-full
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;p&gt;Some interesting packages for visualization:&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; pip3 install --yes mpld3
  pip3 install --yes numba
  pip3 install --yes seaborn
- pip3 install --yes jupyter_contrib_nbextensions
  pip3 install --yes sh
  pip3 install --yes pip
  pip3 install altair 
  jupyter nbextension enable vega --py --sys-prefix
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip3 install --yes -c damianavila82 rise
+jupyter nbextension install rise --py --sys-prefix
+jupyter nbextension enable rise --py --sys-prefix
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
 </description>
         <pubDate>Fri, 13 Jan 2017 18:42:23 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/13/jupyterhub-gcloud/</link>

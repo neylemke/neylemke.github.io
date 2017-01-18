@@ -369,25 +369,39 @@ ok after starting the service you should see 2 process running one for jupyetrhu
 <p>You can insert new users using the jupyterhub interface. But you have to add the users on gcloud and create the <code class="highlighter-rouge">notebooks</code> directory for each one. Now you can extend your installation by includind new kernels and installing <code class="highlighter-rouge">nbextensions</code>. To guarantee that your users could use these improvements install them system wise. The extensions should be 
 at <code class="highlighter-rouge">/usr/local/share/jupyter/nbextensions</code> and the kernels at <code class="highlighter-rouge">/usr/local/share/jupyter/kernels</code>.</p>
 
+<p>To install <code class="highlighter-rouge">nbextensions</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> pip3 install --yes jupyter_contrib_nbextensions
+</code></pre>
+</div>
+
 <p>A very nice aspect on this is that you can use jupyter terminal to adduser  and execute other administrative tasks
 using only your browser.</p>
 
-<p>In order to guarantee that jupyter  will work perfectly you should install $\LaTex$.</p>
+<p>In order to guarantee that jupyter  will work perfectly you should install LaTeX.</p>
 
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install texlive-full
 </code></pre>
 </div>
 
+<p>Some interesting packages for visualization:</p>
+
 <div class="highlighter-rouge"><pre class="highlight"><code> pip3 install --yes mpld3
  pip3 install --yes numba
  pip3 install --yes seaborn
- pip3 install --yes jupyter_contrib_nbextensions
  pip3 install --yes sh
  pip3 install --yes pip
  pip3 install altair 
  jupyter nbextension enable vega --py --sys-prefix
 </code></pre>
 </div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>pip3 install --yes -c damianavila82 rise
+jupyter nbextension install rise --py --sys-prefix
+jupyter nbextension enable rise --py --sys-prefix
+</code></pre>
+</div>
+
 
             </article>
         </div>
