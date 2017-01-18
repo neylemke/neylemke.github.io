@@ -5,9 +5,206 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 09 Jan 2017 15:45:27 -0200</pubDate>
-    <lastBuildDate>Mon, 09 Jan 2017 15:45:27 -0200</lastBuildDate>
+    <pubDate>Wed, 18 Jan 2017 20:09:48 -0200</pubDate>
+    <lastBuildDate>Wed, 18 Jan 2017 20:09:48 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Installing jupyterhub on  gcloud</title>
+        <description>&lt;p&gt;Jupyterhub is a very interesting tool to deal with notebooks for classrooms and other envirnments demanding that users could share the same infrastructure 
+to collaborate using notebooks.&lt;/p&gt;
+
+&lt;p&gt;The most important thing is do not use anaconda. It will be easier to install 
+everything as root. The first step is to install pi3.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install python3-pip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Install nodejs/npm&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install npm nodejs-legacy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Install proxy with npm&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g configurable-http-proxy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+Install Jupyterhub
+
+&lt;span class=&quot;sb&quot;&gt;```&lt;/span&gt;bash
+pip3 install jupyterhub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Install Jupyter notebook (/upgrade)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip3 install --upgrade notebook
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Install oathauthenticator&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip3 install oauthenticator
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It is essential to use secure SSL certificate file for the public facing 
+interface of the proxy. To produce personal security certificates commands are as follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl req ­x509 ­nodes ­days 365 ­newkey rsa:1024 ­keyout mykey.key ­out mycert.pem
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You will need &lt;code class=&quot;highlighter-rouge&quot;&gt;mykey.out&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mycert.pem&lt;/code&gt; files in the next steps.&lt;/p&gt;
+
+&lt;p&gt;Create Jupyterhub configuration file&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyterhub --generate-config
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;We will use Github OAuthentication as our Authenticator. so steps are as follows:&lt;/p&gt;
+
+&lt;p&gt;Go to your Github profile &amp;gt; Settings &amp;gt; Oauth application&lt;/p&gt;
+
+&lt;p&gt;Register new application&lt;/p&gt;
+
+&lt;p&gt;Under callback URL is: https://your_host/hub/oauth_callback&lt;/p&gt;
+
+&lt;p&gt;Where your­host is where your server will be running. Such as example.com:8000 .&lt;/p&gt;
+
+&lt;p&gt;click on Register application.&lt;/p&gt;
+
+&lt;p&gt;You will see Client id and secret key generated above:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Github client_id = '---­­­­­­­Some cryptic string----­­­­­'
+Github client_secret = '­­­­­­­---­­­­­­­Some cryptic string----­­'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You will need to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;client_id&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;client_secret&lt;/code&gt; on your configuration file.&lt;/p&gt;
+
+&lt;p&gt;Create userlist file&lt;/p&gt;
+
+&lt;p&gt;It should be like username and admin after one space for giving admin right otherwise only username for normal user. Example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;username&amp;gt; admin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I am using ubuntu and using a sudo user in this step.&lt;/p&gt;
+
+&lt;p&gt;Create Default Directory for your Jupyter Notebooks:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo mkdir /home/&amp;lt;username&amp;gt;/notebooks
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now Edit jupyter_config.py as follows:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#-----------------------------------------------------------------------------------------------------------------------------------------------------
+# Application configuration
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# This is an application.
+c.JupyterHub.authenticator_class = 'oauthenticator.GitHubOAuthenticator'
+c.GitHubOAuthenticator.oauth_callback_url = 'https://your_ip_addrees/hub/oauth_callback'
+c.GitHubOAuthenticator.client_id = '---­­­­­­­Some cryptic string----­­­­­'
+c.GitHubOAuthenticator.client_secret = '---­­­­­­­Some cryptic string----­­­­­'
+# This is an application.
+# create system users that don't exist yet
+c.LocalAuthenticator.create_system_users = True
+c.Authenticator.whitelist = {}
+c.Authenticator.admin_users = {'&amp;lt;usernname&amp;gt;'}
+c.Spawner.notebook_dir = '~/notebooks'
+c.JupyterHub.ssl_cert = 'mycert.pem'
+c.JupyterHub.ssl_key = 'mykey.key' 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You have to open the 8000 door and the 8888 door on the firewall. This have to be done on your local 
+machine.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+gcloud compute firewall-rules create jupyternotebook  --allow tcp:8888  --source-ranges&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.0.0.0/0 --description&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;allows connections to jupyter server&quot;&lt;/span&gt;
+
+
+gcloud compute firewall-rules create jupyterhub  --allow tcp:8000  --source-ranges&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.0.0.0/0 --description&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;allows connections to jupyter server&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now starting jupyterhub with above configuration&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyterhub
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Go to &lt;code class=&quot;highlighter-rouge&quot;&gt;http://your_ip_address:8000&lt;/code&gt;. And it should be working. If not pay special atention to the messages 
+on the terminal. You should see at leat 2 process running the proxy and jupyterhub.&lt;/p&gt;
+
+&lt;p&gt;The next challenge is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jupyterhub&lt;/code&gt; as a service. Copy the &lt;code class=&quot;highlighter-rouge&quot;&gt;mycert.pem&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;mykey.key&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;jupyterhub_config.py&lt;/code&gt;  files to &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/jupyter/hub&lt;/code&gt;. You should protect the files:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod og-r mycert.pem mycert.key
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Edit &lt;code class=&quot;highlighter-rouge&quot;&gt;jupyterhub_config.py&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;c.JupyterHub.ssl_cert = '/etc/jupyterhub/mycert.pem'
+c.JupyterHub.ssl_key = '/etc/jupyterhub/mykey.key' 
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The next step&lt;/p&gt;
+
+&lt;p&gt;Save https://gist.github.com/lambdalisue/f01c5a65e81100356379 as /etc/init.d/jupyterhub and follow&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod +x /etc/init.d/jupyterhub
+# Start jupyterhub
+sudo service jupyterhub start
+# Stop jupyterhub
+sudo service jupyterhub stop
+# Start jupyterhub on boot
+$ sudo update-rc.d jupyterhub defaults
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One of the challenges that I faced was to set the correct global python version, that was python 3. If everything is 
+ok after starting the service you should see 2 process running one for jupyetrhub and the other for the proxy.&lt;/p&gt;
+
+&lt;p&gt;You can insert new users using the jupyterhub interface. But you have to add the users on gcloud and create the &lt;code class=&quot;highlighter-rouge&quot;&gt;notebooks&lt;/code&gt; directory for each one. Now you can extend your installation by includind new kernels and installing &lt;code class=&quot;highlighter-rouge&quot;&gt;nbextensions&lt;/code&gt;. To guarantee that your users could use these improvements install them system wise. The extensions should be 
+at &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/share/jupyter/nbextensions&lt;/code&gt; and the kernels at &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/share/jupyter/kernels&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;A very nice aspect on this is that you can use jupyter terminal to adduser  and execute other administrative tasks
+using only your browser.&lt;/p&gt;
+
+&lt;p&gt;In order to guarantee that jupyter  will work perfectly you should install $\LaTex$.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install texlive-full
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; pip3 install --yes mpld3
+ pip3 install --yes numba
+ pip3 install --yes seaborn
+ pip3 install --yes jupyter_contrib_nbextensions
+ pip3 install --yes sh
+ pip3 install --yes pip
+ pip3 install altair 
+ jupyter nbextension enable vega --py --sys-prefix
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 13 Jan 2017 18:42:23 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/13/jupyterhub-gcloud/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/13/jupyterhub-gcloud/</guid>
+        
+        
+        <category>Technical</category>
+        
+      </item>
     
       <item>
         <title>Slide Example</title>
@@ -102,8 +299,6 @@ You have to run all cells so the last command works.&lt;/p&gt;
         
         <category>Technical</category>
         
-        <category>Paper</category>
-        
       </item>
     
       <item>
@@ -170,8 +365,6 @@ git push
         
         
         <category>Technical</category>
-        
-        <category>Paper</category>
         
       </item>
     
@@ -251,8 +444,6 @@ http://&lt;yourgcefixedip&gt;:8888&quot;.&lt;/yourgcefixedip&gt;&lt;/p&gt;
         
         
         <category>Technical</category>
-        
-        <category>Paper</category>
         
       </item>
     

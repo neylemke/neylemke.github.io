@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Installing jupyterhub on  gcloud</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="canonical" href="/2017/01/13/jupyterhub-gcloud/">
+	<link rel="alternate" type="application/rss+xml" title="DataScience2SB" href="/feed.xml">
+	
+	<meta name="description" content="">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?94be4b0f9fc5d94cc0d0415ea6761ae9";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.jpg">
+      </a> -->
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Categories</a>
+        </li>
+        <li>
+          <a href="/tag">Tags</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <!--  <li>
+          <a href="/donate/"><strong>Donate</strong></a>
+          </li> -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Info<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/neylemke/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="http://lattes.cnpq.br/7977035910952141">Resume</a></li>
+            <li><a rel="nofollow" href="/books">Books</a></li>
+            <li><a rel="nofollow" href="/reference">Reference</a></li>
+            <!--   <li><a href="/feed.xml">RSS</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/neylemke/LessOrMore.git">GitHub Pages</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>Installing jupyterhub on  gcloud</h1>
+		    <p>Post on Jan 13, 2017 by <a href="/about">Ney Lemke</a></p>
+		-->
+		    <h1>Data Science for Systems Biology</h1>
+    
+  </div>
+</div>
+
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#Technical-ref">Technical</a>	/
+    	<a href="/tag/#-ref"></a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>Posts</h1>
+  <ul class="nav sidenav">
+<!--
+    
+      
+      
+      
+      
+
+      
+        <li><a href="#year_2017">2017</a>
+          <ul class="nav">
+            <li><a href="#month_2017_January">January</a></li>
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            </ul>
+          </li>
+      
+    
+-->
+  </ul>
+</div>
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">Installing jupyterhub on  gcloud</h1>
+              <!--
+                <p class="post-meta">Jan 13, 2017</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jan 13, 2017</span> By <a target="_blank" href="http://www.lbbc.unesp.br">Ney Lemke</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <p>Jupyterhub is a very interesting tool to deal with notebooks for classrooms and other envirnments demanding that users could share the same infrastructure 
+to collaborate using notebooks.</p>
+
+<p>The most important thing is do not use anaconda. It will be easier to install 
+everything as root. The first step is to install pi3.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install python3-pip
+</code></pre>
+</div>
+
+<p>Install nodejs/npm</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install npm nodejs-legacy
+</code></pre>
+</div>
+
+<p>Install proxy with npm</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>npm install -g configurable-http-proxy
+</code></pre>
+</div>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>
+Install Jupyterhub
+
+<span class="sb">```</span>bash
+pip3 install jupyterhub
+</code></pre>
+</div>
+
+<p>Install Jupyter notebook (/upgrade)</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip3 install --upgrade notebook
+</code></pre>
+</div>
+
+<p>Install oathauthenticator</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip3 install oauthenticator
+</code></pre>
+</div>
+
+<p>It is essential to use secure SSL certificate file for the public facing 
+interface of the proxy. To produce personal security certificates commands are as follows:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>openssl req ­x509 ­nodes ­days 365 ­newkey rsa:1024 ­keyout mykey.key ­out mycert.pem
+</code></pre>
+</div>
+
+<p>You will need <code class="highlighter-rouge">mykey.out</code> and <code class="highlighter-rouge">mycert.pem</code> files in the next steps.</p>
+
+<p>Create Jupyterhub configuration file</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>jupyterhub --generate-config
+</code></pre>
+</div>
+<p>We will use Github OAuthentication as our Authenticator. so steps are as follows:</p>
+
+<p>Go to your Github profile &gt; Settings &gt; Oauth application</p>
+
+<p>Register new application</p>
+
+<p>Under callback URL is: https://your_host/hub/oauth_callback</p>
+
+<p>Where your­host is where your server will be running. Such as example.com:8000 .</p>
+
+<p>click on Register application.</p>
+
+<p>You will see Client id and secret key generated above:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Github client_id = '---­­­­­­­Some cryptic string----­­­­­'
+Github client_secret = '­­­­­­­---­­­­­­­Some cryptic string----­­'
+</code></pre>
+</div>
+
+<p>You will need to use the <code class="highlighter-rouge">client_id</code> and <code class="highlighter-rouge">client_secret</code> on your configuration file.</p>
+
+<p>Create userlist file</p>
+
+<p>It should be like username and admin after one space for giving admin right otherwise only username for normal user. Example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;username&gt; admin
+</code></pre>
+</div>
+
+<p>I am using ubuntu and using a sudo user in this step.</p>
+
+<p>Create Default Directory for your Jupyter Notebooks:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code> sudo mkdir /home/&lt;username&gt;/notebooks
+</code></pre>
+</div>
+
+<p>Now Edit jupyter_config.py as follows:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>#-----------------------------------------------------------------------------------------------------------------------------------------------------
+# Application configuration
+#-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# This is an application.
+c.JupyterHub.authenticator_class = 'oauthenticator.GitHubOAuthenticator'
+c.GitHubOAuthenticator.oauth_callback_url = 'https://your_ip_addrees/hub/oauth_callback'
+c.GitHubOAuthenticator.client_id = '---­­­­­­­Some cryptic string----­­­­­'
+c.GitHubOAuthenticator.client_secret = '---­­­­­­­Some cryptic string----­­­­­'
+# This is an application.
+# create system users that don't exist yet
+c.LocalAuthenticator.create_system_users = True
+c.Authenticator.whitelist = {}
+c.Authenticator.admin_users = {'&lt;usernname&gt;'}
+c.Spawner.notebook_dir = '~/notebooks'
+c.JupyterHub.ssl_cert = 'mycert.pem'
+c.JupyterHub.ssl_key = 'mykey.key' 
+</code></pre>
+</div>
+
+<p>You have to open the 8000 door and the 8888 door on the firewall. This have to be done on your local 
+machine.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>
+gcloud compute firewall-rules create jupyternotebook  --allow tcp:8888  --source-ranges<span class="o">=</span>0.0.0.0/0 --description<span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
+
+
+gcloud compute firewall-rules create jupyterhub  --allow tcp:8000  --source-ranges<span class="o">=</span>0.0.0.0/0 --description<span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
+</code></pre>
+</div>
+
+<p>Now starting jupyterhub with above configuration</p>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>jupyterhub
+</code></pre>
+</div>
+
+<p>Go to <code class="highlighter-rouge">http://your_ip_address:8000</code>. And it should be working. If not pay special atention to the messages 
+on the terminal. You should see at leat 2 process running the proxy and jupyterhub.</p>
+
+<p>The next challenge is to run <code class="highlighter-rouge">jupyterhub</code> as a service. Copy the <code class="highlighter-rouge">mycert.pem</code> <code class="highlighter-rouge">mykey.key</code> <code class="highlighter-rouge">jupyterhub_config.py</code>  files to <code class="highlighter-rouge">/etc/jupyter/hub</code>. You should protect the files:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo chmod og-r mycert.pem mycert.key
+</code></pre>
+</div>
+
+<p>Edit <code class="highlighter-rouge">jupyterhub_config.py</code></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>c.JupyterHub.ssl_cert = '/etc/jupyterhub/mycert.pem'
+c.JupyterHub.ssl_key = '/etc/jupyterhub/mykey.key' 
+
+</code></pre>
+</div>
+
+<p>The next step</p>
+
+<p>Save https://gist.github.com/lambdalisue/f01c5a65e81100356379 as /etc/init.d/jupyterhub and follow</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo chmod +x /etc/init.d/jupyterhub
+# Start jupyterhub
+sudo service jupyterhub start
+# Stop jupyterhub
+sudo service jupyterhub stop
+# Start jupyterhub on boot
+$ sudo update-rc.d jupyterhub defaults
+</code></pre>
+</div>
+
+<p>One of the challenges that I faced was to set the correct global python version, that was python 3. If everything is 
+ok after starting the service you should see 2 process running one for jupyetrhub and the other for the proxy.</p>
+
+<p>You can insert new users using the jupyterhub interface. But you have to add the users on gcloud and create the <code class="highlighter-rouge">notebooks</code> directory for each one. Now you can extend your installation by includind new kernels and installing <code class="highlighter-rouge">nbextensions</code>. To guarantee that your users could use these improvements install them system wise. The extensions should be 
+at <code class="highlighter-rouge">/usr/local/share/jupyter/nbextensions</code> and the kernels at <code class="highlighter-rouge">/usr/local/share/jupyter/kernels</code>.</p>
+
+<p>A very nice aspect on this is that you can use jupyter terminal to adduser  and execute other administrative tasks
+using only your browser.</p>
+
+<p>In order to guarantee that jupyter  will work perfectly you should install $\LaTex$.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install texlive-full
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> pip3 install --yes mpld3
+ pip3 install --yes numba
+ pip3 install --yes seaborn
+ pip3 install --yes jupyter_contrib_nbextensions
+ pip3 install --yes sh
+ pip3 install --yes pip
+ pip3 install altair 
+ jupyter nbextension enable vega --py --sys-prefix
+</code></pre>
+</div>
+
+            </article>
+        </div>
+      </div>
+      <div class="panel docs-content">
+        <article class="post-content">
+          <div class="wrapper">
+            
+
+
+
+ 
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2017 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme from <a href="http://lesscss.cn/">Less</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/application.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+
+
+  </body>
+</html>
