@@ -5,9 +5,90 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Jan 2017 20:24:22 -0200</pubDate>
-    <lastBuildDate>Wed, 18 Jan 2017 20:24:22 -0200</lastBuildDate>
+    <pubDate>Wed, 25 Jan 2017 13:43:20 -0200</pubDate>
+    <lastBuildDate>Wed, 25 Jan 2017 13:43:20 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>fundibio</title>
+        <description>&lt;section data-markdown=&quot;&quot;&gt;
+#  FUNDIBIO
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+##  Agenda
+* Introdução
+* Situação FUNDIBIO
+* Objetivo
+* Fluxo Fundibio
+* Fluxo IBB
+* Extra: Pendência Finep
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+# Legislação
+
+A lei que legisla sobre as fundações é 
+[LEI No 8.958, DE 20 DE DEZEMBRO DE 1994](www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm). 
+
+&amp;gt; Art. 1o  As Instituições Federais de Ensino Superior poderão celebrar convênios e contratos, por prazo determinado, com fundações instituídas com a finalidade de apoiar projetos de ensino, pesquisa, extensão, desenvolvimento institucional, científico e tecnológico e estímulo à inovação. 
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+# Legislação UNESP
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+# Regimento FUNDIBIO
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+# Convênio IBB-UNESP
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+# *Case* FEPAF
+&lt;/section&gt;
+
+&lt;section data-markdown=&quot;&quot;&gt;
+# Objetivo
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+# Fluxo Fundibio
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+# Fluxo IBB
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+# Fluxo UNESP
+&lt;/section&gt;
+&lt;section data-markdown=&quot;&quot;&gt;
+# Pendência Fapesp
+&lt;/section&gt;
+</description>
+        <pubDate>Wed, 25 Jan 2017 12:58:05 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/25/fundibio/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/25/fundibio/</guid>
+        
+        
+        <category>Slide</category>
+        
+      </item>
+    
+      <item>
+        <title></title>
+        <description>
+</description>
+        <pubDate>Wed, 25 Jan 2017 12:57:51 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/25/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/25/</guid>
+        
+        
+        <category>Technical</category>
+        
+        <category>Paper</category>
+        
+      </item>
     
       <item>
         <title>Installing jupyterhub on  gcloud</title>

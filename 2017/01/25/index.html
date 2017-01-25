@@ -5,14 +5,14 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jupyter Revolutions</title>
+	<title></title>
 
 	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
 	<link rel="icon" href="/styles/images/favicon.jpg">
 
 	<link rel="stylesheet" href="/styles/css/index.css">
 	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
-	<link rel="canonical" href="/2017/01/08/jupyter-revolution/">
+	<link rel="canonical" href="/2017/01/25/">
 	<link rel="alternate" type="application/rss+xml" title="DataScience2SB" href="/feed.xml">
 	
 	<meta name="description" content="">
@@ -89,8 +89,8 @@
   <div class="container">
   	
   		<!--
-		    <h1>Jupyter Revolutions</h1>
-		    <p>Post on Jan 08, 2017 by <a href="/about">Ney Lemke</a></p>
+		    <h1></h1>
+		    <p>Post on Jan 25, 2017 by <a href="/about">Ney Lemke</a></p>
 		-->
 		    <h1>Data Science for Systems Biology</h1>
     
@@ -102,7 +102,7 @@
 <div class="banner">
   <div class="container">
   	
-    	<a href="/categories/#Technical-ref">Technical</a>	/
+    	<a href="/categories/#TechnicalPaper-ref">TechnicalPaper</a>	/
     	<a href="/tag/#-ref"></a>
     
   </div>
@@ -223,81 +223,15 @@
       <div class="panel docs-content">
         <div class="wrapper">
             <header class="post-header">
-              <h1 class="post-title">Jupyter Revolutions</h1>
+              <h1 class="post-title"></h1>
               <!--
-                <p class="post-meta">Jan 8, 2017</p>
+                <p class="post-meta">Jan 25, 2017</p>
               -->
-              <div class="meta">Posted on <span class="postdate">Jan 08, 2017</span> By <a target="_blank" href="http://www.lbbc.unesp.br">Ney Lemke</a></div>
+              <div class="meta">Posted on <span class="postdate">Jan 25, 2017</span> By <a target="_blank" href="http://www.lbbc.unesp.br">Ney Lemke</a></div>
               <br />
             </header>
             <article class="post-content">
-              <p>In this  page I will describe the process of installing a GCE machine capable of running 
-<a href="https://github.com/jupyterlab/jupyterlab">Jupyter  Lab</a>.</p>
-
-<p>The first step  is to create  an  account on Google Compute Engine create a Project 
-and  instantiate one machine.</p>
-
-<p>I am  using  the following  configurations:</p>
-
-<ul>
-  <li>I am allowing HHTP and HTTPS  connections</li>
-  <li>I am  using an UBUNTU 16.04 image</li>
-  <li>I am using  a small machine type</li>
-  <li>The machine should  have a  fixed permanent IP</li>
-</ul>
-
-<p><img src="/assets/machineconf.png" alt="Machine Conf" /></p>
-
-<p>The next step  is to start the instance and connect to the instance  (the command can be obtained clicking on the 
-the 3 dots close to ssh).</p>
-
-<p>Before using this command you have to install  gcloud SDK (<a href="https://cloud.google.com/sdk/downloads">instructions</a>) and be sure you have
-python2 on your system.  I am using pyenv to guarantee that.</p>
-
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>pyenv <span class="nb">local </span>2.7.8
-gcloud config <span class="nb">set </span>project  &lt;myproject&gt;
-gcloud auth login
-<span class="c">#This  sets the  firewall rules</span>
-gcloud compute firewall-rules create jupyternotebook  --allow tcp:8888  --source-ranges<span class="o">=</span>0.0.0.0/0 --description<span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
-<span class="c">#This is the command  you can get on GCE site</span>
-gcloud compute --project &lt;myproject&gt; ssh --zone <span class="s2">"us-central1-f"</span>  &lt;machinetype&gt;
-</code></pre>
-</div>
-
-<p>The next step is to install anaconda.</p>
-
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apt-get install bzip2
-wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-sudo shell Miniconda2-latest-Linux-x86_64.sh
-conda install --yes scikit-learn
-conda install --yes pandas
-conda install --yes jupyter
-conda install --yes -c conda-forge jupyterlab
-</code></pre>
-</div>
-
-<p>I am also  installing some extra-packages</p>
-
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>conda install --yes mpld3
-conda install --yes numba
-conda install --yes seaborn
-conda install --yes -c conda-forge jupyter_contrib_nbextensions
-conda install --yes sh
-conda install --yes pip
-conda install --yes altair --channel conda-forge
-jupyter nbextension <span class="nb">enable </span>vega --py --sys-prefix
-</code></pre>
-</div>
-
-<p>Then you can start the Jupyter Lab  using:</p>
-
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>jupyter lab --ip<span class="o">=</span><span class="k">*</span>  --port<span class="o">=</span>8888 --no-browser &amp;
-</code></pre>
-</div>
-
-<p>To start using the  Jupyter Lab  you have to open a browser and  type
-http://<yourgcefixedip>:8888".</yourgcefixedip></p>
-
+              
 
             </article>
         </div>
