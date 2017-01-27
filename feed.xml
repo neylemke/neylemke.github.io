@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 27 Jan 2017 20:05:30 -0200</pubDate>
-    <lastBuildDate>Fri, 27 Jan 2017 20:05:30 -0200</lastBuildDate>
+    <pubDate>Fri, 27 Jan 2017 20:06:27 -0200</pubDate>
+    <lastBuildDate>Fri, 27 Jan 2017 20:06:27 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -41,34 +41,32 @@
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;FUNDIBIO&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-27 Fri 20:04&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;FUNDIBIO&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-27 Fri 20:06&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org2498d07&quot;&gt;Introdução&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgca9c3b0&quot;&gt;Situação FUNDIBIO&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org7523904&quot;&gt;Objetivo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgbc2c523&quot;&gt;Definição do Fluxo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orgd9031b1&quot;&gt;Introdução&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orgd53cc08&quot;&gt;Situação FUNDIBIO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orgeca83b8&quot;&gt;Objetivo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org26dbb62&quot;&gt;Definição do Fluxo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;p&gt;
-%http://cdn.jsdelivr.net/reveal.js/3.0.0/
-&lt;/p&gt;
+
 
 &lt;section&gt;
-&lt;section id=&quot;slide-org2498d07&quot;&gt;
-&lt;h2 id=&quot;org2498d07&quot;&gt;Introdução&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org2498d07&quot;&gt;
+&lt;section id=&quot;slide-orgd9031b1&quot;&gt;
+&lt;h2 id=&quot;orgd9031b1&quot;&gt;Introdução&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgd9031b1&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org1972ac7&quot;&gt;
-&lt;h3 id=&quot;org1972ac7&quot;&gt;Legislação&lt;/h3&gt;
+&lt;section id=&quot;slide-orgbb2e068&quot;&gt;
+&lt;h3 id=&quot;orgbb2e068&quot;&gt;Legislação&lt;/h3&gt;
 &lt;p&gt;
 A lei que legisla sobre as fundações é
 &lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm&quot;&gt;LEI No 8.958, DE 20 DE DEZEMBRO DE 1994&lt;/a&gt;
@@ -88,12 +86,12 @@ estímulo à inovação.
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org5f44a3b&quot;&gt;
-&lt;h3 id=&quot;org5f44a3b&quot;&gt;Legislação UNESP&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-org5f44a3b&quot;&gt;
+&lt;section id=&quot;slide-orgae479db&quot;&gt;
+&lt;h3 id=&quot;orgae479db&quot;&gt;Legislação UNESP&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-orgae479db&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section id=&quot;slide-org97c2b65&quot;&gt;
-&lt;h4 id=&quot;org97c2b65&quot;&gt;Termo Aditivo&lt;/h4&gt;
+&lt;section id=&quot;slide-orge3004ed&quot;&gt;
+&lt;h4 id=&quot;orge3004ed&quot;&gt;Termo Aditivo&lt;/h4&gt;
 &lt;p&gt;
 Resolução Unesp nº 48/2010:
 &lt;/p&gt;
@@ -119,8 +117,8 @@ III - indicação de Fundação interveniente, quando for o caso, com manifesta�
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org026ed99&quot;&gt;
-&lt;h3 id=&quot;org026ed99&quot;&gt;Regimento FUNDIBIO&lt;/h3&gt;
+&lt;section id=&quot;slide-orgc1355d9&quot;&gt;
+&lt;h3 id=&quot;orgc1355d9&quot;&gt;Regimento FUNDIBIO&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Contrato entre Empresa, FUNDIBIO e proponente&lt;/li&gt;
 &lt;li&gt;Prestação de Contas ao TCE&lt;/li&gt;
@@ -146,8 +144,8 @@ III - indicação de Fundação interveniente, quando for o caso, com manifesta�
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org6642f25&quot;&gt;
-&lt;h3 id=&quot;org6642f25&quot;&gt;Convênio IBB-UNESP&lt;/h3&gt;
+&lt;section id=&quot;slide-org3ccc874&quot;&gt;
+&lt;h3 id=&quot;org3ccc874&quot;&gt;Convênio IBB-UNESP&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;10% Fundibio, 5% UNESP e 5% IBB&lt;/li&gt;
 &lt;li&gt;Cada Projeto e cada atividade tramitará com um termo aditivo&lt;/li&gt;
@@ -161,8 +159,8 @@ Legislação: &lt;a href=&quot;file:///assets/minutafundibio.pdf&quot;&gt;Termo 
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orge873842&quot;&gt;
-&lt;h3 id=&quot;orge873842&quot;&gt;&lt;b&gt;Case&lt;/b&gt; FEPAF&lt;/h3&gt;
+&lt;section id=&quot;slide-orgf723f92&quot;&gt;
+&lt;h3 id=&quot;orgf723f92&quot;&gt;&lt;b&gt;Case&lt;/b&gt; FEPAF&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;300 projetos ano&lt;/li&gt;
 &lt;li&gt;2/3 das bolsas de estudos da FCA são pagas pela FEPAF&lt;/li&gt;
@@ -173,8 +171,8 @@ Legislação: &lt;a href=&quot;file:///assets/minutafundibio.pdf&quot;&gt;Termo 
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgca9c3b0&quot;&gt;
-&lt;h2 id=&quot;orgca9c3b0&quot;&gt;Situação FUNDIBIO&lt;/h2&gt;
+&lt;section id=&quot;slide-orgd53cc08&quot;&gt;
+&lt;h2 id=&quot;orgd53cc08&quot;&gt;Situação FUNDIBIO&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Sem projetos novos desde julho de 2016&lt;/li&gt;
 &lt;li&gt;30 bolsas de pesquisa&lt;/li&gt;
@@ -184,14 +182,14 @@ Legislação: &lt;a href=&quot;file:///assets/minutafundibio.pdf&quot;&gt;Termo 
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org7523904&quot;&gt;
-&lt;h2 id=&quot;org7523904&quot;&gt;Objetivo&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org7523904&quot;&gt;
+&lt;section id=&quot;slide-orgeca83b8&quot;&gt;
+&lt;h2 id=&quot;orgeca83b8&quot;&gt;Objetivo&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgeca83b8&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgbff9cd1&quot;&gt;
-&lt;h3 id=&quot;orgbff9cd1&quot;&gt;Objetivo&lt;/h3&gt;
+&lt;section id=&quot;slide-org4e259bd&quot;&gt;
+&lt;h3 id=&quot;org4e259bd&quot;&gt;Objetivo&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Definir de forma clara o fluxo de tramitação visando desacoplar&lt;/li&gt;
 
@@ -207,14 +205,14 @@ as atribuições do IBB e da Unesp.
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgbc2c523&quot;&gt;
-&lt;h2 id=&quot;orgbc2c523&quot;&gt;Definição do Fluxo&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgbc2c523&quot;&gt;
+&lt;section id=&quot;slide-org26dbb62&quot;&gt;
+&lt;h2 id=&quot;org26dbb62&quot;&gt;Definição do Fluxo&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org26dbb62&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgfb53e72&quot;&gt;
-&lt;h3 id=&quot;orgfb53e72&quot;&gt;Fluxo Fundibio&lt;/h3&gt;
+&lt;section id=&quot;slide-orgee48154&quot;&gt;
+&lt;h3 id=&quot;orgee48154&quot;&gt;Fluxo Fundibio&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Contrato estabelecendo parceria.&lt;/li&gt;
 &lt;li&gt;Termo de Consentimento assinado pelo Diretor do IBB autorizando o estabelecimento da colaboração.&lt;/li&gt;
@@ -223,8 +221,8 @@ as atribuições do IBB e da Unesp.
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org36a3cf9&quot;&gt;
-&lt;h3 id=&quot;org36a3cf9&quot;&gt;Fluxo IBB&lt;/h3&gt;
+&lt;section id=&quot;slide-org9f80485&quot;&gt;
+&lt;h3 id=&quot;org9f80485&quot;&gt;Fluxo IBB&lt;/h3&gt;
 &lt;p&gt;
 Elaboração do &quot;Termo Aditivo&quot; e aprovação:
 &lt;/p&gt;
@@ -237,8 +235,8 @@ Elaboração do &quot;Termo Aditivo&quot; e aprovação:
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org8101420&quot;&gt;
-&lt;h3 id=&quot;org8101420&quot;&gt;Fluxo UNESP&lt;/h3&gt;
+&lt;section id=&quot;slide-orgbc6068c&quot;&gt;
+&lt;h3 id=&quot;orgbc6068c&quot;&gt;Fluxo UNESP&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Câmara Central de Extensão (até 1 mês)&lt;/li&gt;
 &lt;li&gt;Conselho Universitário (até 1 mês)&lt;/li&gt;
