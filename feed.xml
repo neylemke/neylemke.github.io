@@ -5,85 +5,293 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Jan 2017 19:23:32 -0200</pubDate>
-    <lastBuildDate>Thu, 26 Jan 2017 19:23:32 -0200</lastBuildDate>
+    <pubDate>Fri, 27 Jan 2017 19:31:18 -0200</pubDate>
+    <lastBuildDate>Fri, 27 Jan 2017 19:31:18 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
-        <title>fundibio</title>
-        <description>&lt;section data-markdown=&quot;&quot;&gt;
-#  FUNDIBIO
+        <title>Fundibio</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;title&gt;FUNDIBIO&lt;/title&gt;
+&lt;meta name=&quot;author&quot; content=&quot;(Ney Lemke)&quot;/&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.underline { text-decoration: underline; }
+&lt;/style&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;./local.css&quot;/&gt;
+
+&lt;!-- If the query includes 'print-pdf', include the PDF print sheet --&gt;
+&lt;script&gt;
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+&lt;/script&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Org-Reveal Introduction.&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;reveal&quot;&gt;
+&lt;div class=&quot;slides&quot;&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;FUNDIBIO&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-27 Fri 19:29&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id=&quot;table-of-contents&quot;&gt;
+&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org8652572&quot;&gt;Introdução&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org4272940&quot;&gt;Situação FUNDIBIO&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org18791e1&quot;&gt;Objetivo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orge792c6b&quot;&gt;Definição do Fluxo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/section&gt;
 
-&lt;section data-markdown=&quot;&quot;&gt;
-##  Agenda
-* Introdução
-* Situação FUNDIBIO
-* Objetivo
-* Fluxo Fundibio
-* Fluxo IBB
-* Extra: Pendência Finep
+&lt;section&gt;
+&lt;section id=&quot;slide-org8652572&quot;&gt;
+&lt;h2 id=&quot;org8652572&quot;&gt;Introdução&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org8652572&quot;&gt;
+&lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org7ca4627&quot;&gt;
+&lt;h3 id=&quot;org7ca4627&quot;&gt;Legislação&lt;/h3&gt;
+&lt;p&gt;
+A lei que legisla sobre as fundações é
+&lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm&quot;&gt;LEI No 8.958, DE 20 DE DEZEMBRO DE 1994&lt;/a&gt;
+&lt;/p&gt;
 
-&lt;section data-markdown=&quot;&quot;&gt;
-# Legislação
+&lt;blockquote nil&gt;
+&lt;p&gt;
+Art. 1o As Instituições Federais de Ensino Superior poderão celebrar
+convênios e contratos, por prazo determinado, com fundações
+instituídas com a finalidade de apoiar projetos de ensino, pesquisa,
+extensão, desenvolvimento institucional, científico e tecnológico e
+estímulo à inovação.
+&lt;/p&gt;
+&lt;/blockquote&gt;
 
-A lei que legisla sobre as fundações é 
-[LEI No 8.958, DE 20 DE DEZEMBRO DE 1994](www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm). 
 
-&amp;gt; Art. 1o  As Instituições Federais de Ensino Superior poderão celebrar convênios e contratos, por prazo determinado, com fundações instituídas com a finalidade de apoiar projetos de ensino, pesquisa, extensão, desenvolvimento institucional, científico e tecnológico e estímulo à inovação. 
 &lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgef8e2b3&quot;&gt;
+&lt;h3 id=&quot;orgef8e2b3&quot;&gt;Legislação UNESP&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-orgef8e2b3&quot;&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;section id=&quot;slide-org68445e1&quot;&gt;
+&lt;h4 id=&quot;org68445e1&quot;&gt;Termo Aditivo&lt;/h4&gt;
+&lt;p&gt;
+Resolução Unesp nº 48/2010:
+&lt;/p&gt;
 
-&lt;section data-markdown=&quot;&quot;&gt;
-# Legislação UNESP
-&lt;/section&gt;
+&lt;p&gt;
+Artigo 2º - As propostas de Convênio, de Protocolo ou Acordo de Cooperação, bem como
+ Termos Aditivos, Anexos e Termos de prorrogação de vigência desses ajustes, deverão ser instruídas com: 
+&lt;/p&gt;
 
-&lt;section data-markdown=&quot;&quot;&gt;
-# Regimento FUNDIBIO
-&lt;/section&gt;
+&lt;p&gt;
+I - exposição de motivos que justifique a celebração do ajuste;
+&lt;/p&gt;
 
-&lt;section data-markdown=&quot;&quot;&gt;
-# Convênio IBB-UNESP
-&lt;/section&gt;
+&lt;p&gt;
+II - minuta do instrumento a ser celebrado, elaborada de acordo com os requisitos formais e legais exigidos, e,
+ no caso de convênio genérico, também de minuta de seu primeiro Termo Aditivo; 
+&lt;/p&gt;
 
-&lt;section data-markdown=&quot;&quot;&gt;
-# *Case* FEPAF
-&lt;/section&gt;
+&lt;p&gt;
+III - indicação de Fundação interveniente, quando for o caso, com manifestação da mesma.
+&lt;/p&gt;
 
-&lt;section data-markdown=&quot;&quot;&gt;
-# Objetivo
 &lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-# Fluxo Fundibio
 &lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-# Fluxo IBB
+&lt;section&gt;
+&lt;section id=&quot;slide-org288d76c&quot;&gt;
+&lt;h3 id=&quot;org288d76c&quot;&gt;Regimento FUNDIBIO&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Contrato entre Empresa, FUNDIBIO e proponente&lt;/li&gt;
+&lt;li&gt;Prestação de Contas ao TCE&lt;/li&gt;
+&lt;li&gt;Duas Modalidades de Apoio
+&lt;ul&gt;
+&lt;li&gt;Projeto de Pesquisa
+&lt;ul&gt;
+&lt;li&gt;Permite Bolsa Docente&lt;/li&gt;
+&lt;li&gt;Exige Descrição de Gastos&lt;/li&gt;
+
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Prestação de Serviço
+&lt;ul&gt;
+&lt;li&gt;Não Permite Bolsa Docente&lt;/li&gt;
+&lt;li&gt;Não exige gastos Detalhados&lt;/li&gt;
+
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;/ul&gt;
+
 &lt;/section&gt;
-&lt;section data-markdown=&quot;&quot;&gt;
-# Fluxo UNESP
 &lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org408d3dc&quot;&gt;
+&lt;h3 id=&quot;org408d3dc&quot;&gt;Convênio IBB-UNESP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;10% Fundibio, 5% UNESP e 5% IBB&lt;/li&gt;
+&lt;li&gt;Cada Projeto e cada atividade tramitará com um termo aditivo&lt;/li&gt;
+&lt;li&gt;&quot;Termo Aditivo&quot; só é válido após sua tramitação pelos orgãos competentes.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;
+Legislação: &lt;a href=&quot;file://assets/minutafundibio.pdf&quot;&gt;Termo Aditivo&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgc3a2b07&quot;&gt;
+&lt;h3 id=&quot;orgc3a2b07&quot;&gt;&lt;b&gt;Case&lt;/b&gt; FEPAF&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;300 projetos ano&lt;/li&gt;
+&lt;li&gt;2/3 das bolsas de estudos da FCA são pagas pela FEPAF&lt;/li&gt;
+&lt;li&gt;Um único termo aditivo&lt;/li&gt;
+&lt;li&gt;Tramitação apenas na Unidade&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org4272940&quot;&gt;
+&lt;h2 id=&quot;org4272940&quot;&gt;Situação FUNDIBIO&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Sem projetos novos desde julho de 2016&lt;/li&gt;
+&lt;li&gt;30 bolsas de pesquisa&lt;/li&gt;
+&lt;li&gt;Tratamento diferenciado para docentes do IBB&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org18791e1&quot;&gt;
+&lt;h2 id=&quot;org18791e1&quot;&gt;Objetivo&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org18791e1&quot;&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org8fc56df&quot;&gt;
+&lt;h3 id=&quot;org8fc56df&quot;&gt;Objetivo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Definir de forma clara o fluxo de tramitação visando desacoplar&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;
+as atribuições do IBB e da Unesp.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Garantir Certificação dos Docentes e Discentes envolvidos.&lt;/li&gt;
+&lt;li&gt;Tratamento equivalente por parte da FUNDIBIO aos  docentes do IBB&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orge792c6b&quot;&gt;
+&lt;h2 id=&quot;orge792c6b&quot;&gt;Definição do Fluxo&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orge792c6b&quot;&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org761ce1b&quot;&gt;
+&lt;h3 id=&quot;org761ce1b&quot;&gt;Fluxo Fundibio&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Contrato estabelecendo parceria.&lt;/li&gt;
+&lt;li&gt;Termo de Consentimento assinado pelo Diretor do IBB autorizando o estabelecimento da colaboração.&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgb2757b2&quot;&gt;
+&lt;h3 id=&quot;orgb2757b2&quot;&gt;Fluxo IBB&lt;/h3&gt;
+&lt;p&gt;
+Elaboração do &quot;Termo Aditivo&quot; e aprovação:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conselho dos departamentos envolvidos (2 semanas)&lt;/li&gt;
+&lt;li&gt;CPP ou CPEU dependendo do caso (até 1 mês)&lt;/li&gt;
+&lt;li&gt;Congregação (até 1 mês)&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org5ed0b4a&quot;&gt;
+&lt;h3 id=&quot;org5ed0b4a&quot;&gt;Fluxo UNESP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Câmara Central de Extensão (até 1 mês)&lt;/li&gt;
+&lt;li&gt;Conselho Universitário (até 1 mês)&lt;/li&gt;
+&lt;li&gt;Assinatura Reitor (semanas)&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt; Created by yjwen. &lt;/p&gt;
+&lt;script src=&quot;http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </description>
-        <pubDate>Wed, 25 Jan 2017 12:58:05 -0200</pubDate>
+        <pubDate>Wed, 25 Jan 2017 00:00:00 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/25/fundibio/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/25/fundibio/</guid>
         
-        
-        <category>Slide</category>
-        
-      </item>
-    
-      <item>
-        <title></title>
-        <description>
-</description>
-        <pubDate>Wed, 25 Jan 2017 12:57:51 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2017/01/25/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/25/</guid>
-        
-        
-        <category>Technical</category>
-        
-        <category>Paper</category>
         
       </item>
     

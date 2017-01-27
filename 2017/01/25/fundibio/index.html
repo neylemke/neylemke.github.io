@@ -1,135 +1,276 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+<meta charset="utf-8"/>
+<title>FUNDIBIO</title>
+<meta name="author" content="(Ney Lemke)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
 
-    <title>
-      
-        fundibio | 
-      
-    </title>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/moon.css" id="theme"/>
 
-    <meta name="author" content="Ney Lemke" />
+<link rel="stylesheet" href="./local.css"/>
 
-    <!-- Description -->
-    
-      <meta name="description" content="Data Science for Systems Biology">
-    
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-    <link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
-    
-      <link rel="stylesheet" href="/reveal.js/css/theme/black.css" id="theme"/>
-    
-
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="/reveal.js/lib/css/zenburn.css"/>
-
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement( 'link' );
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/reveal.js/css/print/pdf.css' : '/reveal.js/css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
-    </script>
-
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-    <link rel="canonical" href="http://www.lbbc.unesp.br/2017/01/25/fundibio/">
-
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-  
-    <div class="reveal">
-      <div class="slides">
-        <section data-markdown="">
-#  FUNDIBIO
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Org-Reveal Introduction.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">FUNDIBIO</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-27 Fri 19:29</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org8652572">Introdução</a></li>
+<li><a href="#/slide-org4272940">Situação FUNDIBIO</a></li>
+<li><a href="#/slide-org18791e1">Objetivo</a></li>
+<li><a href="#/slide-orge792c6b">Definição do Fluxo</a></li>
+</ul>
+</div>
+</div>
 </section>
 
-<section data-markdown="">
-##  Agenda
-* Introdução
-* Situação FUNDIBIO
-* Objetivo
-* Fluxo Fundibio
-* Fluxo IBB
-* Extra: Pendência Finep
+<section>
+<section id="slide-org8652572">
+<h2 id="org8652572">Introdução</h2>
+<div class="outline-text-2" id="text-org8652572">
+</div></section>
 </section>
+<section>
+<section id="slide-org7ca4627">
+<h3 id="org7ca4627">Legislação</h3>
+<p>
+A lei que legisla sobre as fundações é
+<a href="http://www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm">LEI No 8.958, DE 20 DE DEZEMBRO DE 1994</a>
+</p>
 
-<section data-markdown="">
-# Legislação
+<blockquote nil>
+<p>
+Art. 1o As Instituições Federais de Ensino Superior poderão celebrar
+convênios e contratos, por prazo determinado, com fundações
+instituídas com a finalidade de apoiar projetos de ensino, pesquisa,
+extensão, desenvolvimento institucional, científico e tecnológico e
+estímulo à inovação.
+</p>
+</blockquote>
 
-A lei que legisla sobre as fundações é 
-[LEI No 8.958, DE 20 DE DEZEMBRO DE 1994](www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm). 
 
-&gt; Art. 1o  As Instituições Federais de Ensino Superior poderão celebrar convênios e contratos, por prazo determinado, com fundações instituídas com a finalidade de apoiar projetos de ensino, pesquisa, extensão, desenvolvimento institucional, científico e tecnológico e estímulo à inovação. 
 </section>
+</section>
+<section>
+<section id="slide-orgef8e2b3">
+<h3 id="orgef8e2b3">Legislação UNESP</h3>
+<div class="outline-text-3" id="text-orgef8e2b3">
+</div></section>
+<section id="slide-org68445e1">
+<h4 id="org68445e1">Termo Aditivo</h4>
+<p>
+Resolução Unesp nº 48/2010:
+</p>
 
-<section data-markdown="">
-# Legislação UNESP
-</section>
+<p>
+Artigo 2º - As propostas de Convênio, de Protocolo ou Acordo de Cooperação, bem como
+ Termos Aditivos, Anexos e Termos de prorrogação de vigência desses ajustes, deverão ser instruídas com: 
+</p>
 
-<section data-markdown="">
-# Regimento FUNDIBIO
-</section>
+<p>
+I - exposição de motivos que justifique a celebração do ajuste;
+</p>
 
-<section data-markdown="">
-# Convênio IBB-UNESP
-</section>
+<p>
+II - minuta do instrumento a ser celebrado, elaborada de acordo com os requisitos formais e legais exigidos, e,
+ no caso de convênio genérico, também de minuta de seu primeiro Termo Aditivo; 
+</p>
 
-<section data-markdown="">
-# *Case* FEPAF
-</section>
+<p>
+III - indicação de Fundação interveniente, quando for o caso, com manifestação da mesma.
+</p>
 
-<section data-markdown="">
-# Objetivo
 </section>
-<section data-markdown="">
-# Fluxo Fundibio
 </section>
-<section data-markdown="">
-# Fluxo IBB
-</section>
-<section data-markdown="">
-# Fluxo UNESP
-</section>
+<section>
+<section id="slide-org288d76c">
+<h3 id="org288d76c">Regimento FUNDIBIO</h3>
+<ul>
+<li>Contrato entre Empresa, FUNDIBIO e proponente</li>
+<li>Prestação de Contas ao TCE</li>
+<li>Duas Modalidades de Apoio
+<ul>
+<li>Projeto de Pesquisa
+<ul>
+<li>Permite Bolsa Docente</li>
+<li>Exige Descrição de Gastos</li>
 
-      </div>
-    </div>
+</ul></li>
+<li>Prestação de Serviço
+<ul>
+<li>Não Permite Bolsa Docente</li>
+<li>Não exige gastos Detalhados</li>
 
-    <script src="/reveal.js/lib/js/head.min.js"></script>
-    <script src="/reveal.js/js/reveal.js"></script>
-    <script>
-      // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-        
-          transition: 'slide',
-        
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: '/reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: '/reveal.js/plugin/notes/notes.js', async: true }
-        ]
-      });
-    </script>
-    
-  </body>
+</ul></li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org408d3dc">
+<h3 id="org408d3dc">Convênio IBB-UNESP</h3>
+<ul>
+<li>10% Fundibio, 5% UNESP e 5% IBB</li>
+<li>Cada Projeto e cada atividade tramitará com um termo aditivo</li>
+<li>"Termo Aditivo" só é válido após sua tramitação pelos orgãos competentes.</li>
+
+</ul>
+
+<p>
+Legislação: <a href="file://assets/minutafundibio.pdf">Termo Aditivo</a> 
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgc3a2b07">
+<h3 id="orgc3a2b07"><b>Case</b> FEPAF</h3>
+<ul>
+<li>300 projetos ano</li>
+<li>2/3 das bolsas de estudos da FCA são pagas pela FEPAF</li>
+<li>Um único termo aditivo</li>
+<li>Tramitação apenas na Unidade</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org4272940">
+<h2 id="org4272940">Situação FUNDIBIO</h2>
+<ul>
+<li>Sem projetos novos desde julho de 2016</li>
+<li>30 bolsas de pesquisa</li>
+<li>Tratamento diferenciado para docentes do IBB</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org18791e1">
+<h2 id="org18791e1">Objetivo</h2>
+<div class="outline-text-2" id="text-org18791e1">
+</div></section>
+</section>
+<section>
+<section id="slide-org8fc56df">
+<h3 id="org8fc56df">Objetivo</h3>
+<ul>
+<li>Definir de forma clara o fluxo de tramitação visando desacoplar</li>
+
+</ul>
+<p>
+as atribuições do IBB e da Unesp.
+</p>
+<ul>
+<li>Garantir Certificação dos Docentes e Discentes envolvidos.</li>
+<li>Tratamento equivalente por parte da FUNDIBIO aos  docentes do IBB</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge792c6b">
+<h2 id="orge792c6b">Definição do Fluxo</h2>
+<div class="outline-text-2" id="text-orge792c6b">
+</div></section>
+</section>
+<section>
+<section id="slide-org761ce1b">
+<h3 id="org761ce1b">Fluxo Fundibio</h3>
+<ul>
+<li>Contrato estabelecendo parceria.</li>
+<li>Termo de Consentimento assinado pelo Diretor do IBB autorizando o estabelecimento da colaboração.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb2757b2">
+<h3 id="orgb2757b2">Fluxo IBB</h3>
+<p>
+Elaboração do "Termo Aditivo" e aprovação:
+</p>
+<ul>
+<li>Conselho dos departamentos envolvidos (2 semanas)</li>
+<li>CPP ou CPEU dependendo do caso (até 1 mês)</li>
+<li>Congregação (até 1 mês)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org5ed0b4a">
+<h3 id="org5ed0b4a">Fluxo UNESP</h3>
+<ul>
+<li>Câmara Central de Extensão (até 1 mês)</li>
+<li>Conselho Universitário (até 1 mês)</li>
+<li>Assinatura Reitor (semanas)</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<p> Created by yjwen. </p>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
 </html>
