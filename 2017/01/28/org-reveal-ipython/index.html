@@ -1,62 +1,38 @@
-#+Title: Using Reveal and Ipython in Orgmode
-#+Author: Ney Lemke
-#+Email: lemke@ibb.unesp.br
+<p>## Environment</p>
 
-#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
-#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
-#+OPTIONS: reveal_width:1200 reveal_height:800
-#+OPTIONS: toc:1
-#+REVEAL_MARGIN: 0.1
-#+REVEAL_MIN_SCALE: 0.5
-#+REVEAL_MAX_SCALE: 2.5
-#+REVEAL_TRANS: cube
-#+REVEAL_THEME: moon
-#+REVEAL_HLEVEL: 2
-#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
-#+REVEAL_POSTAMBLE: <p> Created by Ney Lemke. </p>
-#+REVEAL_PLUGINS: (markdown notes)
-#+REVEAL_EXTRA_CSS: ./local.css
-#+REVEAL_ROOT: /reveal.js 
-# Pré-Installation
+<p>We will that assume the user has already installed these tools:</p>
 
-## Environment
+<ul>
+  <li>emacs</li>
+  <li>spacemacs <a href="http://https://github.com/syl20bnr/spacemacs">http://https://github.com/syl20bnr/spacemacs</a></li>
+  <li>orgmode <a href="http://http://orgmode.org">http://http://orgmode.org</a></li>
+  <li>latex</li>
+  <li>anaconda <a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a></li>
+  <li>jupyter <a href="http://http://jupyter.org">http://http://jupyter.org</a></li>
+</ul>
 
-We will that assume the user has already installed these tools:
+<p>## Python
+We will need  to install some python packages to start</p>
 
-- emacs
-- spacemacs http://https://github.com/syl20bnr/spacemacs
-- orgmode http://http://orgmode.org
-- latex
-- anaconda https://www.continuum.io/downloads
-- jupyter http://http://jupyter.org
-
-# Instalation
-
-## Python
-We will need  to install some python packages to start
-
-#+BEGIN_SRC sh
-conda install jupyter_console 
+<div class="highlighter-rouge"><pre class="highlight"><code>conda install jupyter_console 
 conda install jupyter_client
 conda install tornado
 conda update ipython
-#+END_SRC
+</code></pre>
+</div>
 
-## Emacs
-We will also need to install some packages on emacs: =ob-python= https://github.com/gregsexton/ob-ipython 
-and =ox-reveal= https://github.com/yjwen/org-reveal. I
-have edit .spacemacs. I included a line on user-config section
+<p>## Emacs
+We will also need to install some packages on emacs: <code class="highlighter-rouge">ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
+and <code class="highlighter-rouge">ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
+have edit .spacemacs. I included a line on user-config section</p>
 
-#+BEGIN_SRC elisp
+<div class="highlighter-rouge"><pre class="highlight"><code>(eval-after-load 'org '(load-library 'ox-reveal ))
+</code></pre>
+</div>
 
-(eval-after-load 'org '(load-library 'ox-reveal ))
-#+END_SRC
+<p>I also included some languages to use on babel</p>
 
-I also included some languages to use on babel
-
-#+BEGIN_SRC 
-
-(org-babel-do-load-languages
+<div class="highlighter-rouge"><pre class="highlight"><code>(org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
    (latex . t)
@@ -65,16 +41,16 @@ I also included some languages to use on babel
    (elisp . t)
    ))
 )
-#+END_SRC
+</code></pre>
+</div>
 
-I also edited aditional packages. 
+<p>I also edited aditional packages.</p>
 
-#+BEGIN_SRC elisp
-   dotspacemacs-additional-packages '(
-                                      ecb
-                                      ob-ipython
-                                      ox-reveal
-                                      )
-#+END_SRC 
-
+<div class="highlighter-rouge"><pre class="highlight"><code>dotspacemacs-additional-packages '(
+                                   ecb
+                                   ob-ipython
+                                   ox-reveal
+                                   )
+</code></pre>
+</div>
 
