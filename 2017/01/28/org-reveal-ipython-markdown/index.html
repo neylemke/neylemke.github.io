@@ -1,0 +1,82 @@
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org802554d">Pré-Installation</a></li>
+<li><a href="#org0792122">Instalation</a></li>
+</ul>
+</div>
+</div>
+
+<p><a id="org802554d"></a></p>
+
+<h1 id="pré-installation">Pré-Installation</h1>
+
+<p><a id="org4d92646"></a></p>
+
+<h2 id="environment">Environment</h2>
+
+<p>We will that assume the user has already installed these tools:</p>
+
+<ul>
+  <li>emacs</li>
+  <li>spacemacs <a href="http://https://github.com/syl20bnr/spacemacs">http://https://github.com/syl20bnr/spacemacs</a></li>
+  <li>orgmode <a href="http://http://orgmode.org">http://http://orgmode.org</a></li>
+  <li>latex</li>
+  <li>anaconda <a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a></li>
+  <li>jupyter <a href="http://http://jupyter.org">http://http://jupyter.org</a></li>
+</ul>
+
+<p><a id="org0792122"></a></p>
+
+<h1 id="instalation">Instalation</h1>
+
+<p><a id="orgc417673"></a></p>
+
+<h2 id="python">Python</h2>
+
+<p>We will need  to install some python packages to start</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>conda install jupyter_console 
+conda install jupyter_client
+conda install tornado
+conda update ipython
+</code></pre>
+</div>
+
+<p><a id="orged1f70d"></a></p>
+
+<h2 id="emacs">Emacs</h2>
+
+<p>We will also need to install some packages on emacs: <code class="highlighter-rouge">ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
+and <code class="highlighter-rouge">ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
+have edit .spacemacs. I included a line on user-config section</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>(eval-after-load 'org '(load-library 'ox-reveal ))
+</code></pre>
+</div>
+
+<p>I also included some languages to use on babel</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   (latex . t)
+   (shell . t)
+   (ipython . t)
+   (elisp . t)
+   ))
+)
+</code></pre>
+</div>
+
+<p>I also edited aditional packages.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>dotspacemacs-additional-packages '(
+                                   ecb
+                                   ob-ipython
+                                   ox-reveal
+                                   )
+</code></pre>
+</div>
+

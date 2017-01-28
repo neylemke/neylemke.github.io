@@ -1,64 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Using Reveal and Ipython in Orgmode</title>
+<meta name="author" content="(Ney Lemke)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="/reveal.js/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Org-Reveal Introduction.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Using Reveal and Ipython in Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-28 Sat 21:01</p>
+</section>
+<section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org802554d">Pré-Installation</a></li>
-<li><a href="#org0792122">Instalation</a></li>
+<li><a href="#/slide-orgca02a4c">Pré-Installation</a></li>
+<li><a href="#/slide-org447c11e">Instalation</a></li>
 </ul>
 </div>
 </div>
-
-<p><a id="org802554d"></a></p>
-
-<h1 id="pré-installation">Pré-Installation</h1>
-
-<p><a id="org4d92646"></a></p>
-
-<h2 id="environment">Environment</h2>
-
-<p>We will that assume the user has already installed these tools:</p>
+</section>
+<section>
+<section id="slide-orgca02a4c">
+<h2 id="orgca02a4c">Pré-Installation</h2>
+<div class="outline-text-2" id="text-orgca02a4c">
+</div></section>
+</section>
+<section>
+<section id="slide-orgfe30432">
+<h3 id="orgfe30432">Environment</h3>
+<p>
+We will that assume the user has already installed these tools:
+</p>
 
 <ul>
-  <li>emacs</li>
-  <li>spacemacs <a href="http://https://github.com/syl20bnr/spacemacs">http://https://github.com/syl20bnr/spacemacs</a></li>
-  <li>orgmode <a href="http://http://orgmode.org">http://http://orgmode.org</a></li>
-  <li>latex</li>
-  <li>anaconda <a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a></li>
-  <li>jupyter <a href="http://http://jupyter.org">http://http://jupyter.org</a></li>
+<li>emacs</li>
+<li>spacemacs <a href="http://https//github.com/syl20bnr/spacemacs">http://https//github.com/syl20bnr/spacemacs</a></li>
+<li>orgmode <a href="http://http//orgmode.org">http://http//orgmode.org</a></li>
+<li>latex</li>
+<li>anaconda <a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a></li>
+<li>jupyter <a href="http://http//jupyter.org">http://http//jupyter.org</a></li>
+
 </ul>
 
-<p><a id="org0792122"></a></p>
+</section>
+</section>
+<section>
+<section id="slide-org447c11e">
+<h2 id="org447c11e">Instalation</h2>
+<div class="outline-text-2" id="text-org447c11e">
+</div></section>
+</section>
+<section>
+<section id="slide-orgbade1a0">
+<h3 id="orgbade1a0">Python</h3>
+<p>
+We will need  to install some python packages to start
+</p>
 
-<h1 id="instalation">Instalation</h1>
+<div class="org-src-container">
 
-<p><a id="orgc417673"></a></p>
-
-<h2 id="python">Python</h2>
-
-<p>We will need  to install some python packages to start</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>conda install jupyter_console 
+<pre  class="src src-sh">conda install jupyter_console 
 conda install jupyter_client
 conda install tornado
 conda update ipython
-</code></pre>
+</pre>
 </div>
 
-<p><a id="orged1f70d"></a></p>
+</section>
+</section>
+<section>
+<section id="slide-org31ce797">
+<h3 id="org31ce797">Emacs</h3>
+<p>
+We will also need to install some packages on emacs: <code>ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
+and <code>ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
+have edit .spacemacs. I included a line on user-config section
+</p>
 
-<h2 id="emacs">Emacs</h2>
+<div class="org-src-container">
 
-<p>We will also need to install some packages on emacs: <code class="highlighter-rouge">ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
-and <code class="highlighter-rouge">ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
-have edit .spacemacs. I included a line on user-config section</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>(eval-after-load 'org '(load-library 'ox-reveal ))
-</code></pre>
+<pre  class="src src-elisp"><span style="color: #4f97d7;">(</span>eval-after-load 'org '<span style="color: #bc6ec5;">(</span>load-library 'ox-reveal <span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
 </div>
 
-<p>I also included some languages to use on babel</p>
+<p>
+I also included some languages to use on babel
+</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(org-babel-do-load-languages
+<pre  class="example">
+(org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
    (latex . t)
@@ -67,16 +119,63 @@ have edit .spacemacs. I included a line on user-config section</p>
    (elisp . t)
    ))
 )
-</code></pre>
-</div>
+</pre>
 
-<p>I also edited aditional packages.</p>
+<p>
+I also edited aditional packages. 
+</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>dotspacemacs-additional-packages '(
+<div class="org-src-container">
+
+<pre  class="src src-elisp">dotspacemacs-additional-packages '<span style="color: #4f97d7;">(</span>
                                    ecb
                                    ob-ipython
                                    ox-reveal
-                                   )
-</code></pre>
+                                   <span style="color: #4f97d7;">)</span>
+</pre>
 </div>
+</section>
+</section>
+</div>
+</div>
+<p> Created by Ney Lemke. </p>
+<script src="/reveal.js/lib/js/head.min.js"></script>
+<script src="/reveal.js/js/reveal.js"></script>
 
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

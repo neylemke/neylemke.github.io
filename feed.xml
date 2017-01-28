@@ -5,101 +5,9 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Jan 2017 21:02:06 -0200</pubDate>
-    <lastBuildDate>Sat, 28 Jan 2017 21:02:06 -0200</lastBuildDate>
+    <pubDate>Sat, 28 Jan 2017 21:06:31 -0200</pubDate>
+    <lastBuildDate>Sat, 28 Jan 2017 21:06:31 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
-    
-      <item>
-        <title>Org Reveal Ipython</title>
-        <description>&lt;div id=&quot;table-of-contents&quot;&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id=&quot;text-table-of-contents&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#org802554d&quot;&gt;Pré-Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#org0792122&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a id=&quot;org802554d&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;pré-installation&quot;&gt;Pré-Installation&lt;/h1&gt;
-
-&lt;p&gt;&lt;a id=&quot;org4d92646&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;environment&quot;&gt;Environment&lt;/h2&gt;
-
-&lt;p&gt;We will that assume the user has already installed these tools:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;emacs&lt;/li&gt;
-  &lt;li&gt;spacemacs &lt;a href=&quot;http://https://github.com/syl20bnr/spacemacs&quot;&gt;http://https://github.com/syl20bnr/spacemacs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;orgmode &lt;a href=&quot;http://http://orgmode.org&quot;&gt;http://http://orgmode.org&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;latex&lt;/li&gt;
-  &lt;li&gt;anaconda &lt;a href=&quot;https://www.continuum.io/downloads&quot;&gt;https://www.continuum.io/downloads&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;jupyter &lt;a href=&quot;http://http://jupyter.org&quot;&gt;http://http://jupyter.org&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a id=&quot;org0792122&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;instalation&quot;&gt;Instalation&lt;/h1&gt;
-
-&lt;p&gt;&lt;a id=&quot;orgc417673&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
-
-&lt;p&gt;We will need  to install some python packages to start&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install jupyter_console 
-conda install jupyter_client
-conda install tornado
-conda update ipython
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;a id=&quot;orged1f70d&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
-
-&lt;p&gt;We will also need to install some packages on emacs: &lt;code class=&quot;highlighter-rouge&quot;&gt;ob-python&lt;/code&gt; &lt;a href=&quot;https://github.com/gregsexton/ob-ipython&quot;&gt;https://github.com/gregsexton/ob-ipython&lt;/a&gt; 
-and &lt;code class=&quot;highlighter-rouge&quot;&gt;ox-reveal&lt;/code&gt; &lt;a href=&quot;https://github.com/yjwen/org-reveal&quot;&gt;https://github.com/yjwen/org-reveal&lt;/a&gt;. I
-have edit .spacemacs. I included a line on user-config section&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(eval-after-load 'org '(load-library 'ox-reveal ))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I also included some languages to use on babel&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(org-babel-do-load-languages
- 'org-babel-load-languages
- '((python . t)
-   (latex . t)
-   (shell . t)
-   (ipython . t)
-   (elisp . t)
-   ))
-)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;I also edited aditional packages.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotspacemacs-additional-packages '(
-                                   ecb
-                                   ob-ipython
-                                   ox-reveal
-                                   )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</guid>
-        
-        
-      </item>
     
       <item>
         <title>Org Reveal Ipython</title>
@@ -288,6 +196,98 @@ dependencies: [
         <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Org Reveal Ipython Markdown</title>
+        <description>&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#org802554d&quot;&gt;Pré-Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#org0792122&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a id=&quot;org802554d&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;pré-installation&quot;&gt;Pré-Installation&lt;/h1&gt;
+
+&lt;p&gt;&lt;a id=&quot;org4d92646&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;environment&quot;&gt;Environment&lt;/h2&gt;
+
+&lt;p&gt;We will that assume the user has already installed these tools:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;emacs&lt;/li&gt;
+  &lt;li&gt;spacemacs &lt;a href=&quot;http://https://github.com/syl20bnr/spacemacs&quot;&gt;http://https://github.com/syl20bnr/spacemacs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;orgmode &lt;a href=&quot;http://http://orgmode.org&quot;&gt;http://http://orgmode.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;latex&lt;/li&gt;
+  &lt;li&gt;anaconda &lt;a href=&quot;https://www.continuum.io/downloads&quot;&gt;https://www.continuum.io/downloads&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;jupyter &lt;a href=&quot;http://http://jupyter.org&quot;&gt;http://http://jupyter.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a id=&quot;org0792122&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;instalation&quot;&gt;Instalation&lt;/h1&gt;
+
+&lt;p&gt;&lt;a id=&quot;orgc417673&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
+
+&lt;p&gt;We will need  to install some python packages to start&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install jupyter_console 
+conda install jupyter_client
+conda install tornado
+conda update ipython
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a id=&quot;orged1f70d&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
+
+&lt;p&gt;We will also need to install some packages on emacs: &lt;code class=&quot;highlighter-rouge&quot;&gt;ob-python&lt;/code&gt; &lt;a href=&quot;https://github.com/gregsexton/ob-ipython&quot;&gt;https://github.com/gregsexton/ob-ipython&lt;/a&gt; 
+and &lt;code class=&quot;highlighter-rouge&quot;&gt;ox-reveal&lt;/code&gt; &lt;a href=&quot;https://github.com/yjwen/org-reveal&quot;&gt;https://github.com/yjwen/org-reveal&lt;/a&gt;. I
+have edit .spacemacs. I included a line on user-config section&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(eval-after-load 'org '(load-library 'ox-reveal ))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I also included some languages to use on babel&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   (latex . t)
+   (shell . t)
+   (ipython . t)
+   (elisp . t)
+   ))
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I also edited aditional packages.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotspacemacs-additional-packages '(
+                                   ecb
+                                   ob-ipython
+                                   ox-reveal
+                                   )
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython-markdown/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython-markdown/</guid>
         
         
       </item>
