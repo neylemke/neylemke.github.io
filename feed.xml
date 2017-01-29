@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Jan 2017 01:14:45 -0200</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2017 01:14:45 -0200</lastBuildDate>
+    <pubDate>Sun, 29 Jan 2017 01:16:18 -0200</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2017 01:16:18 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -135,28 +135,28 @@ have edit .spacemacs. I included a line on user-config section&lt;/p&gt;
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Using Reveal and Ipython in Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-29 Sun 01:14&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Using Reveal and Ipython in Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-29 Sun 01:16&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org00dc8c9&quot;&gt;Pré-Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orga5348fc&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org233f63b&quot;&gt;Pre-Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org543bc7b&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org00dc8c9&quot;&gt;
-&lt;h2 id=&quot;org00dc8c9&quot;&gt;Pré-Installation&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org00dc8c9&quot;&gt;
+&lt;section id=&quot;slide-org233f63b&quot;&gt;
+&lt;h2 id=&quot;org233f63b&quot;&gt;Pre-Installation&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org233f63b&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgb16ec92&quot;&gt;
-&lt;h3 id=&quot;orgb16ec92&quot;&gt;Environment&lt;/h3&gt;
+&lt;section id=&quot;slide-org97fb01a&quot;&gt;
+&lt;h3 id=&quot;org97fb01a&quot;&gt;Environment&lt;/h3&gt;
 &lt;p&gt;
 We will that assume the user has already installed these tools:
 &lt;/p&gt;
@@ -174,14 +174,14 @@ We will that assume the user has already installed these tools:
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orga5348fc&quot;&gt;
-&lt;h2 id=&quot;orga5348fc&quot;&gt;Instalation&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orga5348fc&quot;&gt;
+&lt;section id=&quot;slide-org543bc7b&quot;&gt;
+&lt;h2 id=&quot;org543bc7b&quot;&gt;Instalation&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org543bc7b&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgde2743f&quot;&gt;
-&lt;h3 id=&quot;orgde2743f&quot;&gt;Python&lt;/h3&gt;
+&lt;section id=&quot;slide-orge5c350b&quot;&gt;
+&lt;h3 id=&quot;orge5c350b&quot;&gt;Python&lt;/h3&gt;
 &lt;p&gt;
 We will need  to install some python packages to start
 &lt;/p&gt;
@@ -198,8 +198,8 @@ conda update ipython
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org24bacc1&quot;&gt;
-&lt;h3 id=&quot;org24bacc1&quot;&gt;Emacs&lt;/h3&gt;
+&lt;section id=&quot;slide-orgb5f05bb&quot;&gt;
+&lt;h3 id=&quot;orgb5f05bb&quot;&gt;Emacs&lt;/h3&gt;
 &lt;p&gt;
 We will also need to install some packages on emacs: &lt;code&gt;ob-python&lt;/code&gt; &lt;a href=&quot;https://github.com/gregsexton/ob-ipython&quot;&gt;https://github.com/gregsexton/ob-ipython&lt;/a&gt; 
 and &lt;code&gt;ox-reveal&lt;/code&gt; &lt;a href=&quot;https://github.com/yjwen/org-reveal&quot;&gt;https://github.com/yjwen/org-reveal&lt;/a&gt;. I
@@ -215,8 +215,8 @@ have edit .spacemacs. I included a line on layer-config section
 &lt;/div&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-org47c609c&quot;&gt;
-&lt;h4 id=&quot;org47c609c&quot;&gt;Emacs&lt;/h4&gt;
+&lt;section id=&quot;slide-org7a41cf2&quot;&gt;
+&lt;h4 id=&quot;org7a41cf2&quot;&gt;Emacs&lt;/h4&gt;
 &lt;p&gt;
 I also included some languages to use on babel
 &lt;/p&gt;
@@ -234,11 +234,11 @@ I also included some languages to use on babel
 &lt;/pre&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-org54efbde&quot;&gt;
-&lt;h4 id=&quot;org54efbde&quot;&gt;Emacs&lt;/h4&gt;
+&lt;section id=&quot;slide-org7f3501e&quot;&gt;
+&lt;h4 id=&quot;org7f3501e&quot;&gt;Emacs&lt;/h4&gt;
 &lt;p&gt;
 I also included  aditional packages on layer configuration file:
-&lt;code&gt;~.emacs.d/layers/+emacs/org/packages.el&lt;/code&gt;. I include &lt;code&gt;ob-ipython&lt;/code&gt;
+&lt;code&gt;~/.emacs.d/layers/+emacs/org/packages.el&lt;/code&gt;. I include &lt;code&gt;ob-ipython&lt;/code&gt;
 on the packages variable and included a new function:
 &lt;/p&gt;
 
