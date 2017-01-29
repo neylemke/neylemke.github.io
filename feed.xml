@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Jan 2017 00:16:59 -0200</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2017 00:16:59 -0200</lastBuildDate>
+    <pubDate>Sun, 29 Jan 2017 00:46:03 -0200</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2017 00:46:03 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -326,28 +326,28 @@ dependencies: [
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Examplo de Uso do Reveal no Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-28 Sat 23:29&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Examplo de Uso do Reveal no Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-29 Sun 00:42&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org9625533&quot;&gt;Geração Automática de Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orgba27e7d&quot;&gt;Geração Automática de Slides&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 
 &lt;section&gt;
-&lt;section id=&quot;slide-org9625533&quot;&gt;
-&lt;h2 id=&quot;org9625533&quot;&gt;Geração Automática de Slides&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org9625533&quot;&gt;
+&lt;section id=&quot;slide-orgba27e7d&quot;&gt;
+&lt;h2 id=&quot;orgba27e7d&quot;&gt;Geração Automática de Slides&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgba27e7d&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org2410fa9&quot;&gt;
-&lt;h3 id=&quot;org2410fa9&quot;&gt;Objetivo&lt;/h3&gt;
+&lt;section id=&quot;slide-orgba792f1&quot;&gt;
+&lt;h3 id=&quot;orgba792f1&quot;&gt;Objetivo&lt;/h3&gt;
 &lt;p&gt;
 O meu objetivo inicial vai ser testar se é mais eficiente gerar 
 slides usando o orgmode. 
@@ -356,8 +356,8 @@ slides usando o orgmode.
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org4dc386a&quot;&gt;
-&lt;h3 id=&quot;org4dc386a&quot;&gt;Inicialmente vamos preparar o sistema&lt;/h3&gt;
+&lt;section id=&quot;slide-orgd21b4e8&quot;&gt;
+&lt;h3 id=&quot;orgd21b4e8&quot;&gt;Inicialmente vamos preparar o sistema&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-sh&quot;&gt;git clone https://github.com/ipython-books/cookbook-data.git
@@ -369,24 +369,46 @@ unzip tennis.zip
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org5e08f9b&quot;&gt;
-&lt;h3 id=&quot;org5e08f9b&quot;&gt;&lt;span class=&quot;done DONE&quot;&gt;DONE&lt;/span&gt; Vamos testar o uso do python&lt;/h3&gt;
+&lt;section id=&quot;slide-orgc8b0c8a&quot;&gt;
+&lt;h3 id=&quot;orgc8b0c8a&quot;&gt;Vamos testar o uso do python&lt;/h3&gt;
+&lt;p&gt;
+Os primeiros passos são carregar os pacotes:
+&lt;/p&gt;
+
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-ipython&quot;&gt;import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from pytz import UTC
-player = 'Roger Federer'
-filename = &quot;./cookbook-data/data/{name}.csv&quot;.format(name=player.replace(' ', '-')) 
-df = pd.read_csv(filename)
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; numpy &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;as&lt;/span&gt; np
+&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; pandas &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;as&lt;/span&gt; pd
+&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;as&lt;/span&gt; plt
 &lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgb32fd25&quot;&gt;
+&lt;h3 id=&quot;orgb32fd25&quot;&gt;Datafile&lt;/h3&gt;
+&lt;p&gt;
+Criamos o &lt;i&gt;datafile&lt;/i&gt; usando os arquivos do item anterior. 
+&lt;/p&gt;
+
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-ipython&quot;&gt;df['win'] = df['winner'] == player
-df['win'].tail()
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;player&lt;/span&gt; = &lt;span style=&quot;color: #2d9574;&quot;&gt;'Roger Federer'&lt;/span&gt;
+&lt;span style=&quot;color: #7590db;&quot;&gt;filename&lt;/span&gt; = &lt;span style=&quot;color: #2d9574;&quot;&gt;&quot;./cookbook-data/data/{name}.csv&quot;&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;format&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;name=player.replace&lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #2d9574;&quot;&gt;'-'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt; 
+&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt; = pd.read_csv&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;filename&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org85b575b&quot;&gt;
+&lt;h3 id=&quot;org85b575b&quot;&gt;Determinamos quem Venceu&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; = df&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'winner'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; == player
+df&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.tail&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 
@@ -399,64 +421,94 @@ df['win'].tail()
 Name: win, dtype: bool
 &lt;/pre&gt;
 
-
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org45d2508&quot;&gt;
+&lt;h3 id=&quot;org45d2508&quot;&gt;Podemos gerar um &lt;i&gt;Report&lt;/i&gt; mais interessante.&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-ipython&quot;&gt;(&quot;{player} has won {vic:.0f}% &quot;
-               &quot;of his ATP matches.&quot;).format(
-                player=player, vic=100*df['win'].mean())
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;&quot;{player} has won {vic:.0f}% &quot;&lt;/span&gt;
+               &lt;span style=&quot;color: #2d9574;&quot;&gt;&quot;of his ATP matches.&quot;&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;format&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;
+                player=player, vic=&lt;span style=&quot;color: #a45bad;&quot;&gt;100&lt;/span&gt;*df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;.mean&lt;span style=&quot;color: #bc6ec5;&quot;&gt;()&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgb3d25ff&quot;&gt;
+&lt;h3 id=&quot;orgb3d25ff&quot;&gt;Agora geramos a fração de faltas duplas&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; = &lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'player1 double faults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt; / 
+                   df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'player1 total points total'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-ipython&quot;&gt;df['dblfaults'] = (df['player1 double faults'] / 
-                   df['player1 total points total'])
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.tail&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgf38fd19&quot;&gt;
+&lt;h3 id=&quot;orgf38fd19&quot;&gt;Agrupamos os dados&lt;/h3&gt;
+&lt;p&gt;
+Inicialmente por tipo de quadra
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df.groupby&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'surface'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.mean&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org459c9cc&quot;&gt;
+&lt;h3 id=&quot;org459c9cc&quot;&gt;Agrupamos os dados&lt;/h3&gt;
+&lt;p&gt;
+Agora por ano 
+&lt;/p&gt;
 
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-ipython&quot;&gt;df['dblfaults'].tail()
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;org-src-container&quot;&gt;
-
-&lt;pre  class=&quot;src src-ipython&quot;&gt;df.groupby('surface')['win'].mean()
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;org-src-container&quot;&gt;
-
-&lt;pre  class=&quot;src src-ipython&quot;&gt;gb = df.groupby('year')
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;gb&lt;/span&gt; = df.groupby&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'year'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 
 
-&lt;div class=&quot;org-src-container&quot;&gt;
-
-&lt;pre  class=&quot;src src-ipython&quot;&gt;df['dblfaults']
-&lt;/pre&gt;
-&lt;/div&gt;
-
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgc99c0ab&quot;&gt;
+&lt;h3 id=&quot;orgc99c0ab&quot;&gt;Gráfico dos Pontos&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-ipython&quot;&gt;%matplotlib inline
-fig=plt.figure(figsize=(4,2))
-plt.plot_date(gb['start date'].max(), gb['dblfaults'].mean(), '-', lw=3,tz='UTC')
-plt.plot_date(df['start date'], df['dblfaults'], alpha=.25, lw=0,tz='UTC')
-plt.ylabel('Proportion of double faults per match.')
-plt.xlabel('Year')
-plt.savefig('images/pandas.png')
+&lt;span style=&quot;color: #7590db;&quot;&gt;fig&lt;/span&gt;=plt.figure&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;figsize=&lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a45bad;&quot;&gt;4&lt;/span&gt;,&lt;span style=&quot;color: #a45bad;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.plot_date&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;gb&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;max&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;()&lt;/span&gt;, gb&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;.mean&lt;span style=&quot;color: #bc6ec5;&quot;&gt;()&lt;/span&gt;, &lt;span style=&quot;color: #2d9574;&quot;&gt;'-'&lt;/span&gt;, lw=&lt;span style=&quot;color: #a45bad;&quot;&gt;3&lt;/span&gt;,tz=&lt;span style=&quot;color: #2d9574;&quot;&gt;'UTC'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.plot_date&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;, df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;, alpha=.&lt;span style=&quot;color: #a45bad;&quot;&gt;25&lt;/span&gt;, lw=&lt;span style=&quot;color: #a45bad;&quot;&gt;0&lt;/span&gt;,tz=&lt;span style=&quot;color: #2d9574;&quot;&gt;'UTC'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.ylabel&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'Proportion of double faults per match.'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.xlabel&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'Year'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.savefig&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'images/pandas.png'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 
 
-
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org983e59d&quot;&gt;
+&lt;h3 id=&quot;org983e59d&quot;&gt;Melhores Resultados&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-ipython&quot;&gt;gb['start date'].max()
+&lt;pre  class=&quot;src src-ipython&quot;&gt;gb&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;max&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/section&gt;
