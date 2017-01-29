@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Jan 2017 23:22:02 -0200</pubDate>
-    <lastBuildDate>Sat, 28 Jan 2017 23:22:02 -0200</lastBuildDate>
+    <pubDate>Sat, 28 Jan 2017 23:29:56 -0200</pubDate>
+    <lastBuildDate>Sat, 28 Jan 2017 23:29:56 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -290,6 +290,224 @@ dependencies: [
         <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Exemplo Uso Reveal</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;title&gt;Examplo de Uso do Reveal no Orgmode&lt;/title&gt;
+&lt;meta name=&quot;author&quot; content=&quot;(Ney Lemke)&quot;/&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.underline { text-decoration: underline; }
+&lt;/style&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/reveal.css&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;./local.css&quot;/&gt;
+
+&lt;!-- If the query includes 'print-pdf', include the PDF print sheet --&gt;
+&lt;script&gt;
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+&lt;/script&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Org-Reveal Introduction.&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;reveal&quot;&gt;
+&lt;div class=&quot;slides&quot;&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Examplo de Uso do Reveal no Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-28 Sat 23:29&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id=&quot;table-of-contents&quot;&gt;
+&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org9625533&quot;&gt;Geração Automática de Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;section id=&quot;slide-org9625533&quot;&gt;
+&lt;h2 id=&quot;org9625533&quot;&gt;Geração Automática de Slides&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org9625533&quot;&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org2410fa9&quot;&gt;
+&lt;h3 id=&quot;org2410fa9&quot;&gt;Objetivo&lt;/h3&gt;
+&lt;p&gt;
+O meu objetivo inicial vai ser testar se é mais eficiente gerar 
+slides usando o orgmode. 
+&lt;/p&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org4dc386a&quot;&gt;
+&lt;h3 id=&quot;org4dc386a&quot;&gt;Inicialmente vamos preparar o sistema&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-sh&quot;&gt;git clone https://github.com/ipython-books/cookbook-data.git
+&lt;span style=&quot;color: #4f97d7;&quot;&gt;cd&lt;/span&gt; cookbook-data
+unzip tennis.zip
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org5e08f9b&quot;&gt;
+&lt;h3 id=&quot;org5e08f9b&quot;&gt;&lt;span class=&quot;done DONE&quot;&gt;DONE&lt;/span&gt; Vamos testar o uso do python&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from pytz import UTC
+player = 'Roger Federer'
+filename = &quot;./cookbook-data/data/{name}.csv&quot;.format(name=player.replace(' ', '-')) 
+df = pd.read_csv(filename)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df['win'] = df['winner'] == player
+df['win'].tail()
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+1174    False
+1175     True
+1176     True
+1177     True
+1178    False
+Name: win, dtype: bool
+&lt;/pre&gt;
+
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;(&quot;{player} has won {vic:.0f}% &quot;
+               &quot;of his ATP matches.&quot;).format(
+                player=player, vic=100*df['win'].mean())
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df['dblfaults'] = (df['player1 double faults'] / 
+                   df['player1 total points total'])
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df['dblfaults'].tail()
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df.groupby('surface')['win'].mean()
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;gb = df.groupby('year')
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df['dblfaults']
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;%matplotlib inline
+fig=plt.figure(figsize=(4,2))
+plt.plot_date(gb['start date'].max(), gb['dblfaults'].mean(), '-', lw=3,tz='UTC')
+plt.plot_date(df['start date'], df['dblfaults'], alpha=.25, lw=0,tz='UTC')
+plt.ylabel('Proportion of double faults per match.')
+plt.xlabel('Year')
+plt.savefig('images/pandas.png')
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;gb['start date'].max()
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt; Created by Ney Lemke. &lt;/p&gt;
+&lt;script src=&quot;/reveal.js/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/reveal.js/js/reveal.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/28/exemplo-uso-reveal/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/exemplo-uso-reveal/</guid>
         
         
       </item>

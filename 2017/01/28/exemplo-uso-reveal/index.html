@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Examplo de Uso do Reveal no Orgmode</title>
+<meta name="author" content="(Ney Lemke)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="/reveal.js/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Org-Reveal Introduction.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Examplo de Uso do Reveal no Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-28 Sat 23:29</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org9625533">Geração Automática de Slides</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org9625533">
+<h2 id="org9625533">Geração Automática de Slides</h2>
+<div class="outline-text-2" id="text-org9625533">
+</div></section>
+</section>
+<section>
+<section id="slide-org2410fa9">
+<h3 id="org2410fa9">Objetivo</h3>
+<p>
+O meu objetivo inicial vai ser testar se é mais eficiente gerar 
+slides usando o orgmode. 
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org4dc386a">
+<h3 id="org4dc386a">Inicialmente vamos preparar o sistema</h3>
+<div class="org-src-container">
+
+<pre  class="src src-sh">git clone https://github.com/ipython-books/cookbook-data.git
+<span style="color: #4f97d7;">cd</span> cookbook-data
+unzip tennis.zip
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org5e08f9b">
+<h3 id="org5e08f9b"><span class="done DONE">DONE</span> Vamos testar o uso do python</h3>
+<div class="org-src-container">
+
+<pre  class="src src-ipython">import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from pytz import UTC
+player = 'Roger Federer'
+filename = "./cookbook-data/data/{name}.csv".format(name=player.replace(' ', '-')) 
+df = pd.read_csv(filename)
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">df['win'] = df['winner'] == player
+df['win'].tail()
+</pre>
+</div>
+
+<pre class="example">
+1174    False
+1175     True
+1176     True
+1177     True
+1178    False
+Name: win, dtype: bool
+</pre>
+
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">("{player} has won {vic:.0f}% "
+               "of his ATP matches.").format(
+                player=player, vic=100*df['win'].mean())
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">df['dblfaults'] = (df['player1 double faults'] / 
+                   df['player1 total points total'])
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">df['dblfaults'].tail()
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">df.groupby('surface')['win'].mean()
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">gb = df.groupby('year')
+</pre>
+</div>
+
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">df['dblfaults']
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">%matplotlib inline
+fig=plt.figure(figsize=(4,2))
+plt.plot_date(gb['start date'].max(), gb['dblfaults'].mean(), '-', lw=3,tz='UTC')
+plt.plot_date(df['start date'], df['dblfaults'], alpha=.25, lw=0,tz='UTC')
+plt.ylabel('Proportion of double faults per match.')
+plt.xlabel('Year')
+plt.savefig('images/pandas.png')
+</pre>
+</div>
+
+
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">gb['start date'].max()
+</pre>
+</div>
+</section>
+</section>
+</div>
+</div>
+<p> Created by Ney Lemke. </p>
+<script src="/reveal.js/lib/js/head.min.js"></script>
+<script src="/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
