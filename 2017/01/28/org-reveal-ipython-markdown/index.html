@@ -261,17 +261,17 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org802554d">Pré-Installation</a></li>
-<li><a href="#org0792122">Instalation</a></li>
+<li><a href="#org507e90f">Pre-Installation</a></li>
+<li><a href="#orgb9fe46e">Instalation</a></li>
 </ul>
 </div>
 </div>
 
-<p><a id="org802554d"></a></p>
+<p><a id="org507e90f"></a></p>
 
-<h1 id="pré-installation">Pré-Installation</h1>
+<h1 id="pre-installation">Pre-Installation</h1>
 
-<p><a id="org4d92646"></a></p>
+<p><a id="org9974017"></a></p>
 
 <h2 id="environment">Environment</h2>
 
@@ -286,11 +286,11 @@
   <li>jupyter <a href="http://http://jupyter.org">http://http://jupyter.org</a></li>
 </ul>
 
-<p><a id="org0792122"></a></p>
+<p><a id="orgb9fe46e"></a></p>
 
 <h1 id="instalation">Instalation</h1>
 
-<p><a id="orgc417673"></a></p>
+<p><a id="orge1083cc"></a></p>
 
 <h2 id="python">Python</h2>
 
@@ -303,17 +303,23 @@ conda update ipython
 </code></pre>
 </div>
 
-<p><a id="orged1f70d"></a></p>
+<p><a id="orgc99d587"></a></p>
 
 <h2 id="emacs">Emacs</h2>
 
 <p>We will also need to install some packages on emacs: <code class="highlighter-rouge">ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
 and <code class="highlighter-rouge">ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
-have edit .spacemacs. I included a line on user-config section</p>
+have edit .spacemacs. I included a line on layer-config section</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(eval-after-load 'org '(load-library 'ox-reveal ))
+<div class="highlighter-rouge"><pre class="highlight"><code>org (org :variables
+              org-enable-reveal-js-support t
+              org-enable-github-support t)
 </code></pre>
 </div>
+
+<p><a id="org39aef8e"></a></p>
+
+<h3 id="emacs-1">Emacs</h3>
 
 <p>I also included some languages to use on babel</p>
 
@@ -323,19 +329,23 @@ have edit .spacemacs. I included a line on user-config section</p>
    (latex . t)
    (shell . t)
    (ipython . t)
-   (elisp . t)
+   (lisp . t)
    ))
 )
 </code></pre>
 </div>
 
-<p>I also edited aditional packages.</p>
+<p><a id="org12cbb2c"></a></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>dotspacemacs-additional-packages '(
-                                   ecb
-                                   ob-ipython
-                                   ox-reveal
-                                   )
+<h3 id="emacs-2">Emacs</h3>
+
+<p>I also included  aditional packages on layer configuration file:
+<code class="highlighter-rouge">~/.emacs.d/layers/+emacs/org/packages.el</code>. I include <code class="highlighter-rouge">ob-ipython</code>
+on the packages variable and included a new function:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>(defun org/init-ob-ipython ()
+    (use-package ob-ipython
+     :defer t))
 </code></pre>
 </div>
 

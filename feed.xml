@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Jan 2017 01:20:37 -0200</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2017 01:20:37 -0200</lastBuildDate>
+    <pubDate>Sun, 29 Jan 2017 01:31:34 -0200</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2017 01:31:34 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -15,17 +15,17 @@
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#org802554d&quot;&gt;Pré-Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#org0792122&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#org507e90f&quot;&gt;Pre-Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#orgb9fe46e&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a id=&quot;org802554d&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;org507e90f&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;pré-installation&quot;&gt;Pré-Installation&lt;/h1&gt;
+&lt;h1 id=&quot;pre-installation&quot;&gt;Pre-Installation&lt;/h1&gt;
 
-&lt;p&gt;&lt;a id=&quot;org4d92646&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;org9974017&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;environment&quot;&gt;Environment&lt;/h2&gt;
 
@@ -40,11 +40,11 @@
   &lt;li&gt;jupyter &lt;a href=&quot;http://http://jupyter.org&quot;&gt;http://http://jupyter.org&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a id=&quot;org0792122&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;orgb9fe46e&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;instalation&quot;&gt;Instalation&lt;/h1&gt;
 
-&lt;p&gt;&lt;a id=&quot;orgc417673&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;orge1083cc&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
 
@@ -57,17 +57,23 @@ conda update ipython
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;a id=&quot;orged1f70d&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;orgc99d587&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;emacs&quot;&gt;Emacs&lt;/h2&gt;
 
 &lt;p&gt;We will also need to install some packages on emacs: &lt;code class=&quot;highlighter-rouge&quot;&gt;ob-python&lt;/code&gt; &lt;a href=&quot;https://github.com/gregsexton/ob-ipython&quot;&gt;https://github.com/gregsexton/ob-ipython&lt;/a&gt; 
 and &lt;code class=&quot;highlighter-rouge&quot;&gt;ox-reveal&lt;/code&gt; &lt;a href=&quot;https://github.com/yjwen/org-reveal&quot;&gt;https://github.com/yjwen/org-reveal&lt;/a&gt;. I
-have edit .spacemacs. I included a line on user-config section&lt;/p&gt;
+have edit .spacemacs. I included a line on layer-config section&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(eval-after-load 'org '(load-library 'ox-reveal ))
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;org (org :variables
+              org-enable-reveal-js-support t
+              org-enable-github-support t)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;p&gt;&lt;a id=&quot;org39aef8e&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;emacs-1&quot;&gt;Emacs&lt;/h3&gt;
 
 &lt;p&gt;I also included some languages to use on babel&lt;/p&gt;
 
@@ -77,19 +83,23 @@ have edit .spacemacs. I included a line on user-config section&lt;/p&gt;
    (latex . t)
    (shell . t)
    (ipython . t)
-   (elisp . t)
+   (lisp . t)
    ))
 )
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;I also edited aditional packages.&lt;/p&gt;
+&lt;p&gt;&lt;a id=&quot;org12cbb2c&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dotspacemacs-additional-packages '(
-                                   ecb
-                                   ob-ipython
-                                   ox-reveal
-                                   )
+&lt;h3 id=&quot;emacs-2&quot;&gt;Emacs&lt;/h3&gt;
+
+&lt;p&gt;I also included  aditional packages on layer configuration file:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d/layers/+emacs/org/packages.el&lt;/code&gt;. I include &lt;code class=&quot;highlighter-rouge&quot;&gt;ob-ipython&lt;/code&gt;
+on the packages variable and included a new function:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(defun org/init-ob-ipython ()
+    (use-package ob-ipython
+     :defer t))
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
