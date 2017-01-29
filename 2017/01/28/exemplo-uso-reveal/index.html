@@ -28,28 +28,28 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Examplo de Uso do Reveal no Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-29 Sun 00:42</p>
+<section id="sec-title-slide"><h1 class="title">Examplo de Uso do Reveal no Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-29 Sun 01:37</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgba27e7d">Geração Automática de Slides</a></li>
+<li><a href="#/slide-orgaed9ce2">Geração Automática de Slides</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-orgba27e7d">
-<h2 id="orgba27e7d">Geração Automática de Slides</h2>
-<div class="outline-text-2" id="text-orgba27e7d">
+<section id="slide-orgaed9ce2">
+<h2 id="orgaed9ce2">Geração Automática de Slides</h2>
+<div class="outline-text-2" id="text-orgaed9ce2">
 </div></section>
 </section>
 <section>
-<section id="slide-orgba792f1">
-<h3 id="orgba792f1">Objetivo</h3>
+<section id="slide-orgd2f6290">
+<h3 id="orgd2f6290">Objetivo</h3>
 <p>
 O meu objetivo inicial vai ser testar se é mais eficiente gerar 
 slides usando o orgmode. 
@@ -58,8 +58,8 @@ slides usando o orgmode.
 </section>
 </section>
 <section>
-<section id="slide-orgd21b4e8">
-<h3 id="orgd21b4e8">Inicialmente vamos preparar o sistema</h3>
+<section id="slide-org2d5f29c">
+<h3 id="org2d5f29c">Inicialmente vamos preparar o sistema</h3>
 <div class="org-src-container">
 
 <pre  class="src src-sh">git clone https://github.com/ipython-books/cookbook-data.git
@@ -71,8 +71,8 @@ unzip tennis.zip
 </section>
 </section>
 <section>
-<section id="slide-orgc8b0c8a">
-<h3 id="orgc8b0c8a">Vamos testar o uso do python</h3>
+<section id="slide-orgd0d3af2">
+<h3 id="orgd0d3af2">Vamos testar o uso do python</h3>
 <p>
 Os primeiros passos são carregar os pacotes:
 </p>
@@ -88,8 +88,8 @@ Os primeiros passos são carregar os pacotes:
 </section>
 </section>
 <section>
-<section id="slide-orgb32fd25">
-<h3 id="orgb32fd25">Datafile</h3>
+<section id="slide-org90a1f23">
+<h3 id="org90a1f23">Datafile</h3>
 <p>
 Criamos o <i>datafile</i> usando os arquivos do item anterior. 
 </p>
@@ -105,8 +105,8 @@ Criamos o <i>datafile</i> usando os arquivos do item anterior.
 </section>
 </section>
 <section>
-<section id="slide-org85b575b">
-<h3 id="org85b575b">Determinamos quem Venceu</h3>
+<section id="slide-org988d109">
+<h3 id="org988d109">Determinamos quem Venceu</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython"><span style="color: #7590db;">df</span><span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'win'</span><span style="color: #4f97d7;">]</span> = df<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'winner'</span><span style="color: #4f97d7;">]</span> == player
@@ -126,8 +126,8 @@ Name: win, dtype: bool
 </section>
 </section>
 <section>
-<section id="slide-org45d2508">
-<h3 id="org45d2508">Podemos gerar um <i>Report</i> mais interessante.</h3>
+<section id="slide-orge0387a9">
+<h3 id="orge0387a9">Podemos gerar um Report mais interessante.</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython"><span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"{player} has won {vic:.0f}% "</span>
@@ -140,8 +140,8 @@ Name: win, dtype: bool
 </section>
 </section>
 <section>
-<section id="slide-orgb3d25ff">
-<h3 id="orgb3d25ff">Agora geramos a fração de faltas duplas</h3>
+<section id="slide-orged09e86">
+<h3 id="orged09e86">Agora geramos a fração de faltas duplas</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython"><span style="color: #7590db;">df</span><span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'dblfaults'</span><span style="color: #4f97d7;">]</span> = <span style="color: #4f97d7;">(</span>df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'player1 double faults'</span><span style="color: #bc6ec5;">]</span> / 
@@ -158,8 +158,8 @@ Name: win, dtype: bool
 </section>
 </section>
 <section>
-<section id="slide-orgf38fd19">
-<h3 id="orgf38fd19">Agrupamos os dados</h3>
+<section id="slide-orgcb2e4c8">
+<h3 id="orgcb2e4c8">Agrupamos os dados</h3>
 <p>
 Inicialmente por tipo de quadra
 </p>
@@ -172,8 +172,8 @@ Inicialmente por tipo de quadra
 </section>
 </section>
 <section>
-<section id="slide-org459c9cc">
-<h3 id="org459c9cc">Agrupamos os dados</h3>
+<section id="slide-org5687f9f">
+<h3 id="org5687f9f">Agrupamos os dados</h3>
 <p>
 Agora por ano 
 </p>
@@ -188,8 +188,8 @@ Agora por ano
 </section>
 </section>
 <section>
-<section id="slide-orgc99c0ab">
-<h3 id="orgc99c0ab">Gráfico dos Pontos</h3>
+<section id="slide-orgcebd282">
+<h3 id="orgcebd282">Gráfico dos Pontos</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython">%matplotlib inline
@@ -206,11 +206,11 @@ plt.savefig<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'
 </section>
 </section>
 <section>
-<section id="slide-org983e59d">
-<h3 id="org983e59d">Melhores Resultados</h3>
+<section id="slide-orga8a1cee">
+<h3 id="orga8a1cee">Melhores Resultados</h3>
 <div class="org-src-container">
 
-<pre  class="src src-ipython">gb<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #4f97d7;">]</span>.<span style="color: #4f97d7;">max</span><span style="color: #4f97d7;">()</span>
+<pre  class="src src-ipython">gb<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #4f97d7;">]</span>.<span style="color: #4f97d7;">max</span><span style="color: #4f97d7;">()</span>.tail<span style="color: #4f97d7;">()</span>
 </pre>
 </div>
 </section>
