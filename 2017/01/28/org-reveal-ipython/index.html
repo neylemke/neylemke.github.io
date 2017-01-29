@@ -28,28 +28,28 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Using Reveal and Ipython in Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-28 Sat 21:01</p>
+<section id="sec-title-slide"><h1 class="title">Using Reveal and Ipython in Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-29 Sun 01:10</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgca02a4c">Pré-Installation</a></li>
-<li><a href="#/slide-org447c11e">Instalation</a></li>
+<li><a href="#/slide-org2c31df1">Pré-Installation</a></li>
+<li><a href="#/slide-org6b18012">Instalation</a></li>
 </ul>
 </div>
 </div>
 </section>
 <section>
-<section id="slide-orgca02a4c">
-<h2 id="orgca02a4c">Pré-Installation</h2>
-<div class="outline-text-2" id="text-orgca02a4c">
+<section id="slide-org2c31df1">
+<h2 id="org2c31df1">Pré-Installation</h2>
+<div class="outline-text-2" id="text-org2c31df1">
 </div></section>
 </section>
 <section>
-<section id="slide-orgfe30432">
-<h3 id="orgfe30432">Environment</h3>
+<section id="slide-orgc97c9d4">
+<h3 id="orgc97c9d4">Environment</h3>
 <p>
 We will that assume the user has already installed these tools:
 </p>
@@ -67,14 +67,14 @@ We will that assume the user has already installed these tools:
 </section>
 </section>
 <section>
-<section id="slide-org447c11e">
-<h2 id="org447c11e">Instalation</h2>
-<div class="outline-text-2" id="text-org447c11e">
+<section id="slide-org6b18012">
+<h2 id="org6b18012">Instalation</h2>
+<div class="outline-text-2" id="text-org6b18012">
 </div></section>
 </section>
 <section>
-<section id="slide-orgbade1a0">
-<h3 id="orgbade1a0">Python</h3>
+<section id="slide-org0d7ad04">
+<h3 id="org0d7ad04">Python</h3>
 <p>
 We will need  to install some python packages to start
 </p>
@@ -91,20 +91,25 @@ conda update ipython
 </section>
 </section>
 <section>
-<section id="slide-org31ce797">
-<h3 id="org31ce797">Emacs</h3>
+<section id="slide-org8a9a286">
+<h3 id="org8a9a286">Emacs</h3>
 <p>
 We will also need to install some packages on emacs: <code>ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
 and <code>ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
-have edit .spacemacs. I included a line on user-config section
+have edit .spacemacs. I included a line on layer-config section
 </p>
 
 <div class="org-src-container">
 
-<pre  class="src src-elisp"><span style="color: #4f97d7;">(</span>eval-after-load 'org '<span style="color: #bc6ec5;">(</span>load-library 'ox-reveal <span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+<pre  class="src src-elisp">org <span style="color: #4f97d7;">(</span>org <span style="color: #4f97d7;">:variables</span>
+              org-enable-reveal-js-support t
+              org-enable-github-support t<span style="color: #4f97d7;">)</span>
 </pre>
 </div>
 
+</section>
+<section id="slide-orgcd7e91c">
+<h4 id="orgcd7e91c">Emacs</h4>
 <p>
 I also included some languages to use on babel
 </p>
@@ -116,22 +121,25 @@ I also included some languages to use on babel
    (latex . t)
    (shell . t)
    (ipython . t)
-   (elisp . t)
+   (lisp . t)
    ))
 )
 </pre>
 
+</section>
+<section id="slide-orgf015175">
+<h4 id="orgf015175">Emacs</h4>
 <p>
-I also edited aditional packages. 
+I also included  aditional packages on layer configuration file:
+<code>~.emacs.d/layers/+emacs/org/packages.el</code>. I include <code>ob-ipython</code>
+on the packages variable and included a new function:
 </p>
 
 <div class="org-src-container">
 
-<pre  class="src src-elisp">dotspacemacs-additional-packages '<span style="color: #4f97d7;">(</span>
-                                   ecb
-                                   ob-ipython
-                                   ox-reveal
-                                   <span style="color: #4f97d7;">)</span>
+<pre  class="src src-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">defun</span> <span style="color: #bc6ec5; font-weight: bold;">org/init-ob-ipython</span> <span style="color: #bc6ec5;">()</span>
+    <span style="color: #bc6ec5;">(</span>use-package ob-ipython
+     <span style="color: #4f97d7;">:defer</span> t<span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
 </pre>
 </div>
 </section>

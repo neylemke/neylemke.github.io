@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Jan 2017 01:11:49 -0200</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2017 01:11:49 -0200</lastBuildDate>
+    <pubDate>Sun, 29 Jan 2017 01:13:37 -0200</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2017 01:13:37 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -135,28 +135,28 @@ have edit .spacemacs. I included a line on user-config section&lt;/p&gt;
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Using Reveal and Ipython in Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-28 Sat 21:01&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Using Reveal and Ipython in Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-29 Sun 01:10&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgca02a4c&quot;&gt;Pré-Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org447c11e&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org2c31df1&quot;&gt;Pré-Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org6b18012&quot;&gt;Instalation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgca02a4c&quot;&gt;
-&lt;h2 id=&quot;orgca02a4c&quot;&gt;Pré-Installation&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgca02a4c&quot;&gt;
+&lt;section id=&quot;slide-org2c31df1&quot;&gt;
+&lt;h2 id=&quot;org2c31df1&quot;&gt;Pré-Installation&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org2c31df1&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgfe30432&quot;&gt;
-&lt;h3 id=&quot;orgfe30432&quot;&gt;Environment&lt;/h3&gt;
+&lt;section id=&quot;slide-orgc97c9d4&quot;&gt;
+&lt;h3 id=&quot;orgc97c9d4&quot;&gt;Environment&lt;/h3&gt;
 &lt;p&gt;
 We will that assume the user has already installed these tools:
 &lt;/p&gt;
@@ -174,14 +174,14 @@ We will that assume the user has already installed these tools:
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org447c11e&quot;&gt;
-&lt;h2 id=&quot;org447c11e&quot;&gt;Instalation&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org447c11e&quot;&gt;
+&lt;section id=&quot;slide-org6b18012&quot;&gt;
+&lt;h2 id=&quot;org6b18012&quot;&gt;Instalation&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org6b18012&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgbade1a0&quot;&gt;
-&lt;h3 id=&quot;orgbade1a0&quot;&gt;Python&lt;/h3&gt;
+&lt;section id=&quot;slide-org0d7ad04&quot;&gt;
+&lt;h3 id=&quot;org0d7ad04&quot;&gt;Python&lt;/h3&gt;
 &lt;p&gt;
 We will need  to install some python packages to start
 &lt;/p&gt;
@@ -198,20 +198,25 @@ conda update ipython
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org31ce797&quot;&gt;
-&lt;h3 id=&quot;org31ce797&quot;&gt;Emacs&lt;/h3&gt;
+&lt;section id=&quot;slide-org8a9a286&quot;&gt;
+&lt;h3 id=&quot;org8a9a286&quot;&gt;Emacs&lt;/h3&gt;
 &lt;p&gt;
 We will also need to install some packages on emacs: &lt;code&gt;ob-python&lt;/code&gt; &lt;a href=&quot;https://github.com/gregsexton/ob-ipython&quot;&gt;https://github.com/gregsexton/ob-ipython&lt;/a&gt; 
 and &lt;code&gt;ox-reveal&lt;/code&gt; &lt;a href=&quot;https://github.com/yjwen/org-reveal&quot;&gt;https://github.com/yjwen/org-reveal&lt;/a&gt;. I
-have edit .spacemacs. I included a line on user-config section
+have edit .spacemacs. I included a line on layer-config section
 &lt;/p&gt;
 
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-elisp&quot;&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;eval-after-load 'org '&lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;load-library 'ox-reveal &lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;pre  class=&quot;src src-elisp&quot;&gt;org &lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;org &lt;span style=&quot;color: #4f97d7;&quot;&gt;:variables&lt;/span&gt;
+              org-enable-reveal-js-support t
+              org-enable-github-support t&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 
+&lt;/section&gt;
+&lt;section id=&quot;slide-orgcd7e91c&quot;&gt;
+&lt;h4 id=&quot;orgcd7e91c&quot;&gt;Emacs&lt;/h4&gt;
 &lt;p&gt;
 I also included some languages to use on babel
 &lt;/p&gt;
@@ -223,22 +228,25 @@ I also included some languages to use on babel
    (latex . t)
    (shell . t)
    (ipython . t)
-   (elisp . t)
+   (lisp . t)
    ))
 )
 &lt;/pre&gt;
 
+&lt;/section&gt;
+&lt;section id=&quot;slide-orgf015175&quot;&gt;
+&lt;h4 id=&quot;orgf015175&quot;&gt;Emacs&lt;/h4&gt;
 &lt;p&gt;
-I also edited aditional packages. 
+I also included  aditional packages on layer configuration file:
+&lt;code&gt;~.emacs.d/layers/+emacs/org/packages.el&lt;/code&gt;. I include &lt;code&gt;ob-ipython&lt;/code&gt;
+on the packages variable and included a new function:
 &lt;/p&gt;
 
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;pre  class=&quot;src src-elisp&quot;&gt;dotspacemacs-additional-packages '&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;
-                                   ecb
-                                   ob-ipython
-                                   ox-reveal
-                                   &lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;pre  class=&quot;src src-lisp&quot;&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;defun&lt;/span&gt; &lt;span style=&quot;color: #bc6ec5; font-weight: bold;&quot;&gt;org/init-ob-ipython&lt;/span&gt; &lt;span style=&quot;color: #bc6ec5;&quot;&gt;()&lt;/span&gt;
+    &lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;use-package ob-ipython
+     &lt;span style=&quot;color: #4f97d7;&quot;&gt;:defer&lt;/span&gt; t&lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/section&gt;
