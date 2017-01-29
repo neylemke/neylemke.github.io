@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Jan 2017 01:42:54 -0200</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2017 01:42:54 -0200</lastBuildDate>
+    <pubDate>Sun, 29 Jan 2017 01:49:48 -0200</pubDate>
+    <lastBuildDate>Sun, 29 Jan 2017 01:49:48 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -344,28 +344,28 @@ dependencies: [
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Examplo de Uso do Reveal no Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-29 Sun 01:42&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Examplo de Uso do Reveal no Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-29 Sun 01:49&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgd9c5588&quot;&gt;Geração Automática de Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orge6b9619&quot;&gt;Geração Automática de Slides&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 
 &lt;section&gt;
-&lt;section id=&quot;slide-orgd9c5588&quot;&gt;
-&lt;h2 id=&quot;orgd9c5588&quot;&gt;Geração Automática de Slides&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgd9c5588&quot;&gt;
+&lt;section id=&quot;slide-orge6b9619&quot;&gt;
+&lt;h2 id=&quot;orge6b9619&quot;&gt;Geração Automática de Slides&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orge6b9619&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgcacf08e&quot;&gt;
-&lt;h3 id=&quot;orgcacf08e&quot;&gt;Objetivo&lt;/h3&gt;
+&lt;section id=&quot;slide-orgabcbfe9&quot;&gt;
+&lt;h3 id=&quot;orgabcbfe9&quot;&gt;Objetivo&lt;/h3&gt;
 &lt;p&gt;
 O meu objetivo inicial vai ser testar se é mais eficiente gerar 
 slides usando o orgmode. 
@@ -374,8 +374,8 @@ slides usando o orgmode.
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgc525eda&quot;&gt;
-&lt;h3 id=&quot;orgc525eda&quot;&gt;Inicialmente vamos preparar o sistema&lt;/h3&gt;
+&lt;section id=&quot;slide-orgd01f864&quot;&gt;
+&lt;h3 id=&quot;orgd01f864&quot;&gt;Inicialmente vamos preparar o sistema&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-sh&quot;&gt;git clone https://github.com/ipython-books/cookbook-data.git
@@ -387,8 +387,8 @@ unzip tennis.zip
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orge15fb70&quot;&gt;
-&lt;h3 id=&quot;orge15fb70&quot;&gt;Vamos testar o uso do python&lt;/h3&gt;
+&lt;section id=&quot;slide-orgae15ef7&quot;&gt;
+&lt;h3 id=&quot;orgae15ef7&quot;&gt;Vamos testar o uso do python&lt;/h3&gt;
 &lt;p&gt;
 Os primeiros passos são carregar os pacotes:
 &lt;/p&gt;
@@ -404,8 +404,8 @@ Os primeiros passos são carregar os pacotes:
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgba37ea2&quot;&gt;
-&lt;h3 id=&quot;orgba37ea2&quot;&gt;Datafile&lt;/h3&gt;
+&lt;section id=&quot;slide-org5a882e8&quot;&gt;
+&lt;h3 id=&quot;org5a882e8&quot;&gt;Datafile&lt;/h3&gt;
 &lt;p&gt;
 Criamos o &lt;i&gt;datafile&lt;/i&gt; usando os arquivos do item anterior. 
 &lt;/p&gt;
@@ -421,8 +421,8 @@ Criamos o &lt;i&gt;datafile&lt;/i&gt; usando os arquivos do item anterior.
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orga5f6409&quot;&gt;
-&lt;h3 id=&quot;orga5f6409&quot;&gt;Determinamos quem Venceu&lt;/h3&gt;
+&lt;section id=&quot;slide-orgbef3f35&quot;&gt;
+&lt;h3 id=&quot;orgbef3f35&quot;&gt;Determinamos quem Venceu&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; = df&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'winner'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; == player
@@ -442,8 +442,8 @@ Name: win, dtype: bool
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org6350b59&quot;&gt;
-&lt;h3 id=&quot;org6350b59&quot;&gt;Podemos gerar um Report mais interessante.&lt;/h3&gt;
+&lt;section id=&quot;slide-org094fdf8&quot;&gt;
+&lt;h3 id=&quot;org094fdf8&quot;&gt;Podemos gerar um Report mais interessante.&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;&quot;{player} has won {vic:.0f}% &quot;&lt;/span&gt;
@@ -460,8 +460,8 @@ Roger Federer has won 82% of his ATP matches.
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org0bf867d&quot;&gt;
-&lt;h3 id=&quot;org0bf867d&quot;&gt;Agora geramos a fração de faltas duplas&lt;/h3&gt;
+&lt;section id=&quot;slide-org7625a15&quot;&gt;
+&lt;h3 id=&quot;org7625a15&quot;&gt;Agora geramos a fração de faltas duplas&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; = &lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'player1 double faults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt; / 
@@ -487,8 +487,8 @@ Name: dblfaults, dtype: float64
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgbdcb32e&quot;&gt;
-&lt;h3 id=&quot;orgbdcb32e&quot;&gt;Agrupamos os dados&lt;/h3&gt;
+&lt;section id=&quot;slide-orgc55c440&quot;&gt;
+&lt;h3 id=&quot;orgc55c440&quot;&gt;Agrupamos os dados&lt;/h3&gt;
 &lt;p&gt;
 Inicialmente por tipo de quadra
 &lt;/p&gt;
@@ -512,8 +512,8 @@ Name: win, dtype: float64
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org9cd0524&quot;&gt;
-&lt;h3 id=&quot;org9cd0524&quot;&gt;Agrupamos os dados&lt;/h3&gt;
+&lt;section id=&quot;slide-orgd853c08&quot;&gt;
+&lt;h3 id=&quot;orgd853c08&quot;&gt;Agrupamos os dados&lt;/h3&gt;
 &lt;p&gt;
 Agora por ano 
 &lt;/p&gt;
@@ -528,8 +528,8 @@ Agora por ano
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org7729f23&quot;&gt;
-&lt;h3 id=&quot;org7729f23&quot;&gt;Gráfico dos Pontos&lt;/h3&gt;
+&lt;section id=&quot;slide-org375d7bf&quot;&gt;
+&lt;h3 id=&quot;org375d7bf&quot;&gt;Gráfico dos Pontos&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-ipython&quot;&gt;%matplotlib inline
@@ -538,7 +538,7 @@ plt.plot_date&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;gb&lt;s
 plt.plot_date&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;, df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;, alpha=.&lt;span style=&quot;color: #a45bad;&quot;&gt;25&lt;/span&gt;, lw=&lt;span style=&quot;color: #a45bad;&quot;&gt;0&lt;/span&gt;,tz=&lt;span style=&quot;color: #2d9574;&quot;&gt;'UTC'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 plt.ylabel&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'Proportion of double faults per match.'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 plt.xlabel&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'Year'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
-plt.savefig&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'images/pandas.png'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.savefig&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'/Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
 &lt;/pre&gt;
 &lt;/div&gt;
 
@@ -549,11 +549,16 @@ plt.savefig&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span 
 &lt;/div&gt;
 
 
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;file:///Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png&quot; alt=&quot;pandatennis.png&quot; /&gt;
+&lt;/p&gt;
+&lt;/div&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org08992c4&quot;&gt;
-&lt;h3 id=&quot;org08992c4&quot;&gt;Melhores Resultados&lt;/h3&gt;
+&lt;section id=&quot;slide-org4a6b95b&quot;&gt;
+&lt;h3 id=&quot;org4a6b95b&quot;&gt;Melhores Resultados&lt;/h3&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
 &lt;pre  class=&quot;src src-ipython&quot;&gt;gb&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;max&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;.tail&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
