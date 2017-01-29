@@ -28,28 +28,28 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Examplo de Uso do Reveal no Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-29 Sun 18:58</p>
+<section id="sec-title-slide"><h1 class="title">Examplo de Uso do Reveal no Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-29 Sun 19:46</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgf66bd81">Geração Automática de Slides</a></li>
+<li><a href="#/slide-org9414a1f">Geração Automática de Slides</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-orgf66bd81">
-<h2 id="orgf66bd81">Geração Automática de Slides</h2>
-<div class="outline-text-2" id="text-orgf66bd81">
+<section id="slide-org9414a1f">
+<h2 id="org9414a1f">Geração Automática de Slides</h2>
+<div class="outline-text-2" id="text-org9414a1f">
 </div></section>
 </section>
 <section>
-<section id="slide-org87aea65">
-<h3 id="org87aea65">Objetivo</h3>
+<section id="slide-orgd515c8d">
+<h3 id="orgd515c8d">Objetivo</h3>
 <p>
 O meu objetivo inicial vai ser testar se é mais eficiente gerar 
 slides usando o orgmode. 
@@ -58,8 +58,8 @@ slides usando o orgmode.
 </section>
 </section>
 <section>
-<section id="slide-orge05cf14">
-<h3 id="orge05cf14">Inicialmente vamos preparar o sistema</h3>
+<section id="slide-org104c348">
+<h3 id="org104c348">Inicialmente vamos preparar o sistema</h3>
 <div class="org-src-container">
 
 <pre  class="src src-sh">git clone https://github.com/ipython-books/cookbook-data.git
@@ -71,8 +71,8 @@ unzip tennis.zip
 </section>
 </section>
 <section>
-<section id="slide-org91b21d6">
-<h3 id="org91b21d6">Vamos testar o uso do python</h3>
+<section id="slide-org1491a09">
+<h3 id="org1491a09">Vamos testar o uso do python</h3>
 <p>
 Os primeiros passos são carregar os pacotes:
 </p>
@@ -88,8 +88,8 @@ Os primeiros passos são carregar os pacotes:
 </section>
 </section>
 <section>
-<section id="slide-orgea05059">
-<h3 id="orgea05059">Datafile</h3>
+<section id="slide-org93ee8ec">
+<h3 id="org93ee8ec">Datafile</h3>
 <p>
 Criamos o <i>datafile</i> usando os arquivos do item anterior. 
 </p>
@@ -105,8 +105,8 @@ Criamos o <i>datafile</i> usando os arquivos do item anterior.
 </section>
 </section>
 <section>
-<section id="slide-org31f488f">
-<h3 id="org31f488f">Determinamos quem Venceu</h3>
+<section id="slide-org8a1c392">
+<h3 id="org8a1c392">Determinamos quem Venceu</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython"><span style="color: #7590db;">df</span><span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'win'</span><span style="color: #4f97d7;">]</span> = df<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'winner'</span><span style="color: #4f97d7;">]</span> == player
@@ -126,8 +126,8 @@ Name: win, dtype: bool
 </section>
 </section>
 <section>
-<section id="slide-org414ca80">
-<h3 id="org414ca80">Podemos gerar um Report mais interessante.</h3>
+<section id="slide-orgc6137b5">
+<h3 id="orgc6137b5">Podemos gerar um Report mais interessante.</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython"><span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"{player} has won {vic:.0f}% "</span>
@@ -144,8 +144,8 @@ Roger Federer has won 82% of his ATP matches.
 </section>
 </section>
 <section>
-<section id="slide-org93225b4">
-<h3 id="org93225b4">Agora geramos a fração de faltas duplas</h3>
+<section id="slide-org3426c99">
+<h3 id="org3426c99">Agora geramos a fração de faltas duplas</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython"><span style="color: #7590db;">df</span><span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'dblfaults'</span><span style="color: #4f97d7;">]</span> = <span style="color: #4f97d7;">(</span>df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'player1 double faults'</span><span style="color: #bc6ec5;">]</span> / 
@@ -171,8 +171,8 @@ Name: dblfaults, dtype: float64
 </section>
 </section>
 <section>
-<section id="slide-org3c93c77">
-<h3 id="org3c93c77">Agrupamos os dados</h3>
+<section id="slide-org3e7312f">
+<h3 id="org3e7312f">Agrupamos os dados</h3>
 <p>
 Inicialmente por tipo de quadra
 </p>
@@ -196,8 +196,8 @@ Name: win, dtype: float64
 </section>
 </section>
 <section>
-<section id="slide-orgc651924">
-<h3 id="orgc651924">Agrupamos os dados</h3>
+<section id="slide-orga77143b">
+<h3 id="orga77143b">Agrupamos os dados</h3>
 <p>
 Agora por ano 
 </p>
@@ -212,8 +212,8 @@ Agora por ano
 </section>
 </section>
 <section>
-<section id="slide-org58ae92a">
-<h3 id="org58ae92a">Representação dos Pontos</h3>
+<section id="slide-org94c7a00">
+<h3 id="org94c7a00">Representação dos Pontos</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython">%matplotlib inline
@@ -222,32 +222,33 @@ plt.plot_date<span style="color: #4f97d7;">(</span>gb<span style="color: #bc6ec5
 plt.plot_date<span style="color: #4f97d7;">(</span>df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #bc6ec5;">]</span>, df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'dblfaults'</span><span style="color: #bc6ec5;">]</span>, alpha=.<span style="color: #a45bad;">25</span>, lw=<span style="color: #a45bad;">0</span>,tz=<span style="color: #2d9574;">'UTC'</span><span style="color: #4f97d7;">)</span>
 plt.ylabel<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'Proportion of double faults per match.'</span><span style="color: #4f97d7;">)</span>
 plt.xlabel<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'Year'</span><span style="color: #4f97d7;">)</span>
-plt.savefig<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'/Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png'</span><span style="color: #4f97d7;">)</span>
 </pre>
 </div>
+
 
 </section>
 </section>
 <section>
-<section id="slide-orgefa46c7">
-<h3 id="orgefa46c7">Representação dos Pontos</h3>
+<section id="slide-org774ef6f">
+<h3 id="org774ef6f">Representação dos Pontos</h3>
 
-<div class="figure">
-<p><img src="file:///tmp/image.png" alt="image.png" />
+<div id="orgb0cd3fd" class="figure">
+<p><img src="file:///Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png" alt="pandatennis.png" />
 </p>
+<p><span class="figure-number">Figure 1: </span>Federer Results</p>
 </div>
 
 
-<div id="org08bd05e" class="figure">
-<p><img src="/assets/pandatennis.png" alt="pandatennis.png" />
+<div id="orgc7adc02" class="figure">
+<p><img src="file:///assets/pandatennis.png" alt="pandatennis.png" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Federer Results</p>
 </div>
 </section>
 </section>
 <section>
-<section id="slide-orgf2dfc75">
-<h3 id="orgf2dfc75">Melhores Resultados</h3>
+<section id="slide-orgdfc8e2d">
+<h3 id="orgdfc8e2d">Melhores Resultados</h3>
 <div class="org-src-container">
 
 <pre  class="src src-ipython">gb<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #4f97d7;">]</span>.<span style="color: #4f97d7;">max</span><span style="color: #4f97d7;">()</span>.tail<span style="color: #4f97d7;">()</span>
