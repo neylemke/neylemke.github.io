@@ -5,9 +5,27 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Jan 2017 17:44:09 -0200</pubDate>
-    <lastBuildDate>Mon, 30 Jan 2017 17:44:09 -0200</lastBuildDate>
+    <pubDate>Thu, 09 Feb 2017 15:17:33 -0200</pubDate>
+    <lastBuildDate>Thu, 09 Feb 2017 15:17:33 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Xmeeting2016 network</title>
+        <description>&lt;p&gt;This is the network of collaborations for the X-meeting 2016. Each node represents an author connections 
+represents co-autorship. You can use tooltip to see the author name.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;X-meeting  network&quot;&gt;/assets/grafo.html&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Feb 2017 15:17:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/02/09/Xmeeting2016-network/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/02/09/Xmeeting2016-network/</guid>
+        
+        
+        <category>Technical</category>
+        
+        <category>Paper</category>
+        
+      </item>
     
       <item>
         <title>Using Reveal and Ipython on OrgMode</title>
