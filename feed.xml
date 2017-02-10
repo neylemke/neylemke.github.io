@@ -5,333 +5,9 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Feb 2017 18:56:54 -0200</pubDate>
-    <lastBuildDate>Fri, 10 Feb 2017 18:56:54 -0200</lastBuildDate>
+    <pubDate>Fri, 10 Feb 2017 18:58:44 -0200</pubDate>
+    <lastBuildDate>Fri, 10 Feb 2017 18:58:44 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
-    
-      <item>
-        <title>Sti</title>
-        <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;{D,S}TI&lt;/title&gt;
-&lt;meta name=&quot;author&quot; content=&quot;(Ney Lemke)&quot;/&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-.underline { text-decoration: underline; }
-&lt;/style&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/reveal.css&quot;/&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;./local.css&quot;/&gt;
-
-&lt;!-- If the query includes 'print-pdf', include the PDF print sheet --&gt;
-&lt;script&gt;
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = '/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&gt;&lt;/script&gt;
-&lt;meta name=&quot;description&quot; content=&quot;Org-Reveal Introduction.&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;reveal&quot;&gt;
-&lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;{D,S}TI&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-02-10 Fri 18:56&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id=&quot;table-of-contents&quot;&gt;
-&lt;div id=&quot;table-of-contents&quot;&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id=&quot;text-table-of-contents&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org65f2e82&quot;&gt;Apresentação Pessoal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org8f116ac&quot;&gt;Filosofia de Trabalho&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org16d8c02&quot;&gt;Diagnóstico Geral&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org685c426&quot;&gt;Plano de Ação&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orge464642&quot;&gt;Medidas Iniciais&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-
-&lt;section&gt;
-&lt;section id=&quot;slide-org65f2e82&quot;&gt;
-&lt;h2 id=&quot;org65f2e82&quot;&gt;Apresentação Pessoal&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org65f2e82&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orge9bcfd6&quot;&gt;
-&lt;h3 id=&quot;orge9bcfd6&quot;&gt;Peopleware&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Regra: quanto mais vermelho melhor (comunista, colorado, vinho tinto e 
-carne mal passada)&lt;/li&gt;
-&lt;li&gt;Formado em Física (Graduação+Mestrado+Doutorado)&lt;/li&gt;
-&lt;li&gt;Pesquisador em Bioinformática&lt;/li&gt;
-&lt;li&gt;Atuação nas áreas:
-&lt;ul&gt;
-&lt;li&gt;Computação de Alto Desempenho&lt;/li&gt;
-&lt;li&gt;Inteligência Artificial&lt;/li&gt;
-&lt;li&gt;Educação&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orge1d5d17&quot;&gt;
-&lt;h3 id=&quot;orge1d5d17&quot;&gt;Hardware&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Iniciei com o TK 80 em Basic&lt;/li&gt;
-&lt;li&gt;Apple IIe Logo e Basic&lt;/li&gt;
-&lt;li&gt;Cobra&lt;/li&gt;
-&lt;li&gt;Vax em VMS&lt;/li&gt;
-&lt;li&gt;Estações Sparc Unix+Fortran&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;section id=&quot;slide-orge8a6e9c&quot;&gt;
-&lt;h4 id=&quot;orge8a6e9c&quot;&gt;Hardware&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Desktops com C++, Mathematica, Awk, Fortran, Python&lt;/li&gt;
-&lt;li&gt;CrayMP Fortran&lt;/li&gt;
-&lt;li&gt;GridUnesp e Cluster Local&lt;/li&gt;
-
-&lt;/ul&gt;
-
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org76a97c7&quot;&gt;
-&lt;h3 id=&quot;org76a97c7&quot;&gt;Software&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Unix+Linux+MacosX desde 1990&lt;/li&gt;
-&lt;li&gt;Última versão do Windows que eu tive alguma familiaridade: Windows XP&lt;/li&gt;
-&lt;li&gt;Editor: Emacs+Vim&lt;/li&gt;
-&lt;li&gt;Sempre que possível: %\LaTeX$&lt;/li&gt;
-&lt;li&gt;No meu laboratório Mac+Linux,  Microsoft só o necessário&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org8f116ac&quot;&gt;
-&lt;h2 id=&quot;org8f116ac&quot;&gt;Filosofia de Trabalho&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org8f116ac&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org9c24bf0&quot;&gt;
-&lt;h3 id=&quot;org9c24bf0&quot;&gt;Regras básicas&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Sem  \(\mu^3\)&lt;/li&gt;
-&lt;li&gt;Reuniões Curtas e Objetivas&lt;/li&gt;
-&lt;li&gt;Liberdade Operacional&lt;/li&gt;
-&lt;li&gt;Ônus da decisão será sempre da chefia&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;p&gt;
-&amp;#x2013; Filosofia Felipão
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A chefia sempre terá interesse em &lt;b&gt;escutar&lt;/b&gt; a opinião de todos&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;p&gt;
-&amp;#x2013; Antes a crítica que o erro
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nunca discutam por email!&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org16d8c02&quot;&gt;
-&lt;h2 id=&quot;org16d8c02&quot;&gt;Diagnóstico Geral&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org16d8c02&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org0ca80f7&quot;&gt;
-&lt;h3 id=&quot;org0ca80f7&quot;&gt;Minha visão de Futuro&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Fim da lei de Moore&lt;/li&gt;
-&lt;li&gt;Computação ubiqua aumento da variabilidade das plataformas, desktops, servidores, sensores, smartphones, clouds, grids&lt;/li&gt;
-&lt;li&gt;o império do browser como ferramenta universal&lt;/li&gt;
-&lt;li&gt;impacto da inteligência artificial&lt;/li&gt;
-&lt;li&gt;computação como serviço&lt;/li&gt;
-&lt;li&gt;épocas de contenção de gastos tendem a ser positivas para áreas de TI&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;section id=&quot;slide-org34aaead&quot;&gt;
-&lt;h4 id=&quot;org34aaead&quot;&gt;Visão sobre a nova Gestão&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Necessidade de mudanças&lt;/li&gt;
-&lt;li&gt;Uso mais disseminado de novas tecnologias em ensino&lt;/li&gt;
-&lt;li&gt;Expectativa de um aumento na oferta de soluções de TI&lt;/li&gt;
-&lt;li&gt;Transferência das atividades da STI para os usuários&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;p&gt;
-&amp;#x2013; Capacitar os usuários
-&lt;/p&gt;
-
-&lt;/section&gt;
-&lt;section id=&quot;slide-org4b290e7&quot;&gt;
-&lt;h4 id=&quot;org4b290e7&quot;&gt;Visão Pessoal sobre o STI&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Os serviços essenciais são mantidos com bom nível de qualidade&lt;/li&gt;
-&lt;li&gt;A crise financeira impactou a abrangência de diversos serviços:
-&amp;#x2013; manutenção de equipamentos
-&amp;#x2013; compra de novos equipamentos&lt;/li&gt;
-&lt;li&gt;Não existe clareza quanto a área de atuação do STI e sobre quem define
-as políticas, quais regras são locais e quais são institucionais&lt;/li&gt;
-&lt;li&gt;Falta uma política publica explicitando como são definidos quais projetos
-são implementados e qual sua prioridade&lt;/li&gt;
-&lt;li&gt;Mais custos e menos negativas&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;section id=&quot;slide-org16799e3&quot;&gt;
-&lt;h4 id=&quot;org16799e3&quot;&gt;Pontos Fortes&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Equipe experiente e de bom tamanho&lt;/li&gt;
-&lt;li&gt;Infra-estrutura em boas condições de operação&lt;/li&gt;
-&lt;li&gt;Demanda Institucional crescente&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org685c426&quot;&gt;
-&lt;h2 id=&quot;org685c426&quot;&gt;Plano de Ação&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org685c426&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org3b42301&quot;&gt;
-&lt;h3 id=&quot;org3b42301&quot;&gt;Fase Inicial&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Diagnóstico sobre a atual situação&lt;/li&gt;
-&lt;li&gt;diagnóstico interno&lt;/li&gt;
-&lt;li&gt;determinar demandas da comunidade:
-&lt;ul&gt;
-&lt;li&gt;grupos focais&lt;/li&gt;
-&lt;li&gt;pesquisas de satisfação&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Reorganização da Equipe&lt;/li&gt;
-&lt;li&gt;Definição das políticas em orgãos colegiados&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;section id=&quot;slide-orgfd077db&quot;&gt;
-&lt;h4 id=&quot;orgfd077db&quot;&gt;Metas a medio prazo&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Redefinição das políticas básicas:
-&lt;ul&gt;
-&lt;li&gt;Segurança&lt;/li&gt;
-&lt;li&gt;Comunicação&lt;/li&gt;
-&lt;li&gt;Estabilidade&lt;/li&gt;
-&lt;li&gt;Gerência de Projetos&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orge464642&quot;&gt;
-&lt;h2 id=&quot;orge464642&quot;&gt;Medidas Iniciais&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orge464642&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org8c6d641&quot;&gt;
-&lt;h3 id=&quot;org8c6d641&quot;&gt;Medidas&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&quot;Não é uma sangria desatada&quot;&lt;/li&gt;
-&lt;li&gt;Reuniões com os grupos:
-&lt;ul&gt;
-&lt;li&gt;Apresentação da Equipe&lt;/li&gt;
-&lt;li&gt;Tarefas atuais&lt;/li&gt;
-&lt;li&gt;Prospecção de Novos Projetos&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Definição do Vice&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt; Created by Ney Lemke. &lt;/p&gt;
-&lt;script src=&quot;/reveal.js/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;/reveal.js/js/reveal.js&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-
-controls: true,
-progress: true,
-history: false,
-center: true,
-slideNumber: 'c',
-rollingLinks: true,
-keyboard: true,
-overview: true,
-width: 1200,
-height: 800,
-margin: 0.10,
-minScale: 0.50,
-maxScale: 2.50,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
-transitionSpeed: 'default',
-multiplex: {
-    secret: '', // null if client
-    id: '', // id, obtained from socket.io server
-    url: '' // Location of socket.io server
-},
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
- { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
-});
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</description>
-        <pubDate>Fri, 10 Feb 2017 00:00:00 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2017/02/10/STI/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/02/10/STI/</guid>
-        
-        
-      </item>
     
       <item>
         <title>Xmeeting2016 network</title>
@@ -1658,6 +1334,85 @@ git push
         <pubDate>Sun, 08 Jan 2017 23:03:00 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</guid>
+        
+        
+        <category>Technical</category>
+        
+      </item>
+    
+      <item>
+        <title>Jupyter Revolutions</title>
+        <description>&lt;p&gt;In this  page I will describe the process of installing a GCE machine capable of running 
+&lt;a href=&quot;https://github.com/jupyterlab/jupyterlab&quot;&gt;Jupyter  Lab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first step  is to create  an  account on Google Compute Engine create a Project 
+and  instantiate one machine.&lt;/p&gt;
+
+&lt;p&gt;I am  using  the following  configurations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I am allowing HHTP and HTTPS  connections&lt;/li&gt;
+  &lt;li&gt;I am  using an UBUNTU 16.04 image&lt;/li&gt;
+  &lt;li&gt;I am using  a small machine type&lt;/li&gt;
+  &lt;li&gt;The machine should  have a  fixed permanent IP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/machineconf.png&quot; alt=&quot;Machine Conf&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next step  is to start the instance and connect to the instance  (the command can be obtained clicking on the 
+the 3 dots close to ssh).&lt;/p&gt;
+
+&lt;p&gt;Before using this command you have to install  gcloud SDK (&lt;a href=&quot;https://cloud.google.com/sdk/downloads&quot;&gt;instructions&lt;/a&gt;) and be sure you have
+python2 on your system.  I am using pyenv to guarantee that.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pyenv &lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;2.7.8
+gcloud config &lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;project  &amp;lt;myproject&amp;gt;
+gcloud auth login
+&lt;span class=&quot;c&quot;&gt;#This  sets the  firewall rules&lt;/span&gt;
+gcloud compute firewall-rules create jupyternotebook  --allow tcp:8888  --source-ranges&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;0.0.0.0/0 --description&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;allows connections to jupyter server&quot;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#This is the command  you can get on GCE site&lt;/span&gt;
+gcloud compute --project &amp;lt;myproject&amp;gt; ssh --zone &lt;span class=&quot;s2&quot;&gt;&quot;us-central1-f&quot;&lt;/span&gt;  &amp;lt;machinetype&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The next step is to install anaconda.&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install bzip2
+wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
+sudo shell Miniconda2-latest-Linux-x86_64.sh
+conda install --yes scikit-learn
+conda install --yes pandas
+conda install --yes jupyter
+conda install --yes -c conda-forge jupyterlab
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I am also  installing some extra-packages&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install --yes mpld3
+conda install --yes numba
+conda install --yes seaborn
+conda install --yes -c conda-forge jupyter_contrib_nbextensions
+conda install --yes sh
+conda install --yes pip
+conda install --yes altair --channel conda-forge
+jupyter nbextension &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;vega --py --sys-prefix
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then you can start the Jupyter Lab  using:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter lab --ip&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;  --port&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;8888 --no-browser &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To start using the  Jupyter Lab  you have to open a browser and  type
+http://&lt;yourgcefixedip&gt;:8888&quot;.&lt;/yourgcefixedip&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 08 Jan 2017 12:00:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/08/jupyter-revolution/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/08/jupyter-revolution/</guid>
         
         
         <category>Technical</category>
