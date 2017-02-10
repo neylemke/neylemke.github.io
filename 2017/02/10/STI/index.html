@@ -1,323 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>{D,S}TI</title>
-<meta name="author" content="(Ney Lemke)"/>
-<style type="text/css">
-.underline { text-decoration: underline; }
-</style>
-<link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="/reveal.js/css/theme/moon.css" id="theme"/>
+#+Title: {D,S}TI 
+#+Author: Ney Lemke
+#+Email: lemke@ibb.unesp.br
 
-<link rel="stylesheet" href="./local.css"/>
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = '/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<meta name="description" content="Org-Reveal Introduction.">
-</head>
-<body>
-<div class="reveal">
-<div class="slides">
-<section id="sec-title-slide"><h1 class="title">{D,S}TI</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-02-10 Fri 18:36</p>
-</section>
-<section id="table-of-contents">
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#/slide-org0df7536">Apresentação Pessoal</a></li>
-<li><a href="#/slide-org2608610">Filosofia de Trabalho</a></li>
-<li><a href="#/slide-orgbdb2d1a">Diagnóstico Geral</a></li>
-<li><a href="#/slide-orgf3d86e6">Plano de Ação</a></li>
-<li><a href="#/slide-org409ca75">Medidas Iniciais</a></li>
-</ul>
-</div>
-</div>
-</section>
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: moon
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by Ney Lemke. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_EXTRA_CSS: ./local.css
+#+REVEAL_ROOT: /reveal.js
 
 
-<section>
-<section id="slide-org0df7536">
-<h2 id="org0df7536">Apresentação Pessoal</h2>
-<div class="outline-text-2" id="text-org0df7536">
-</div></section>
-</section>
-<section>
-<section id="slide-org41a92ba">
-<h3 id="org41a92ba">Peopleware</h3>
-<ul>
-<li>Regra: quanto mais vermelho melhor (comunista, colorado, vinho tinto e 
-carne mal passada)</li>
-<li>Formado em Física (Graduação+Mestrado+Doutorado)</li>
-<li>Pesquisador em Bioinformática</li>
-<li>Atuação nas áreas:
-<ul>
-<li>Computação de Alto Desempenho</li>
-<li>Inteligência Artificial</li>
-<li>Educação</li>
+* Apresentação Pessoal
 
-</ul></li>
+** Peopleware
+- Regra: quanto mais vermelho melhor (comunista, colorado, vinho tinto e 
+  carne mal passada)
+- Formado em Física (Graduação+Mestrado+Doutorado)
+- Pesquisador em Bioinformática
+- Atuação nas áreas:
+  - Computação de Alto Desempenho
+  - Inteligência Artificial
+  - Educação 
 
-</ul>
+** Hardware
+- Iniciei com o TK 80 em Basic
+- Apple IIe Logo e Basic
+- Cobra
+- Vax em VMS
+- Estações Sparc Unix+Fortran
 
-</section>
-</section>
-<section>
-<section id="slide-org7e7d058">
-<h3 id="org7e7d058">Hardware</h3>
-<ul>
-<li>Iniciei com o TK 80 em Basic</li>
-<li>Apple IIe Logo e Basic</li>
-<li>Cobra</li>
-<li>Vax em VMS</li>
-<li>Estações Sparc Unix+Fortran</li>
-
-</ul>
-
-</section>
-<section id="slide-org72cac34">
-<h4 id="org72cac34">Hardware</h4>
-<ul>
-<li>Desktops com C++, Mathematica, Awk, Fortran, Python</li>
-<li>CrayMP Fortran</li>
-<li>GridUnesp e Cluster Local</li>
-
-</ul>
+*** Hardware
+- Desktops com C++, Mathematica, Awk, Fortran, Python
+- CrayMP Fortran
+- GridUnesp e Cluster Local
 
 
-</section>
-</section>
-<section>
-<section id="slide-org801ac3e">
-<h3 id="org801ac3e">Software</h3>
-<ul>
-<li>Unix+Linux+MacosX desde 1990</li>
-<li>Última versão do Windows que eu tive alguma familiaridade: Windows XP</li>
-<li>Editor: Emacs+Vim</li>
-<li>Sempre que possível: %\LaTeX$</li>
-<li>No meu laboratório Mac+Linux,  Microsoft só o necessário</li>
+** Software
+- Unix+Linux+MacosX desde 1990
+- Última versão do Windows que eu tive alguma familiaridade: Windows XP
+- Editor: Emacs+Vim 
+- Sempre que possível: %\LaTeX$ 
+- No meu laboratório Mac+Linux,  Microsoft só o necessário
 
-</ul>
+* Filosofia de Trabalho
+** Regras básicas
+- Sem  $\mu^3$ 
+- Reuniões Curtas e Objetivas
+- Liberdade Operacional
+- Ônus da decisão será sempre da chefia
+-- Filosofia Felipão
+- A chefia sempre terá interesse em *escutar* a opinião de todos 
+-- Antes a crítica que o erro
+- Nunca discutam por email!
 
-</section>
-</section>
-<section>
-<section id="slide-org2608610">
-<h2 id="org2608610">Filosofia de Trabalho</h2>
-<div class="outline-text-2" id="text-org2608610">
-</div></section>
-</section>
-<section>
-<section id="slide-org372ad49">
-<h3 id="org372ad49">Regras básicas</h3>
-<ul>
-<li>Sem  \(\mu^3\)</li>
-<li>Reuniões Curtas e Objetivas</li>
-<li>Liberdade Operacional</li>
-<li>Ônus da decisão será sempre da chefia</li>
+* Diagnóstico Geral
+** Minha visão de Futuro
+- Fim da lei de Moore
+- Computação ubiqua aumento da variabilidade das plataformas, desktops, servidores, sensores, smartphones, clouds, grids
+- o império do browser como ferramenta universal
+- impacto da inteligência artificial
+- computação como serviço
+- épocas de contenção de gastos tendem a ser positivas para áreas de TI
 
-</ul>
-<p>
-&#x2013; Filosofia Felipão
-</p>
-<ul>
-<li>A chefia sempre terá interesse em <b>escutar</b> a opinião de todos</li>
+*** Visão sobre a nova Gestão  
+   - Necessidade de mudanças 
+   - Uso mais disseminado de novas tecnologias em ensino
+   - Expectativa de um aumento na oferta de soluções de TI
+   - Transferência das atividades da STI para os usuários
+   -- Capacitar os usuários
 
-</ul>
-<p>
-&#x2013; Antes a crítica que o erro
-</p>
-<ul>
-<li>Nunca discutam por email!</li>
+*** Visão Pessoal sobre o STI
+   - Os serviços essenciais são mantidos com bom nível de qualidade
+   - A crise financeira impactou a abrangência de diversos serviços:
+     -- manutenção de equipamentos
+     -- compra de novos equipamentos
+   - Não existe clareza quanto a área de atuação do STI e sobre quem define
+     as políticas, quais regras são locais e quais são institucionais
+   - Falta uma política publica explicitando como são definidos quais projetos
+     são implementados e qual sua prioridade
+   - Mais custos e menos negativas
 
-</ul>
+*** Pontos Fortes
+- Equipe experiente e de bom tamanho 
+- Infra-estrutura em boas condições de operação
+- Demanda Institucional crescente
 
-</section>
-</section>
-<section>
-<section id="slide-orgbdb2d1a">
-<h2 id="orgbdb2d1a">Diagnóstico Geral</h2>
-<div class="outline-text-2" id="text-orgbdb2d1a">
-</div></section>
-</section>
-<section>
-<section id="slide-orgc20750b">
-<h3 id="orgc20750b">Minha visão de Futuro</h3>
-<ul>
-<li>Fim da lei de Moore</li>
-<li>Computação ubiqua aumento da variabilidade das plataformas, desktops, servidores, sensores, smartphones, clouds, grids</li>
-<li>o império do browser como ferramenta universal</li>
-<li>impacto da inteligência artificial</li>
-<li>computação como serviço</li>
-<li>épocas de contenção de gastos tendem a ser positivas para áreas de TI</li>
+* Plano de Ação  
+** Fase Inicial
+  - Diagnóstico sobre a atual situação
+  - diagnóstico interno
+  - determinar demandas da comunidade:
+      - grupos focais
+      - pesquisas de satisfação
+  - Reorganização da Equipe
+  - Definição das políticas em orgãos colegiados
 
-</ul>
+** Fase Inicial
+  - Definição das políticas em orgãos colegiados
+*** Metas a medio prazo
+   - Redefinição das políticas básicas:
+     - Segurança
+     - Comunicação 
+     - Estabilidade 
+     - Gerência de Projetos
 
-</section>
-<section id="slide-orga779c46">
-<h4 id="orga779c46">Visão sobre a nova Gestão</h4>
-<ul>
-<li>Necessidade de mudanças</li>
-<li>Uso mais disseminado de novas tecnologias em ensino</li>
-<li>Expectativa de um aumento na oferta de soluções de TI</li>
-<li>Transferência das atividades da STI para os usuários</li>
-
-</ul>
-<p>
-&#x2013; Capacitar os usuários
-</p>
-
-</section>
-<section id="slide-org8d622e0">
-<h4 id="org8d622e0">Visão Pessoal sobre o STI</h4>
-<ul>
-<li>Os serviços essenciais são mantidos com bom nível de qualidade</li>
-<li>A crise financeira impactou a abrangência de diversos serviços:
-&#x2013; manutenção de equipamentos
-&#x2013; compra de novos equipamentos</li>
-<li>Não existe clareza quanto a área de atuação do STI e sobre quem define
-as políticas, quais regras são locais e quais são institucionais</li>
-<li>Falta uma política publica explicitando como são definidos quais projetos
-são implementados e qual sua prioridade</li>
-<li>Mais custos e menos negativas</li>
-
-</ul>
-
-</section>
-<section id="slide-org78b22c2">
-<h4 id="org78b22c2">Pontos Fortes</h4>
-<ul>
-<li>Equipe experiente e de bom tamanho</li>
-<li>Infra-estrutura em boas condições de operação</li>
-<li>Demanda Institucional crescente</li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-orgf3d86e6">
-<h2 id="orgf3d86e6">Plano de Ação</h2>
-<div class="outline-text-2" id="text-orgf3d86e6">
-</div></section>
-</section>
-<section>
-<section id="slide-orgf018738">
-<h3 id="orgf018738">Fase Inicial</h3>
-<ul>
-<li>Diagnóstico sobre a atual situação</li>
-<li>diagnóstico interno</li>
-<li>determinar demandas da comunidade:
-<ul>
-<li>grupos focais</li>
-<li>pesquisas de satisfação</li>
-
-</ul></li>
-<li>Reorganização da Equipe</li>
-<li>Definição das políticas em orgãos colegiados</li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-org3a0882f">
-<h3 id="org3a0882f">Fase Inicial</h3>
-<ul>
-<li>Definição das políticas em orgãos colegiados</li>
-
-</ul>
-</section>
-<section id="slide-orgfea02f6">
-<h4 id="orgfea02f6">Metas a medio prazo</h4>
-<ul>
-<li>Redefinição das políticas básicas:
-<ul>
-<li>Segurança</li>
-<li>Comunicação</li>
-<li>Estabilidade</li>
-<li>Gerência de Projetos</li>
-
-</ul></li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-org409ca75">
-<h2 id="org409ca75">Medidas Iniciais</h2>
-<div class="outline-text-2" id="text-org409ca75">
-</div></section>
-</section>
-<section>
-<section id="slide-orgb047e8d">
-<h3 id="orgb047e8d">Medidas</h3>
-<ul>
-<li>"Não é uma sangria desatada"</li>
-<li>Reuniões com os grupos:
-<ul>
-<li>Apresentação da Equipe</li>
-<li>Tarefas atuais</li>
-<li>Prospecção de Novos Projetos</li>
-
-</ul></li>
-<li>Definição do Vice</li>
-
-</ul>
-</section>
-</section>
-</div>
-</div>
-<p> Created by Ney Lemke. </p>
-<script src="/reveal.js/lib/js/head.min.js"></script>
-<script src="/reveal.js/js/reveal.js"></script>
-
-<script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-
-controls: true,
-progress: true,
-history: false,
-center: true,
-slideNumber: 'c',
-rollingLinks: true,
-keyboard: true,
-overview: true,
-width: 1200,
-height: 800,
-margin: 0.10,
-minScale: 0.50,
-maxScale: 2.50,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
-transitionSpeed: 'default',
-multiplex: {
-    secret: '', // null if client
-    id: '', // id, obtained from socket.io server
-    url: '' // Location of socket.io server
-},
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
- { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
-});
-</script>
-</body>
-</html>
+* Medidas Iniciais
+** Medidas 
+   - "Não é uma sangria desatada"
+   - Reuniões com os grupos:
+     - Apresentação da Equipe
+     - Tarefas atuais
+     - Prospecção de Novos Projetos
+   - Definição do Vice 

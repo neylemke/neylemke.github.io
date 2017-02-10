@@ -5,9 +5,143 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 10 Feb 2017 18:49:31 -0200</pubDate>
-    <lastBuildDate>Fri, 10 Feb 2017 18:49:31 -0200</lastBuildDate>
+    <pubDate>Fri, 10 Feb 2017 18:52:35 -0200</pubDate>
+    <lastBuildDate>Fri, 10 Feb 2017 18:52:35 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Sti</title>
+        <description>
+#+Title: {D,S}TI 
+#+Author: Ney Lemke
+#+Email: lemke@ibb.unesp.br
+
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: moon
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: &lt;meta name=&quot;description&quot; content=&quot;Org-Reveal Introduction.&quot;&gt;
+#+REVEAL_POSTAMBLE: &lt;p&gt; Created by Ney Lemke. &lt;/p&gt;
+#+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_EXTRA_CSS: ./local.css
+#+REVEAL_ROOT: /reveal.js
+
+
+* Apresentação Pessoal
+
+** Peopleware
+- Regra: quanto mais vermelho melhor (comunista, colorado, vinho tinto e 
+  carne mal passada)
+- Formado em Física (Graduação+Mestrado+Doutorado)
+- Pesquisador em Bioinformática
+- Atuação nas áreas:
+  - Computação de Alto Desempenho
+  - Inteligência Artificial
+  - Educação 
+
+** Hardware
+- Iniciei com o TK 80 em Basic
+- Apple IIe Logo e Basic
+- Cobra
+- Vax em VMS
+- Estações Sparc Unix+Fortran
+
+*** Hardware
+- Desktops com C++, Mathematica, Awk, Fortran, Python
+- CrayMP Fortran
+- GridUnesp e Cluster Local
+
+
+** Software
+- Unix+Linux+MacosX desde 1990
+- Última versão do Windows que eu tive alguma familiaridade: Windows XP
+- Editor: Emacs+Vim 
+- Sempre que possível: %\LaTeX$ 
+- No meu laboratório Mac+Linux,  Microsoft só o necessário
+
+* Filosofia de Trabalho
+** Regras básicas
+- Sem  $\mu^3$ 
+- Reuniões Curtas e Objetivas
+- Liberdade Operacional
+- Ônus da decisão será sempre da chefia
+-- Filosofia Felipão
+- A chefia sempre terá interesse em *escutar* a opinião de todos 
+-- Antes a crítica que o erro
+- Nunca discutam por email!
+
+* Diagnóstico Geral
+** Minha visão de Futuro
+- Fim da lei de Moore
+- Computação ubiqua aumento da variabilidade das plataformas, desktops, servidores, sensores, smartphones, clouds, grids
+- o império do browser como ferramenta universal
+- impacto da inteligência artificial
+- computação como serviço
+- épocas de contenção de gastos tendem a ser positivas para áreas de TI
+
+*** Visão sobre a nova Gestão  
+   - Necessidade de mudanças 
+   - Uso mais disseminado de novas tecnologias em ensino
+   - Expectativa de um aumento na oferta de soluções de TI
+   - Transferência das atividades da STI para os usuários
+   -- Capacitar os usuários
+
+*** Visão Pessoal sobre o STI
+   - Os serviços essenciais são mantidos com bom nível de qualidade
+   - A crise financeira impactou a abrangência de diversos serviços:
+     -- manutenção de equipamentos
+     -- compra de novos equipamentos
+   - Não existe clareza quanto a área de atuação do STI e sobre quem define
+     as políticas, quais regras são locais e quais são institucionais
+   - Falta uma política publica explicitando como são definidos quais projetos
+     são implementados e qual sua prioridade
+   - Mais custos e menos negativas
+
+*** Pontos Fortes
+- Equipe experiente e de bom tamanho 
+- Infra-estrutura em boas condições de operação
+- Demanda Institucional crescente
+
+* Plano de Ação  
+** Fase Inicial
+  - Diagnóstico sobre a atual situação
+  - diagnóstico interno
+  - determinar demandas da comunidade:
+      - grupos focais
+      - pesquisas de satisfação
+  - Reorganização da Equipe
+  - Definição das políticas em orgãos colegiados
+
+** Fase Inicial
+  - Definição das políticas em orgãos colegiados
+*** Metas a medio prazo
+   - Redefinição das políticas básicas:
+     - Segurança
+     - Comunicação 
+     - Estabilidade 
+     - Gerência de Projetos
+
+* Medidas Iniciais
+** Medidas 
+   - &quot;Não é uma sangria desatada&quot;
+   - Reuniões com os grupos:
+     - Apresentação da Equipe
+     - Tarefas atuais
+     - Prospecção de Novos Projetos
+   - Definição do Vice 
+</description>
+        <pubDate>Fri, 10 Feb 2017 00:00:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/02/10/STI/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/02/10/STI/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Sti</title>
@@ -1600,73 +1734,6 @@ You have to run all cells so the last command works.&lt;/p&gt;
         <pubDate>Mon, 09 Jan 2017 13:38:43 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</guid>
-        
-        
-        <category>Technical</category>
-        
-      </item>
-    
-      <item>
-        <title>Installing Jekyll</title>
-        <description>&lt;p&gt;Jekyll is an wonderful tool that allows us to generate 
-static html pages that can be used at github. The entire process 
-seems easier if you follow the github pages protocol. But I found it 
-rather difficult to follow.&lt;/p&gt;
-
-&lt;p&gt;The process that I suggest is the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create a directory for your blog &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Choose a Theme for Jekyll &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;themes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Install the theme under  &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Create a project at GitHub called &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Clone the page using one of the prefined themes or not under &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir &lt;/code&gt;(this dir is called &lt;code class=&quot;highlighter-rouge&quot;&gt;githubdir&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;Install &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby&lt;/a&gt; (jekyll is based on ruby)&lt;/li&gt;
-  &lt;li&gt;Install &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install jekyll
-sudo gem install jekyll-paginate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Install dependencies for your theme&lt;/li&gt;
-  &lt;li&gt;Configure the theme on the local filesystem&lt;/li&gt;
-  &lt;li&gt;Buid your page using your theme
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build 
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Generate a page or a blog post&lt;/li&gt;
-  &lt;li&gt;Start the server
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You can edit your page and keep the server running, since changes will cause 
-a new buid&lt;/li&gt;
-  &lt;li&gt;Test the page using the browser &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Build the page using jekyll setting the output to the github cloned page
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build -d githubdir
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Commit and push your changes
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add -all
-git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;description&quot;&lt;/span&gt;
-git push
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;Now go to your Blog Page at &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io &lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 08 Jan 2017 23:03:00 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</guid>
         
         
         <category>Technical</category>
