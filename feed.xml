@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Feb 2017 16:06:48 -0200</pubDate>
-    <lastBuildDate>Sun, 12 Feb 2017 16:06:48 -0200</lastBuildDate>
+    <pubDate>Sun, 12 Feb 2017 16:08:19 -0200</pubDate>
+    <lastBuildDate>Sun, 12 Feb 2017 16:08:19 -0200</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -42,39 +42,39 @@
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;{D,S}TI&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-02-12 Sun 16:06&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;{D,S}TI&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-02-12 Sun 16:08&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org6949c7b&quot;&gt;{D,S}TI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org2b46692&quot;&gt;Apresentação Pessoal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org92bda0e&quot;&gt;Filosofia de Trabalho&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgc21910c&quot;&gt;Diagnóstico Geral&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgbbbef5e&quot;&gt;Plano de Ação&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org229750d&quot;&gt;Medidas Iniciais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org923368f&quot;&gt;{D,S}TI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org88e671b&quot;&gt;Apresentação Pessoal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orga2ac491&quot;&gt;Filosofia de Trabalho&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org82317f8&quot;&gt;Diagnóstico Geral&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orgd2d823f&quot;&gt;Plano de Ação&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org1ba3536&quot;&gt;Medidas Iniciais&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 
 &lt;section&gt;
-&lt;section id=&quot;slide-org6949c7b&quot;&gt;
-&lt;h2 id=&quot;org6949c7b&quot;&gt;{D,S}TI&lt;/h2&gt;
-&lt;img src=&quot;/assets/STI.png&quot; alt=&quot;STI.png&quot; /&gt;
+&lt;section id=&quot;slide-org923368f&quot;&gt;
+&lt;h2 id=&quot;org923368f&quot;&gt;{D,S}TI&lt;/h2&gt;
+&lt;img src=&quot;/assets/sti.png&quot; alt=&quot;sti.png&quot; /&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org2b46692&quot;&gt;
-&lt;h2 id=&quot;org2b46692&quot;&gt;Apresentação Pessoal&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org2b46692&quot;&gt;
+&lt;section id=&quot;slide-org88e671b&quot;&gt;
+&lt;h2 id=&quot;org88e671b&quot;&gt;Apresentação Pessoal&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org88e671b&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgd163abf&quot;&gt;
-&lt;h3 id=&quot;orgd163abf&quot;&gt;Peopleware&lt;/h3&gt;
+&lt;section id=&quot;slide-org5dda6ed&quot;&gt;
+&lt;h3 id=&quot;org5dda6ed&quot;&gt;Peopleware&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Regra: quanto mais vermelho melhor (comunista, colorado, vinho tinto e 
 carne mal passada)&lt;/li&gt;
@@ -93,8 +93,8 @@ carne mal passada)&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org6db8f78&quot;&gt;
-&lt;h3 id=&quot;org6db8f78&quot;&gt;Hardware&lt;/h3&gt;
+&lt;section id=&quot;slide-org18c0f3e&quot;&gt;
+&lt;h3 id=&quot;org18c0f3e&quot;&gt;Hardware&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Iniciei com o TK 80 em Basic&lt;/li&gt;
 &lt;li&gt;Apple IIe Logo e Basic&lt;/li&gt;
@@ -105,8 +105,8 @@ carne mal passada)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-org6433202&quot;&gt;
-&lt;h4 id=&quot;org6433202&quot;&gt;Hardware&lt;/h4&gt;
+&lt;section id=&quot;slide-org56f659f&quot;&gt;
+&lt;h4 id=&quot;org56f659f&quot;&gt;Hardware&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Desktops com C++, Mathematica, Awk, Fortran, Python&lt;/li&gt;
 &lt;li&gt;CrayYMP Fortran&lt;/li&gt;
@@ -118,8 +118,8 @@ carne mal passada)&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgf31e18d&quot;&gt;
-&lt;h3 id=&quot;orgf31e18d&quot;&gt;Software&lt;/h3&gt;
+&lt;section id=&quot;slide-orgabce2ea&quot;&gt;
+&lt;h3 id=&quot;orgabce2ea&quot;&gt;Software&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Unix+Linux+MacosX desde 1990&lt;/li&gt;
 &lt;li&gt;Última versão do Windows que eu tive alguma familiaridade: Windows XP&lt;/li&gt;
@@ -132,14 +132,14 @@ carne mal passada)&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org92bda0e&quot;&gt;
-&lt;h2 id=&quot;org92bda0e&quot;&gt;Filosofia de Trabalho&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org92bda0e&quot;&gt;
+&lt;section id=&quot;slide-orga2ac491&quot;&gt;
+&lt;h2 id=&quot;orga2ac491&quot;&gt;Filosofia de Trabalho&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orga2ac491&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgbbe5172&quot;&gt;
-&lt;h3 id=&quot;orgbbe5172&quot;&gt;Regras básicas&lt;/h3&gt;
+&lt;section id=&quot;slide-org8d3521d&quot;&gt;
+&lt;h3 id=&quot;org8d3521d&quot;&gt;Regras básicas&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Sem  \(\mu^3\)&lt;/li&gt;
 &lt;li&gt;Reuniões Curtas e Objetivas&lt;/li&gt;
@@ -162,14 +162,14 @@ carne mal passada)&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgc21910c&quot;&gt;
-&lt;h2 id=&quot;orgc21910c&quot;&gt;Diagnóstico Geral&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgc21910c&quot;&gt;
+&lt;section id=&quot;slide-org82317f8&quot;&gt;
+&lt;h2 id=&quot;org82317f8&quot;&gt;Diagnóstico Geral&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org82317f8&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org8dc57e8&quot;&gt;
-&lt;h3 id=&quot;org8dc57e8&quot;&gt;Minha visão de Futuro&lt;/h3&gt;
+&lt;section id=&quot;slide-org113b678&quot;&gt;
+&lt;h3 id=&quot;org113b678&quot;&gt;Minha visão de Futuro&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Fim da lei de Moore&lt;/li&gt;
 &lt;li&gt;Computação ubíqua aumento da variabilidade das plataformas, desktops, servidores, sensores, smartphones, clouds, grids&lt;/li&gt;
@@ -181,8 +181,8 @@ carne mal passada)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-orgd76f8a3&quot;&gt;
-&lt;h4 id=&quot;orgd76f8a3&quot;&gt;Visão sobre a nova Gestão&lt;/h4&gt;
+&lt;section id=&quot;slide-org0dfce75&quot;&gt;
+&lt;h4 id=&quot;org0dfce75&quot;&gt;Visão sobre a nova Gestão&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Necessidade de mudanças&lt;/li&gt;
 &lt;li&gt;Uso mais disseminado de novas tecnologias em ensino&lt;/li&gt;
@@ -196,8 +196,8 @@ carne mal passada)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-orgd561d57&quot;&gt;
-&lt;h4 id=&quot;orgd561d57&quot;&gt;Visão Pessoal sobre o STI&lt;/h4&gt;
+&lt;section id=&quot;slide-orgf26117a&quot;&gt;
+&lt;h4 id=&quot;orgf26117a&quot;&gt;Visão Pessoal sobre o STI&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Os serviços essenciais são mantidos com bom nível de qualidade&lt;/li&gt;
 &lt;li&gt;A crise financeira impactou a abrangência de diversos serviços:
@@ -215,8 +215,8 @@ são implementados e qual sua prioridade&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-orgb04725a&quot;&gt;
-&lt;h4 id=&quot;orgb04725a&quot;&gt;Pontos Fortes&lt;/h4&gt;
+&lt;section id=&quot;slide-org5beab28&quot;&gt;
+&lt;h4 id=&quot;org5beab28&quot;&gt;Pontos Fortes&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Equipe experiente e de bom tamanho&lt;/li&gt;
 &lt;li&gt;Infra-estrutura em boas condições de operação&lt;/li&gt;
@@ -227,14 +227,14 @@ são implementados e qual sua prioridade&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgbbbef5e&quot;&gt;
-&lt;h2 id=&quot;orgbbbef5e&quot;&gt;Plano de Ação&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgbbbef5e&quot;&gt;
+&lt;section id=&quot;slide-orgd2d823f&quot;&gt;
+&lt;h2 id=&quot;orgd2d823f&quot;&gt;Plano de Ação&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgd2d823f&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org827d1d4&quot;&gt;
-&lt;h3 id=&quot;org827d1d4&quot;&gt;Fase Inicial&lt;/h3&gt;
+&lt;section id=&quot;slide-orgd54d9af&quot;&gt;
+&lt;h3 id=&quot;orgd54d9af&quot;&gt;Fase Inicial&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Diagnóstico sobre a atual situação&lt;/li&gt;
 &lt;li&gt;Diagnóstico interno&lt;/li&gt;
@@ -250,8 +250,8 @@ são implementados e qual sua prioridade&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-org74e0d4e&quot;&gt;
-&lt;h4 id=&quot;org74e0d4e&quot;&gt;Metas a medio prazo&lt;/h4&gt;
+&lt;section id=&quot;slide-org7be9d52&quot;&gt;
+&lt;h4 id=&quot;org7be9d52&quot;&gt;Metas a medio prazo&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Redefinição das políticas básicas:
 &lt;ul&gt;
@@ -267,14 +267,14 @@ são implementados e qual sua prioridade&lt;/li&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org229750d&quot;&gt;
-&lt;h2 id=&quot;org229750d&quot;&gt;Medidas Iniciais&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org229750d&quot;&gt;
+&lt;section id=&quot;slide-org1ba3536&quot;&gt;
+&lt;h2 id=&quot;org1ba3536&quot;&gt;Medidas Iniciais&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org1ba3536&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org3fab7db&quot;&gt;
-&lt;h3 id=&quot;org3fab7db&quot;&gt;Medidas&lt;/h3&gt;
+&lt;section id=&quot;slide-org1b9e6cb&quot;&gt;
+&lt;h3 id=&quot;org1b9e6cb&quot;&gt;Medidas&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&quot;Não é uma sangria desatada&quot;&lt;/li&gt;
 &lt;li&gt;Reuniões com os grupos:
