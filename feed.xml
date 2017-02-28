@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Feb 2017 17:30:39 -0300</pubDate>
-    <lastBuildDate>Tue, 28 Feb 2017 17:30:39 -0300</lastBuildDate>
+    <pubDate>Tue, 28 Feb 2017 17:32:52 -0300</pubDate>
+    <lastBuildDate>Tue, 28 Feb 2017 17:32:52 -0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -21,7 +21,7 @@ No que concerne ao IBB os aspectos mais relevante que podem ser avaliados pelo d
   &lt;li&gt;Existe Redundância na ligação com a Internet, pois temos duas conexões
 uma na Reitoria e outro no NCC na Barra Funda&lt;/li&gt;
   &lt;li&gt;Existe um anel ligando os Campus mais populados do qual não fazemos parte. 
-&lt;img src=&quot;Rede da UNESP&quot; alt=&quot;/assets/unespnetv5.png&quot; /&gt;&lt;/li&gt;
+&lt;a href=&quot;Rede da UNESP&quot;&gt;/assets/unespnetv5.png&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Tivemos alungs problemas recentes com a rede, eles se dividem em duas grandes classes: 
