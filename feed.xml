@@ -5,9 +5,80 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Feb 2017 07:32:09 -0300</pubDate>
-    <lastBuildDate>Tue, 21 Feb 2017 07:32:09 -0300</lastBuildDate>
+    <pubDate>Tue, 28 Feb 2017 17:25:50 -0300</pubDate>
+    <lastBuildDate>Tue, 28 Feb 2017 17:25:50 -0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Rede Ibb</title>
+        <description>&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#org93f1521&quot;&gt;1. # Rede do IBB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;—
+layout: post
+title: Rede IBB
+cover:  cover.jpg
+date: Tue Feb 28 16:58:56 BRT 2017
+categories: Technical Paper
+—&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;org93f1521&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;-rede-do-ibb&quot;&gt;# Rede do IBB&lt;/h1&gt;
+
+&lt;p&gt;A Rede da Unesp é uma Rede extremamente complexa e reflete a natureza de nossa instituição. 
+No que concerne ao IBB os aspectos mais relevante que podem ser avaliados pelo desenho abaixo, são:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Temos um Link único de 1 Gbit/S com São Paulo&lt;/li&gt;
+  &lt;li&gt;Existe Redundância na ligação com a Internet, pois temos duas conexões&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;uma na Reitoria e outro no NCC na Barra Funda&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Existe um anel ligando os Campus mais populados do qual não fazemos parte.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;\&lt;img src=&quot;Rede da UNESP&quot; alt=&quot;/assets/unespnetv5.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tivemos alungs problemas recentes com a rede, eles se dividem em duas grandes classes: 
+Falhas Intermitentes Não Identificadas (FINI) e Falhas Físicas na rede. As falhas físicas
+são causadas por fatores claramente identificados e que são externos ao sistema de computação,
+recentemente tivemos duas falhas dessa natureza:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;22/2/17 falta de luz na Reitoria e falha no abastecimento do gerador ocasionando uma
+pane de quase três horas&lt;/li&gt;
+  &lt;li&gt;23/2/17 a fibra foi cortada entre Jaú e Brotas e teve de ser reparada&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Esses eventos estão totalmente descorrelacionados e não existe como prevení-los.&lt;/p&gt;
+
+&lt;p&gt;Paralelalmente a esses acidentes temos um problema sério com os FINIs que já foram detectados
+e estão sendo avaliados pela Vivo. Cabendo apenas ao Grupo de Redes da Reitoria contactar a
+empresa e solicitar os ressarcimentos cabíveis. Essas falhas ocorreram posteriormente a 
+instalação do novo link de dados, o que aumentou nossa capacidade de operação, mas pode 
+estar ocasionando essas falhas.&lt;/p&gt;
+
+&lt;p&gt;OS FINIs afetam as 4 unidades de Botucatu igualmente, ou seja não estão relacionados a questões
+ gerenciais internas e nem adimitem uma solução local. Algumas soluções paliativas são possíveis:
+replicar bancos de dados institucionais localmente ou extender o link de Botucatu até Bauru, ainda
+que com uma ligação mais lenta.  Essas soluções implicam em custos e não resolvem o problema, 
+mas poderiam minimizar os custos.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 28 Feb 2017 00:00:00 -0300</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/02/28/Rede-IBB/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/02/28/Rede-IBB/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Sti</title>
@@ -1658,73 +1729,6 @@ You have to run all cells so the last command works.&lt;/p&gt;
         <pubDate>Mon, 09 Jan 2017 13:38:43 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</guid>
-        
-        
-        <category>Technical</category>
-        
-      </item>
-    
-      <item>
-        <title>Installing Jekyll</title>
-        <description>&lt;p&gt;Jekyll is an wonderful tool that allows us to generate 
-static html pages that can be used at github. The entire process 
-seems easier if you follow the github pages protocol. But I found it 
-rather difficult to follow.&lt;/p&gt;
-
-&lt;p&gt;The process that I suggest is the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create a directory for your blog &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Choose a Theme for Jekyll &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;themes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Install the theme under  &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Create a project at GitHub called &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Clone the page using one of the prefined themes or not under &lt;code class=&quot;highlighter-rouge&quot;&gt;blogdir &lt;/code&gt;(this dir is called &lt;code class=&quot;highlighter-rouge&quot;&gt;githubdir&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;Install &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby&lt;/a&gt; (jekyll is based on ruby)&lt;/li&gt;
-  &lt;li&gt;Install &lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install jekyll
-sudo gem install jekyll-paginate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Install dependencies for your theme&lt;/li&gt;
-  &lt;li&gt;Configure the theme on the local filesystem&lt;/li&gt;
-  &lt;li&gt;Buid your page using your theme
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build 
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Generate a page or a blog post&lt;/li&gt;
-  &lt;li&gt;Start the server
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --watch
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You can edit your page and keep the server running, since changes will cause 
-a new buid&lt;/li&gt;
-  &lt;li&gt;Test the page using the browser &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Build the page using jekyll setting the output to the github cloned page
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll build -d githubdir
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Commit and push your changes
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add -all
-git commit -m &lt;span class=&quot;s2&quot;&gt;&quot;description&quot;&lt;/span&gt;
-git push
-&lt;/code&gt;&lt;/pre&gt;
-    &lt;/div&gt;
-
-    &lt;p&gt;Now go to your Blog Page at &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io &lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Sun, 08 Jan 2017 23:03:00 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/08/installing-jekyll/</guid>
         
         
         <category>Technical</category>

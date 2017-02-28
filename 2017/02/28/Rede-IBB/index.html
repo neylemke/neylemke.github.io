@@ -1,0 +1,61 @@
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org93f1521">1. # Rede do IBB</a></li>
+</ul>
+</div>
+</div>
+<p>—
+layout: post
+title: Rede IBB
+cover:  cover.jpg
+date: Tue Feb 28 16:58:56 BRT 2017
+categories: Technical Paper
+—</p>
+
+<p><a id="org93f1521"></a></p>
+
+<h1 id="-rede-do-ibb"># Rede do IBB</h1>
+
+<p>A Rede da Unesp é uma Rede extremamente complexa e reflete a natureza de nossa instituição. 
+No que concerne ao IBB os aspectos mais relevante que podem ser avaliados pelo desenho abaixo, são:</p>
+
+<ul>
+  <li>Temos um Link único de 1 Gbit/S com São Paulo</li>
+  <li>Existe Redundância na ligação com a Internet, pois temos duas conexões</li>
+</ul>
+
+<p>uma na Reitoria e outro no NCC na Barra Funda</p>
+
+<ul>
+  <li>Existe um anel ligando os Campus mais populados do qual não fazemos parte.</li>
+</ul>
+
+<p>\<img src="Rede da UNESP" alt="/assets/unespnetv5.png" /></p>
+
+<p>Tivemos alungs problemas recentes com a rede, eles se dividem em duas grandes classes: 
+Falhas Intermitentes Não Identificadas (FINI) e Falhas Físicas na rede. As falhas físicas
+são causadas por fatores claramente identificados e que são externos ao sistema de computação,
+recentemente tivemos duas falhas dessa natureza:</p>
+
+<ul>
+  <li>22/2/17 falta de luz na Reitoria e falha no abastecimento do gerador ocasionando uma
+pane de quase três horas</li>
+  <li>23/2/17 a fibra foi cortada entre Jaú e Brotas e teve de ser reparada</li>
+</ul>
+
+<p>Esses eventos estão totalmente descorrelacionados e não existe como prevení-los.</p>
+
+<p>Paralelalmente a esses acidentes temos um problema sério com os FINIs que já foram detectados
+e estão sendo avaliados pela Vivo. Cabendo apenas ao Grupo de Redes da Reitoria contactar a
+empresa e solicitar os ressarcimentos cabíveis. Essas falhas ocorreram posteriormente a 
+instalação do novo link de dados, o que aumentou nossa capacidade de operação, mas pode 
+estar ocasionando essas falhas.</p>
+
+<p>OS FINIs afetam as 4 unidades de Botucatu igualmente, ou seja não estão relacionados a questões
+ gerenciais internas e nem adimitem uma solução local. Algumas soluções paliativas são possíveis:
+replicar bancos de dados institucionais localmente ou extender o link de Botucatu até Bauru, ainda
+que com uma ligação mais lenta.  Essas soluções implicam em custos e não resolvem o problema, 
+mas poderiam minimizar os custos.</p>
+
