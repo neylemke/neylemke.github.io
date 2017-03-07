@@ -5,9 +5,234 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Mar 2017 22:52:19 -0300</pubDate>
-    <lastBuildDate>Mon, 06 Mar 2017 22:52:19 -0300</lastBuildDate>
+    <pubDate>Mon, 06 Mar 2017 23:01:50 -0300</pubDate>
+    <lastBuildDate>Mon, 06 Mar 2017 23:01:50 -0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Dti Slides</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;title&gt;Rede IBB&lt;/title&gt;
+&lt;meta name=&quot;author&quot; content=&quot;(Ney Lemke)&quot;/&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.underline { text-decoration: underline; }
+&lt;/style&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/reveal.css&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;./local.css&quot;/&gt;
+
+&lt;!-- If the query includes 'print-pdf', include the PDF print sheet --&gt;
+&lt;script&gt;
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+&lt;/script&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Org-Reveal Introduction.&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;reveal&quot;&gt;
+&lt;div class=&quot;slides&quot;&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Rede IBB&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-03-06 Mon 22:29&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id=&quot;table-of-contents&quot;&gt;
+&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orga39d176&quot;&gt;Rede Unesp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;section id=&quot;slide-orga39d176&quot;&gt;
+&lt;h2 id=&quot;orga39d176&quot;&gt;Rede Unesp&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orga39d176&quot;&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgcf074a3&quot;&gt;
+&lt;h3 id=&quot;orgcf074a3&quot;&gt;Esquema da Rede&lt;/h3&gt;
+&lt;img src=&quot;/assets/unespnetv5.png&quot; alt=&quot;unespnet.png&quot; /&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgcfba14a&quot;&gt;
+&lt;h3 id=&quot;orgcfba14a&quot;&gt;Confiabilidade Esperada&lt;/h3&gt;
+&lt;p&gt;
+O contrato da UNESP prevê uma disponibilidade de 99.4% para nosso link. Isso implica 
+que em um curso de 60 horas podemos esperar algo como 20 minutos de internet não operante. 
+Ao longo dos últimos 30 dias tivemos uma taxa de inoperância muitas vezes superior. 
+&lt;/p&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org7944a45&quot;&gt;
+&lt;h3 id=&quot;org7944a45&quot;&gt;Problemas Recentes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;22/2/17 falta de luz na Reitoria e falha no abastecimento do gerador ocasionando uma
+pane de quase três horas&lt;/li&gt;
+&lt;li&gt;23/2/17 a fibra foi cortada entre Jaú e Brotas e teve de ser reparada&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgd2cdb08&quot;&gt;
+&lt;h3 id=&quot;orgd2cdb08&quot;&gt;Falhas Intermitentes Não Identificadas&lt;/h3&gt;
+&lt;p&gt;
+Paralelalmente a esses acidentes temos um problema sério com os FINIs que já foram detectados
+e estão sendo avaliados pela Telefônica. Cabendo apenas ao Grupo de Redes da Reitoria contactar a
+empresa e solicitar os ressarcimentos cabíveis. Essas falhas ocorreram posteriormente a 
+instalação do novo link de dados, o que aumentou nossa capacidade de operação, mas pode 
+estar ocasionando essas falhas. 
+&lt;/p&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org9e1a875&quot;&gt;
+&lt;h3 id=&quot;org9e1a875&quot;&gt;Falhas Intermitentes Não Identificadas&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Afetam as 4 Unidades de Botucatu&lt;/li&gt;
+&lt;li&gt;A Telefonica admitiu que o problema é causado pela infraestrutura&lt;/li&gt;
+&lt;li&gt;Plano de Ação será apresentado em 9/3/2017&lt;/li&gt;
+
+&lt;/ul&gt;
+
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgb3b0b79&quot;&gt;
+&lt;h3 id=&quot;orgb3b0b79&quot;&gt;Sistemas Afetados&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;acesso a páginas e serviços externos às 4 unidades de Botucatu&lt;/li&gt;
+&lt;li&gt;telefonia externa às 4 unidades&lt;/li&gt;
+&lt;li&gt;video conferências&lt;/li&gt;
+&lt;li&gt;wfu devido a necessidade de autenticação centralizada&lt;/li&gt;
+&lt;li&gt;o serviço local de email não é afetado, mas aqueles que redirecionam&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;
+suas mensagens podem ficar sem o serviço, mensagens de fora de Botucatu 
+não são recebidas. 
+&lt;/p&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org46f9bc6&quot;&gt;
+&lt;h3 id=&quot;org46f9bc6&quot;&gt;Comentários Finais&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A reestruturação tornou a rede UNESP mais rápida, mas menos resiliente.&lt;/li&gt;
+&lt;li&gt;Centralização dos serviços tornou as Unidades mais dependentes da rede.&lt;/li&gt;
+&lt;li&gt;A crise aumentou a demanda por video-conferências e por informatização&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;
+de serviços.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ainda não existe uma infra-estrutura institucional para lidar com as panes.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgd716f3f&quot;&gt;
+&lt;h3 id=&quot;orgd716f3f&quot;&gt;Plano B&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Enquanto não tivermos um plano de ação da Telefonica implementado
+a probabilidade de ocorrerem panes é razoável.&lt;/li&gt;
+&lt;li&gt;Pessoalmente eu sempre tenho uma alternativa pensada para lidar com falhas na&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;
+rede UNESP:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mantenho minhas mensagens em um servidor não ligado a Universidade&lt;/li&gt;
+&lt;li&gt;mantenho backups em casa dos dados críticos&lt;/li&gt;
+&lt;li&gt;tento garantir alternativas para o uso de video conferências que possam&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;
+ser realizadas em casa
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mantenho meu celular configurado para garantir o uso da internet através&lt;/li&gt;
+
+&lt;/ul&gt;
+&lt;p&gt;
+de uma rede local de wifi
+&lt;/p&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt; Created by Ney Lemke. &lt;/p&gt;
+&lt;script src=&quot;/reveal.js/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/reveal.js/js/reveal.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Mon, 06 Mar 2017 00:00:00 -0300</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/03/06/dti-slides/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/03/06/dti-slides/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Rede IBB</title>
@@ -1649,75 +1874,6 @@ The instruction were obtained at:
         
         
         <category>Slide</category>
-        
-      </item>
-    
-      <item>
-        <title>Using jupyter to  generate Presentations on reveal.js</title>
-        <description>&lt;p&gt;In this post I will describe the configuration and instalation of 
-a system to produce slides using reveal.js. 
-The great advantage of using this system is that you can produce 
-interactive presentations that could be used as teaching tools for 
-compouter science, physics, etc  classes.&lt;/p&gt;
-
-&lt;p&gt;What you need to have installed:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;conda&lt;/li&gt;
-  &lt;li&gt;jupyter or jupyter lab&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The first step is to install &lt;a href=&quot;https://github.com/damianavila/RISE&quot;&gt;RISE&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install --yes -c damianavila82 rise
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This will install rise and all the tools need to use reveal.js on jupyter.
-The next step is to enable RISE nbextension, that means a small interface adjustment to jupyter so you can generate live presentaions.&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter nbextension install rise --py --sys-prefix
-jupyter nbextension &lt;span class=&quot;nb&quot;&gt;enable &lt;/span&gt;rise --py --sys-prefix
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Start jupyter&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter notebook
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;You will see a new icon on jupyter interface.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/risise.png&quot; alt=&quot;rise&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To start using the system just go to Cell Toolbar -&amp;gt; Slide.&lt;/p&gt;
-
-&lt;p&gt;A very useful trick is to start your presentation notebook using:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;notebook.services.config&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ConfigManager&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;IPython.paths&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;locate_profile&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ConfigManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profile_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;locate_profile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_ipython&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;profile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;cm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'livereveal'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-              &lt;span class=&quot;s&quot;&gt;'theme'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'beige'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-              &lt;span class=&quot;s&quot;&gt;'transition'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'zoom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-              &lt;span class=&quot;s&quot;&gt;'start_slideshow_at'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'selected'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So you can change &lt;code class=&quot;highlighter-rouge&quot;&gt;reveal.js&lt;/code&gt; configuration. You can try the system by downloading &lt;a href=&quot;https://github.com/neylemke/FISCOMPYTHON/blob/master/Slide.ipynb&quot;&gt;this&lt;/a&gt;. 
-You have to run all cells so the last command works.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 09 Jan 2017 13:38:43 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/09/using-jupyter-to-presentations/</guid>
-        
-        
-        <category>Technical</category>
         
       </item>
     
