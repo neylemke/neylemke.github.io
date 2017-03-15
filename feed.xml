@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Mar 2017 15:04:21 -0300</pubDate>
-    <lastBuildDate>Wed, 15 Mar 2017 15:04:21 -0300</lastBuildDate>
+    <pubDate>Wed, 15 Mar 2017 15:06:03 -0300</pubDate>
+    <lastBuildDate>Wed, 15 Mar 2017 15:06:03 -0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -20,9 +20,9 @@
 &lt;style type=&quot;text/css&quot;&gt;
 .underline { text-decoration: underline; }
 &lt;/style&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/css/reveal.css&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/reveal.css&quot;/&gt;
 
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;./local.css&quot;/&gt;
 
@@ -32,7 +32,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = '/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/css/print/pdf.css';
+        link.href = '/reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 &lt;/script&gt;
@@ -41,81 +41,81 @@
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;CPAUAC&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-03-15 Wed 15:00&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;CPAUAC&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-03-15 Wed 15:05&lt;/p&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgfb37366&quot;&gt;
-&lt;h2 id=&quot;orgfb37366&quot;&gt;Reunião CPAUAC&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgfb37366&quot;&gt;
+&lt;section id=&quot;slide-orgf4d5b66&quot;&gt;
+&lt;h2 id=&quot;orgf4d5b66&quot;&gt;Reunião CPAUAC&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgf4d5b66&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section id=&quot;slide-org29703ff&quot;&gt;
-&lt;h4 id=&quot;org29703ff&quot;&gt;Apresentação Membros&lt;/h4&gt;
-&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org29703ff&quot;&gt;
-&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org9a2a4c7&quot;&gt;&lt;/a&gt;10 Membros&lt;br /&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orga83543b&quot;&gt;&lt;/a&gt;3 Indicados pelo Reitor&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org47cc8dc&quot;&gt;&lt;/a&gt;2 CCEU&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orga788dea&quot;&gt;&lt;/a&gt;2 CCPe&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org0e77c69&quot;&gt;&lt;/a&gt;2 CCG&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orge07ad41&quot;&gt;&lt;/a&gt;1 CADE&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;section id=&quot;slide-orge6ae04c&quot;&gt;
+&lt;h4 id=&quot;orge6ae04c&quot;&gt;Apresentação Membros&lt;/h4&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-orge6ae04c&quot;&gt;
+&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orgd9def39&quot;&gt;&lt;/a&gt;10 Membros&lt;br /&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org997923c&quot;&gt;&lt;/a&gt;3 Indicados pelo Reitor&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org7f2ff3d&quot;&gt;&lt;/a&gt;2 CCEU&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgb404fd3&quot;&gt;&lt;/a&gt;2 CCPe&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgc8bc59f&quot;&gt;&lt;/a&gt;2 CCG&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org163915e&quot;&gt;&lt;/a&gt;1 CADE&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;/section&gt;
-&lt;section id=&quot;slide-org40a9635&quot;&gt;
-&lt;h4 id=&quot;org40a9635&quot;&gt;Radiografia das Unidades&lt;/h4&gt;
-&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org40a9635&quot;&gt;
-&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org6bb52a5&quot;&gt;&lt;/a&gt;13 Unidades Auxiliares Complexas&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org5631327&quot;&gt;&lt;/a&gt;12 Unidades Auxiliares Simples&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org5e5ce27&quot;&gt;&lt;/a&gt;6 Unidades Complementares&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orgf6afc91&quot;&gt;&lt;/a&gt;3 Institutos&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;section id=&quot;slide-org34830db&quot;&gt;
+&lt;h4 id=&quot;org34830db&quot;&gt;Radiografia das Unidades&lt;/h4&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org34830db&quot;&gt;
+&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org4c9ca8b&quot;&gt;&lt;/a&gt;13 Unidades Auxiliares Complexas&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgee27103&quot;&gt;&lt;/a&gt;12 Unidades Auxiliares Simples&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org66a1972&quot;&gt;&lt;/a&gt;6 Unidades Complementares&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org574f122&quot;&gt;&lt;/a&gt;3 Institutos&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;/section&gt;
-&lt;section id=&quot;slide-org39829de&quot;&gt;
-&lt;h4 id=&quot;org39829de&quot;&gt;Unidades nos Campi:&lt;/h4&gt;
-&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org39829de&quot;&gt;
-&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org508a817&quot;&gt;&lt;/a&gt;Araçatuba&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org7d96985&quot;&gt;&lt;/a&gt;Assis&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org4c8753b&quot;&gt;&lt;/a&gt;Bauru&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orgdfa8099&quot;&gt;&lt;/a&gt;Botucatu&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org830b8d8&quot;&gt;&lt;/a&gt;Franca&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org0bac1d4&quot;&gt;&lt;/a&gt;Ilha Solteira&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org030962f&quot;&gt;&lt;/a&gt;Jaboticabal&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org49e7b1b&quot;&gt;&lt;/a&gt;Marília&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orge159b42&quot;&gt;&lt;/a&gt;Rio Claro&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org6f87f53&quot;&gt;&lt;/a&gt;São Paulo&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org915f8c9&quot;&gt;&lt;/a&gt;São Vicente&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;section id=&quot;slide-org37d37f1&quot;&gt;
+&lt;h4 id=&quot;org37d37f1&quot;&gt;Unidades nos Campi:&lt;/h4&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org37d37f1&quot;&gt;
+&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orga08ae7d&quot;&gt;&lt;/a&gt;Araçatuba&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org76e2356&quot;&gt;&lt;/a&gt;Assis&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgc3560f2&quot;&gt;&lt;/a&gt;Bauru&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org38a3a92&quot;&gt;&lt;/a&gt;Botucatu&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org4ebcff5&quot;&gt;&lt;/a&gt;Franca&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org4dc7d48&quot;&gt;&lt;/a&gt;Ilha Solteira&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgc591a99&quot;&gt;&lt;/a&gt;Jaboticabal&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org4086a5d&quot;&gt;&lt;/a&gt;Marília&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org499e909&quot;&gt;&lt;/a&gt;Rio Claro&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgb1eac5b&quot;&gt;&lt;/a&gt;São Paulo&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org632869a&quot;&gt;&lt;/a&gt;São Vicente&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;/section&gt;
-&lt;section id=&quot;slide-orgf5375d1&quot;&gt;
-&lt;h4 id=&quot;orgf5375d1&quot;&gt;Legislação&lt;/h4&gt;
-&lt;div class=&quot;outline-text-4&quot; id=&quot;text-orgf5375d1&quot;&gt;
-&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orgae14e67&quot;&gt;&lt;/a&gt;Unidades Auxiliares são regidas pela Resolução 59/2008&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orgdacc3b5&quot;&gt;&lt;/a&gt;Unidades Auxiliares Simples focom em Pesquisa e Extensão&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orgc189ece&quot;&gt;&lt;/a&gt;Unidades Auxiliares Complexas devem atuar diretamente na Graduação&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;section id=&quot;slide-org30f7925&quot;&gt;
+&lt;h4 id=&quot;org30f7925&quot;&gt;Legislação&lt;/h4&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org30f7925&quot;&gt;
+&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orgad81621&quot;&gt;&lt;/a&gt;Unidades Auxiliares são regidas pela Resolução 59/2008&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org2ab4c57&quot;&gt;&lt;/a&gt;Unidades Auxiliares Simples focom em Pesquisa e Extensão&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org84eae93&quot;&gt;&lt;/a&gt;Unidades Auxiliares Complexas devem atuar diretamente na Graduação&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;/section&gt;
-&lt;section id=&quot;slide-org7518479&quot;&gt;
-&lt;h4 id=&quot;org7518479&quot;&gt;Demandas e Desafios&lt;/h4&gt;
-&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org7518479&quot;&gt;
-&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org74df2a7&quot;&gt;&lt;/a&gt;As Unidades são avaliadas a cada dois anos&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orgc6d29c4&quot;&gt;&lt;/a&gt;Avaliação de 2014 e 2015 foi iniciada&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orgdcb3fbc&quot;&gt;&lt;/a&gt;Legislação: Extinção após dois relatórios negativos&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;section id=&quot;slide-orga383d88&quot;&gt;
+&lt;h4 id=&quot;orga383d88&quot;&gt;Demandas e Desafios&lt;/h4&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-orga383d88&quot;&gt;
+&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org9c03e79&quot;&gt;&lt;/a&gt;As Unidades são avaliadas a cada dois anos&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org21039c2&quot;&gt;&lt;/a&gt;Avaliação de 2014 e 2015 foi iniciada&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orge38b3a3&quot;&gt;&lt;/a&gt;Legislação: Extinção após dois relatórios negativos&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;/section&gt;
-&lt;section id=&quot;slide-orgcc45245&quot;&gt;
-&lt;h4 id=&quot;orgcc45245&quot;&gt;Demandas e Desafios&lt;/h4&gt;
-&lt;div class=&quot;outline-text-4&quot; id=&quot;text-orgcc45245&quot;&gt;
-&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orga05a099&quot;&gt;&lt;/a&gt;Unidades Auxiliares estão ligadas a Extensão&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org6919f24&quot;&gt;&lt;/a&gt;Institutos estão ligados a Pesquisa&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orga18a2b8&quot;&gt;&lt;/a&gt;Dúvidas em relação ao Fluxo:&lt;br /&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org2de6e3f&quot;&gt;&lt;/a&gt;UAs: Unidade-&amp;gt;CPUAC-&amp;gt;CCEu-&amp;gt;CEPE-&amp;gt;CO&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org4be2000&quot;&gt;&lt;/a&gt;Institutos: Institituto-&amp;gt;CPUAC&amp;lt;-&amp;gt;CCPe-&amp;gt;CEPE-&amp;gt;CO&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;section id=&quot;slide-org8ce5b98&quot;&gt;
+&lt;h4 id=&quot;org8ce5b98&quot;&gt;Demandas e Desafios&lt;/h4&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org8ce5b98&quot;&gt;
+&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orga5e2284&quot;&gt;&lt;/a&gt;Unidades Auxiliares estão ligadas a Extensão&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orga0fc08a&quot;&gt;&lt;/a&gt;Institutos estão ligados a Pesquisa&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org898b00b&quot;&gt;&lt;/a&gt;Dúvidas em relação ao Fluxo:&lt;br /&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;org5377e97&quot;&gt;&lt;/a&gt;UAs: Unidade-&amp;gt;CPUAC-&amp;gt;CCEu-&amp;gt;CEPE-&amp;gt;CO&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;org1ca85fe&quot;&gt;&lt;/a&gt;Institutos: Institituto-&amp;gt;CPUAC&amp;lt;-&amp;gt;CCPe-&amp;gt;CEPE-&amp;gt;CO&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
 
 &lt;/section&gt;
-&lt;section id=&quot;slide-org0f0605c&quot;&gt;
-&lt;h4 id=&quot;org0f0605c&quot;&gt;Demandas e Desafios&lt;/h4&gt;
-&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org0f0605c&quot;&gt;
-&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orgd7d4c1b&quot;&gt;&lt;/a&gt;Processo de avaliação moroso&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;org9b9ceb3&quot;&gt;&lt;/a&gt;Indefinição em relação ao papel das Unidades&lt;br /&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orgd00e7e6&quot;&gt;&lt;/a&gt;Foco em pesquisa e não em extensão, mas são ligadas a CCEU&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a id=&quot;orgbd00cd1&quot;&gt;&lt;/a&gt;Redefinição da Legislação para definir foco das Unidades&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;section id=&quot;slide-org6ae678e&quot;&gt;
+&lt;h4 id=&quot;org6ae678e&quot;&gt;Demandas e Desafios&lt;/h4&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-org6ae678e&quot;&gt;
+&lt;/div&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orgcfcab93&quot;&gt;&lt;/a&gt;Processo de avaliação moroso&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgf520825&quot;&gt;&lt;/a&gt;Indefinição em relação ao papel das Unidades&lt;br /&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a id=&quot;orga046638&quot;&gt;&lt;/a&gt;Foco em pesquisa e não em extensão, mas são ligadas a CCEU&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;orgbb02971&quot;&gt;&lt;/a&gt;Redefinição da Legislação para definir foco das Unidades&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt; Created by Ney Lemke. &lt;/p&gt;
-&lt;script src=&quot;/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/js/reveal.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/reveal.js/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/reveal.js/js/reveal.js&quot;&gt;&lt;/script&gt;
 
 &lt;script&gt;
 // Full list of configuration options available here:
@@ -147,9 +147,9 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: '/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/Users/neylemke/anaconda/share/jupyter/nbextensions/rise/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 &lt;/script&gt;
 &lt;/body&gt;
