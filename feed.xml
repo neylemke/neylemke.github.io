@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Apr 2017 22:00:15 -0300</pubDate>
-    <lastBuildDate>Tue, 04 Apr 2017 22:00:15 -0300</lastBuildDate>
+    <pubDate>Tue, 04 Apr 2017 22:01:12 -0300</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 22:01:12 -0300</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -41,124 +41,68 @@
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Mito e Filosofia&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-04-04 Tue 21:55&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Mito e Filosofia&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-04-04 Tue 22:01&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgeb65f9b&quot;&gt;Civilização Grega&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgf505a33&quot;&gt;Mito&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org1169ada&quot;&gt;Condicionantes Históricos&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org009e819&quot;&gt;Nascimento da Filosofia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org1769522&quot;&gt;Civilização Grega&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orgd7afbc8&quot;&gt;Mito&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org6bbddb8&quot;&gt;Condicionantes Históricos&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-orgd86e5a2&quot;&gt;Nascimento da Filosofia&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 
 &lt;section&gt;
-&lt;section id=&quot;slide-orgeb65f9b&quot;&gt;
-&lt;h2 id=&quot;orgeb65f9b&quot;&gt;Civilização Grega&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgeb65f9b&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orga3266a4&quot;&gt;
-&lt;h3 id=&quot;orga3266a4&quot;&gt;Pré-homérico: 2000-1100 AC&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org56fe9c1&quot;&gt;
-&lt;h3 id=&quot;org56fe9c1&quot;&gt;Período Homérico: 1100-800 AC&lt;/h3&gt;
+&lt;section id=&quot;slide-org1769522&quot;&gt;
+&lt;h2 id=&quot;org1769522&quot;&gt;Civilização Grega&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pré-homérico: 2000-1100 AC&lt;/li&gt;
+&lt;li&gt;Período Homérico: 1100-800 AC&lt;/li&gt;
+&lt;li&gt;Período Arcaico: 800-500 AC&lt;/li&gt;
+&lt;li&gt;Século de Péricles: 500-338 AC&lt;/li&gt;
+&lt;li&gt;Perido Helenístico: 338-145 AC&lt;/li&gt;
+
+&lt;/ul&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org38a5b13&quot;&gt;
-&lt;h3 id=&quot;org38a5b13&quot;&gt;Período Arcaico: 800-500 AC&lt;/h3&gt;
+&lt;section id=&quot;slide-orgd7afbc8&quot;&gt;
+&lt;h2 id=&quot;orgd7afbc8&quot;&gt;Mito&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Joseph Campbell: &quot;O Herói de Mil Faces&quot;&lt;/li&gt;
+&lt;li&gt;Transição Caçadores Coletores para Agricultores&lt;/li&gt;
+&lt;li&gt;O papel dos mitos na estruturação das sociedades&lt;/li&gt;
+&lt;li&gt;O início do Caminho Científico&lt;/li&gt;
+
+&lt;/ul&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orgc82ac77&quot;&gt;
-&lt;h3 id=&quot;orgc82ac77&quot;&gt;Século de Péricles: 500-338 AC&lt;/h3&gt;
+&lt;section id=&quot;slide-org6bbddb8&quot;&gt;
+&lt;h2 id=&quot;org6bbddb8&quot;&gt;Condicionantes Históricos&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Geografia&lt;/li&gt;
+&lt;li&gt;Rivalidade Atenas e Esparta&lt;/li&gt;
+&lt;li&gt;Guerras Médicas&lt;/li&gt;
+&lt;li&gt;As conquistas de Alexandre e a Helenização&lt;/li&gt;
+
+&lt;/ul&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-orge366776&quot;&gt;
-&lt;h3 id=&quot;orge366776&quot;&gt;Perido Helenístico: 338-145 AC&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orgf505a33&quot;&gt;
-&lt;h2 id=&quot;orgf505a33&quot;&gt;Mito&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgf505a33&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org78ec89b&quot;&gt;
-&lt;h3 id=&quot;org78ec89b&quot;&gt;Joseph Campbell: &quot;O Herói de Mil Faces&quot;&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org2b7e28b&quot;&gt;
-&lt;h3 id=&quot;org2b7e28b&quot;&gt;Transição Caçadores Coletores para Agricultores&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org2d003cb&quot;&gt;
-&lt;h3 id=&quot;org2d003cb&quot;&gt;O papel dos mitos na estruturação das sociedades&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orgdddd15d&quot;&gt;
-&lt;h3 id=&quot;orgdddd15d&quot;&gt;O início do Caminho Científico&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org1169ada&quot;&gt;
-&lt;h2 id=&quot;org1169ada&quot;&gt;Condicionantes Históricos&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org1169ada&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org0632e0e&quot;&gt;
-&lt;h3 id=&quot;org0632e0e&quot;&gt;Geografia&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org50187c3&quot;&gt;
-&lt;h3 id=&quot;org50187c3&quot;&gt;Rivalidade Atenas e Esparta&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org5545788&quot;&gt;
-&lt;h3 id=&quot;org5545788&quot;&gt;Guerras Médicas&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org2006f9e&quot;&gt;
-&lt;h3 id=&quot;org2006f9e&quot;&gt;As conquistas de Alexandre e a Helenização&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org009e819&quot;&gt;
-&lt;h2 id=&quot;org009e819&quot;&gt;Nascimento da Filosofia&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org009e819&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org193972e&quot;&gt;
-&lt;h3 id=&quot;org193972e&quot;&gt;Transição do pensamento mágico para os princípios universais&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orgb069c7f&quot;&gt;
-&lt;h3 id=&quot;orgb069c7f&quot;&gt;Desdem pelo empirismo&lt;/h3&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org1405bd8&quot;&gt;
-&lt;h3 id=&quot;org1405bd8&quot;&gt;Impacto do pensamento abstrato grego na sociedade&lt;/h3&gt;
+&lt;section id=&quot;slide-orgd86e5a2&quot;&gt;
+&lt;h2 id=&quot;orgd86e5a2&quot;&gt;Nascimento da Filosofia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Transição do pensamento mágico para os princípios universais&lt;/li&gt;
+&lt;li&gt;Desdem pelo empirismo&lt;/li&gt;
+&lt;li&gt;Impacto do pensamento abstrato grego na sociedade&lt;/li&gt;
+
+&lt;/ul&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;/div&gt;
