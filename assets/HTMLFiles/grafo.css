@@ -497,7 +497,7 @@ html {
 /* Input:*/
 .Input {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -506,7 +506,7 @@ html {
 }
 .InputInline {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -516,7 +516,7 @@ html {
 /* InputOnly:*/
 .InputOnly {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 7px;
@@ -525,7 +525,7 @@ html {
 }
 .InputOnlyInline {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 7px;
@@ -534,8 +534,7 @@ html {
 }
 /* Code:*/
 .Code {
-  font-weight: bold;
-  background-color: #EBEBEB;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -543,8 +542,7 @@ html {
   padding: 8px;
 }
 .CodeInline {
-  font-weight: bold;
-  background-color: #EBEBEB;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -573,6 +571,7 @@ html {
   font-size: 11px;
   font-family: .SF NS Text;
   color: #812B27;
+  line-height: 1;
   margin-left: 66px;
   padding: 8px;
 }
@@ -580,6 +579,7 @@ html {
   font-size: 11px;
   font-family: .SF NS Text;
   color: #812B27;
+  line-height: 1;
   margin-left: 66px;
   padding: 8px;
 }
@@ -655,7 +655,7 @@ html {
 }
 /* Program:*/
 .Program {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   border-left: 0px;
   border-right: 0px;
   border-top: 1px;
@@ -669,7 +669,7 @@ html {
   padding: 8px;
 }
 .ProgramInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   border-left: 0px;
   border-right: 0px;
   border-top: 1px;
@@ -810,11 +810,45 @@ html {
 }
 /* MessagesWindow:*/
 .MessagesWindow {
-  background-color: #F9E4DC;
+  background-color: #FFF4F1;
+  margin-left: 11px;
   padding: 8px;
 }
 .MessagesWindowInline {
-  background-color: #F9E4DC;
+  background-color: #FFF4F1;
+  margin-left: 11px;
+  padding: 8px;
+}
+/* MessagesWindowMessage:*/
+.MessagesWindowMessage {
+  font-size: 11px;
+  font-family: .SF NS Text;
+  color: #666666;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding: 8px;
+}
+.MessagesWindowMessageInline {
+  font-size: 11px;
+  font-family: .SF NS Text;
+  color: #666666;
+  line-height: 1;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding: 8px;
+}
+/* MessagesWindowCellLabel:*/
+.MessagesWindowCellLabel {
+  font-size: 9px;
+  font-family: Helvetica;
+  color: #BE1525;
+  padding: 8px;
+}
+.MessagesWindowCellLabelInline {
+  font-size: 9px;
+  font-family: Helvetica;
+  color: #BE1525;
   padding: 8px;
 }
 /* PluginEmbeddedWindow:*/
@@ -841,7 +875,7 @@ html {
 /* WolframAlphaShort:*/
 .WolframAlphaShort {
   font-family: Helvetica;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -850,7 +884,7 @@ html {
 }
 .WolframAlphaShortInline {
   font-family: Helvetica;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -860,7 +894,7 @@ html {
 /* WolframAlphaShortInput:*/
 .WolframAlphaShortInput {
   font-family: Helvetica;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -869,7 +903,7 @@ html {
 }
 .WolframAlphaShortInputInline {
   font-family: Helvetica;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -879,7 +913,7 @@ html {
 /* WolframAlphaLong:*/
 .WolframAlphaLong {
   font-family: Helvetica;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
@@ -888,11 +922,22 @@ html {
 }
 .WolframAlphaLongInline {
   font-family: Helvetica;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 5px;
+  padding: 8px;
+}
+/* WolframAlphaFullOutput:*/
+.WolframAlphaFullOutput {
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 8px;
+}
+.WolframAlphaFullOutputInline {
+  margin-left: 20px;
+  margin-right: 10px;
   padding: 8px;
 }
 /* MessageName:*/
@@ -904,12 +949,71 @@ html {
   color: #9B9B9B;
   padding: 8px;
 }
+/* MessageTemplate:*/
+.MessageTemplate {
+  padding: 8px;
+}
+.MessageTemplateInline {
+  padding: 8px;
+}
+/* MessageTemplate2:*/
+.MessageTemplate2 {
+  padding: 8px;
+}
+.MessageTemplate2Inline {
+  padding: 8px;
+}
+/* MessageMenuLabel:*/
+.MessageMenuLabel {
+  color: #DD1100;
+  padding: 8px;
+}
+.MessageMenuLabelInline {
+  color: #DD1100;
+  padding: 8px;
+}
+/* MessageMenu:*/
+.MessageMenu {
+  font-size: 11px;
+  padding: 8px;
+}
+.MessageMenuInline {
+  font-size: 11px;
+  padding: 8px;
+}
+/* MessageText:*/
+.MessageText {
+  font-style: normal;
+  font-weight: normal;
+  color: #898989;
+  padding: 8px;
+}
+.MessageTextInline {
+  font-style: normal;
+  font-weight: normal;
+  color: #898989;
+  padding: 8px;
+}
+/* MessageStack:*/
+.MessageStack {
+  font-size: 11px;
+  font-weight: normal;
+  color: #000000;
+  padding: 8px;
+}
+.MessageStackInline {
+  font-size: 11px;
+  font-weight: normal;
+  color: #000000;
+  padding: 8px;
+}
 /* Assert:*/
 .Assert {
   font-size: 11px;
   font-family: .SF NS Text;
   color: #812B27;
   background-color: #F0BAA6;
+  line-height: 1;
   border: 1px;
   border-style: solid;
   border-color: #000000;
@@ -921,6 +1025,7 @@ html {
   font-family: .SF NS Text;
   color: #812B27;
   background-color: #F0BAA6;
+  line-height: 1;
   border: 1px;
   border-style: solid;
   border-color: #000000;
@@ -951,7 +1056,7 @@ html {
 .CellLabel {
   font-size: 9px;
   font-family: Helvetica;
-  color: #454F99;
+  color: #999999;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -1104,6 +1209,15 @@ html {
   font-family: Arial;
   font-weight: Bold;
   color: #898989;
+  padding: 8px;
+}
+/* InitializationCell:*/
+.InitializationCell {
+  background-color: #EBEBEB;
+  padding: 8px;
+}
+.InitializationCellInline {
+  background-color: #EBEBEB;
   padding: 8px;
 }
 /* EvaluationUnmatched:*/
@@ -1286,52 +1400,52 @@ html {
 }
 /* MR:*/
 .MR {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: normal;
   padding: 8px;
 }
 .MRInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: normal;
   padding: 8px;
 }
 /* MO:*/
 .MO {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: italic;
   font-weight: normal;
   padding: 8px;
 }
 .MOInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: italic;
   font-weight: normal;
   padding: 8px;
 }
 /* MB:*/
 .MB {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: bold;
   padding: 8px;
 }
 .MBInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: bold;
   padding: 8px;
 }
 /* MBO:*/
 .MBO {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: italic;
   font-weight: bold;
   padding: 8px;
 }
 .MBOInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: italic;
   font-weight: bold;
   padding: 8px;
@@ -1955,14 +2069,14 @@ Floor[--------------------------------------------------]
 /* CalculatePrompt:*/
 .CalculatePrompt {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #FFFFFF;
   background-color: #FF6C00;
   padding: 8px;
 }
 .CalculatePromptInline {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #FFFFFF;
   background-color: #FF6C00;
   padding: 8px;
@@ -2116,6 +2230,34 @@ Floor[--------------------------------------------------]
 .ControlStyleInline {
   font-size: 13px;
   font-family: .SF NS Text;
+  padding: 8px;
+}
+/* ControlStyleLight:*/
+.ControlStyleLight {
+  font-size: 13px;
+  font-family: .SF NS Text;
+  color: #595959;
+  padding: 8px;
+}
+.ControlStyleLightInline {
+  font-size: 13px;
+  font-family: .SF NS Text;
+  color: #595959;
+  padding: 8px;
+}
+/* ControlStyleLightBold:*/
+.ControlStyleLightBold {
+  font-size: 13px;
+  font-family: .SF NS Text;
+  font-weight: Bold;
+  color: #595959;
+  padding: 8px;
+}
+.ControlStyleLightBoldInline {
+  font-size: 13px;
+  font-family: .SF NS Text;
+  font-weight: Bold;
+  color: #595959;
   padding: 8px;
 }
 /* DialogStyle:*/
@@ -2379,6 +2521,40 @@ Floor[--------------------------------------------------]
   margin-left: 4px;
   padding: 8px;
 }
+/* MeshGraphics:*/
+.MeshGraphics {
+  font-size: 10px;
+  font-family: Arial;
+  font-weight: normal;
+  color: #000000;
+  margin-left: 4px;
+  padding: 8px;
+}
+.MeshGraphicsInline {
+  font-size: 10px;
+  font-family: Arial;
+  font-weight: normal;
+  color: #000000;
+  margin-left: 4px;
+  padding: 8px;
+}
+/* MeshGraphics3D:*/
+.MeshGraphics3D {
+  font-size: 10px;
+  font-family: Arial;
+  font-weight: normal;
+  color: #000000;
+  margin-left: 4px;
+  padding: 8px;
+}
+.MeshGraphics3DInline {
+  font-size: 10px;
+  font-family: Arial;
+  font-weight: normal;
+  color: #000000;
+  margin-left: 4px;
+  padding: 8px;
+}
 /* NetworkGraphics:*/
 .NetworkGraphics {
   font-size: 10px;
@@ -2394,20 +2570,6 @@ Floor[--------------------------------------------------]
   font-weight: normal;
   color: #000000;
   margin-left: 4px;
-  padding: 8px;
-}
-/* NetworkVertex:*/
-.NetworkVertex {
-  padding: 8px;
-}
-.NetworkVertexInline {
-  padding: 8px;
-}
-/* NetworkEdge:*/
-.NetworkEdge {
-  padding: 8px;
-}
-.NetworkEdgeInline {
   padding: 8px;
 }
 /* Grid:*/
@@ -2439,13 +2601,13 @@ Floor[--------------------------------------------------]
 }
 /* InlineText:*/
 .InlineText {
-  font-family: Times;
+  font-family: Arial;
   font-style: Plain;
   font-weight: Plain;
   padding: 8px;
 }
 .InlineTextInline {
-  font-family: Times;
+  font-family: Arial;
   font-style: Plain;
   font-weight: Plain;
   padding: 8px;
@@ -4697,6 +4859,97 @@ Floor[--------------------------------------------------]
 .WhittakerWInline {
   padding: 8px;
 }
+/* HankelTransform:*/
+.HankelTransform {
+  padding: 8px;
+}
+.HankelTransformInline {
+  padding: 8px;
+}
+/* InverseHankelTransform:*/
+.InverseHankelTransform {
+  padding: 8px;
+}
+.InverseHankelTransformInline {
+  padding: 8px;
+}
+/* ImplicitList:*/
+.ImplicitList {
+  padding: 8px;
+}
+.ImplicitListInline {
+  padding: 8px;
+}
+/* MellinTransform1:*/
+.MellinTransform1 {
+  padding: 8px;
+}
+.MellinTransform1Inline {
+  padding: 8px;
+}
+/* InverseMellinTransform1:*/
+.InverseMellinTransform1 {
+  padding: 8px;
+}
+.InverseMellinTransform1Inline {
+  padding: 8px;
+}
+/* ChebyshevT:*/
+.ChebyshevT {
+  padding: 8px;
+}
+.ChebyshevTInline {
+  padding: 8px;
+}
+/* ChebyshevU:*/
+.ChebyshevU {
+  padding: 8px;
+}
+.ChebyshevUInline {
+  padding: 8px;
+}
+/* GegenbauerC:*/
+.GegenbauerC {
+  padding: 8px;
+}
+.GegenbauerCInline {
+  padding: 8px;
+}
+/* GegenbauerC2:*/
+.GegenbauerC2 {
+  padding: 8px;
+}
+.GegenbauerC2Inline {
+  padding: 8px;
+}
+/* HermiteH:*/
+.HermiteH {
+  padding: 8px;
+}
+.HermiteHInline {
+  padding: 8px;
+}
+/* JacobiP:*/
+.JacobiP {
+  padding: 8px;
+}
+.JacobiPInline {
+  padding: 8px;
+}
+/* LaguerreL:*/
+.LaguerreL {
+  padding: 8px;
+}
+.LaguerreLInline {
+  padding: 8px;
+}
+/* LaguerreL3:*/
+.LaguerreL3 {
+  padding: 8px;
+}
+.LaguerreL3Inline {
+  padding: 8px;
+}
 /* LegendreP:*/
 .LegendreP {
   padding: 8px;
@@ -4744,6 +4997,62 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .WignerDInline {
+  padding: 8px;
+}
+/* ZernikeR:*/
+.ZernikeR {
+  padding: 8px;
+}
+.ZernikeRInline {
+  padding: 8px;
+}
+/* Algebraics:*/
+.Algebraics {
+  padding: 8px;
+}
+.AlgebraicsInline {
+  padding: 8px;
+}
+/* Booleans:*/
+.Booleans {
+  padding: 8px;
+}
+.BooleansInline {
+  padding: 8px;
+}
+/* Complexes:*/
+.Complexes {
+  padding: 8px;
+}
+.ComplexesInline {
+  padding: 8px;
+}
+/* Integers:*/
+.Integers {
+  padding: 8px;
+}
+.IntegersInline {
+  padding: 8px;
+}
+/* Primes:*/
+.Primes {
+  padding: 8px;
+}
+.PrimesInline {
+  padding: 8px;
+}
+/* Rationals:*/
+.Rationals {
+  padding: 8px;
+}
+.RationalsInline {
+  padding: 8px;
+}
+/* Reals:*/
+.Reals {
+  padding: 8px;
+}
+.RealsInline {
   padding: 8px;
 }
 /* ArithmeticGeometricMean:*/
@@ -4914,11 +5223,53 @@ Floor[--------------------------------------------------]
 .PowerModInline {
   padding: 8px;
 }
+/* RealAbs:*/
+.RealAbs {
+  padding: 8px;
+}
+.RealAbsInline {
+  padding: 8px;
+}
+/* RealSign:*/
+.RealSign {
+  padding: 8px;
+}
+.RealSignInline {
+  padding: 8px;
+}
+/* Sign:*/
+.Sign {
+  padding: 8px;
+}
+.SignInline {
+  padding: 8px;
+}
 /* Highlighted:*/
 .Highlighted {
   padding: 8px;
 }
 .HighlightedInline {
+  padding: 8px;
+}
+/* Spacer1:*/
+.Spacer1 {
+  padding: 8px;
+}
+.Spacer1Inline {
+  padding: 8px;
+}
+/* Spacer2:*/
+.Spacer2 {
+  padding: 8px;
+}
+.Spacer2Inline {
+  padding: 8px;
+}
+/* Spacer3:*/
+.Spacer3 {
+  padding: 8px;
+}
+.Spacer3Inline {
   padding: 8px;
 }
 /* DirichletBeta:*/
@@ -5348,13 +5699,6 @@ Floor[--------------------------------------------------]
 .InactivePartInline {
   padding: 8px;
 }
-/* InactiveReplaceAll:*/
-.InactiveReplaceAll {
-  padding: 8px;
-}
-.InactiveReplaceAllInline {
-  padding: 8px;
-}
 /* InactiveHead:*/
 .InactiveHead {
   padding: 8px;
@@ -5612,13 +5956,6 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .QuantityPrefixUnitPostfixTFInline {
-  padding: 8px;
-}
-/* QuantityDistribution:*/
-.QuantityDistribution {
-  padding: 8px;
-}
-.QuantityDistributionInline {
   padding: 8px;
 }
 /* QuantityMixedUnit1:*/
@@ -5930,6 +6267,13 @@ Floor[--------------------------------------------------]
 .GeneralizedEntityToggleInline {
   padding: 8px;
 }
+/* GeneralizedEntityToggleLabeled:*/
+.GeneralizedEntityToggleLabeled {
+  padding: 8px;
+}
+.GeneralizedEntityToggleLabeledInline {
+  padding: 8px;
+}
 /* GeneralizedEntityBase:*/
 .GeneralizedEntityBase {
   font-family: Helvetica;
@@ -6003,6 +6347,65 @@ Floor[--------------------------------------------------]
 .GeneralizedEntityInfoGridInline {
   padding: 8px;
 }
+/* GeneralizedEntityLabel:*/
+.GeneralizedEntityLabel {
+  font-size: 11px;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #999999;
+  padding: 8px;
+}
+.GeneralizedEntityLabelInline {
+  font-size: 11px;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #999999;
+  padding: 8px;
+}
+/* EntityPropertyInfoItem:*/
+.EntityPropertyInfoItem {
+  font-size: 11px;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #9E693F;
+  padding: 8px;
+}
+.EntityPropertyInfoItemInline {
+  font-size: 11px;
+  font-family: Helvetica;
+  font-weight: normal;
+  color: #9E693F;
+  padding: 8px;
+}
+/* EntityPropertyInfoRow:*/
+.EntityPropertyInfoRow {
+  padding: 8px;
+}
+.EntityPropertyInfoRowInline {
+  padding: 8px;
+}
+/* EntityPropertyToggle:*/
+.EntityPropertyToggle {
+  padding: 8px;
+}
+.EntityPropertyToggleInline {
+  padding: 8px;
+}
+/* QualifiedEntityPropertyBase:*/
+.QualifiedEntityPropertyBase {
+  font-family: Helvetica;
+  font-style: Italic;
+  font-weight: Plain;
+  color: #653510;
+  padding: 8px;
+}
+.QualifiedEntityPropertyBaseInline {
+  font-family: Helvetica;
+  font-style: Italic;
+  font-weight: Plain;
+  color: #653510;
+  padding: 8px;
+}
 /* NotebookObject:*/
 .NotebookObject {
   padding: 8px;
@@ -6043,6 +6446,36 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .BoxObjectInline {
+  padding: 8px;
+}
+/* FileArgument:*/
+.FileArgument {
+  font-size: 10px;
+  font-family: Verdana;
+  font-weight: Plain;
+  color: #444444;
+  padding: 8px;
+}
+.FileArgumentInline {
+  font-size: 10px;
+  font-family: Verdana;
+  font-weight: Plain;
+  color: #444444;
+  padding: 8px;
+}
+/* URLArgument:*/
+.URLArgument {
+  font-size: 10px;
+  font-family: Verdana;
+  font-weight: Plain;
+  color: #444444;
+  padding: 8px;
+}
+.URLArgumentInline {
+  font-size: 10px;
+  font-family: Verdana;
+  font-weight: Plain;
+  color: #444444;
   padding: 8px;
 }
 /* DateObject:*/
@@ -6111,48 +6544,48 @@ Floor[--------------------------------------------------]
 /* CellExpression:*/
 .CellExpression {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   background-color: #FFFFFF;
   margin-left: 6px;
   padding: 8px;
 }
 .CellExpressionInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   background-color: #FFFFFF;
   margin-left: 6px;
   padding: 8px;
 }
 /* InputForm:*/
 .InputForm {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   padding: 8px;
 }
 .InputFormInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   padding: 8px;
 }
 /* OutputForm:*/
 .OutputForm {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   text-align: left;
   line-height: 0.683333;
   padding: 8px;
 }
 .OutputFormInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   text-align: left;
   line-height: 0.683333;
   padding: 8px;
 }
 /* StandardForm:*/
 .StandardForm {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   line-height: 1.25;
   padding: 8px;
 }
 .StandardFormInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   line-height: 1.25;
   padding: 8px;
 }
@@ -6287,7 +6720,7 @@ Floor[--------------------------------------------------]
 .ObjectName {
   font-size: 24px;
   font-family: Verdana;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 24px;
   margin-right: 22px;
   margin-top: 16px;
@@ -6297,7 +6730,7 @@ Floor[--------------------------------------------------]
 .ObjectNameInline {
   font-size: 24px;
   font-family: Verdana;
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 24px;
   margin-right: 22px;
   margin-top: 16px;
@@ -6354,7 +6787,7 @@ Floor[--------------------------------------------------]
 }
 /* InlineOutput:*/
 .InlineOutput {
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 4px;
   margin-top: 8px;
@@ -6362,7 +6795,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .InlineOutputInline {
-  font-weight: bold;
+  font-weight: DemiBold;
   margin-left: 66px;
   margin-right: 4px;
   margin-top: 8px;
@@ -6625,7 +7058,7 @@ Floor[--------------------------------------------------]
 }
 /* CompatibilityInput:*/
 .CompatibilityInput {
-  font-weight: bold;
+  font-weight: DemiBold;
   background-color: #F0FFCF;
   border-left: 0px;
   border-right: 0px;
@@ -6640,7 +7073,7 @@ Floor[--------------------------------------------------]
   padding-bottom: 10px;
 }
 .CompatibilityInputInline {
-  font-weight: bold;
+  font-weight: DemiBold;
   background-color: #F0FFCF;
   border-left: 0px;
   border-right: 0px;
@@ -6704,12 +7137,12 @@ Floor[--------------------------------------------------]
 }
 /* AddOnsLink:*/
 .AddOnsLink {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
 .AddOnsLinkInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
@@ -6735,12 +7168,12 @@ Floor[--------------------------------------------------]
 }
 /* MainBookLinkMR:*/
 .MainBookLinkMR {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
 .MainBookLinkMRInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
@@ -6782,12 +7215,12 @@ Floor[--------------------------------------------------]
 }
 /* OtherInformationLinkMR:*/
 .OtherInformationLinkMR {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
 .OtherInformationLinkMRInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
@@ -6813,12 +7246,12 @@ Floor[--------------------------------------------------]
 }
 /* NotebookLinkMR:*/
 .NotebookLinkMR {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
 .NotebookLinkMRInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   color: #454F99;
   padding: 8px;
 }
@@ -7023,9 +7456,9 @@ Floor[--------------------------------------------------]
 /* CodeAssistCompletion:*/
 .CodeAssistCompletion {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #1A1A1A;
   background-color: #FFFFFF;
   text-align: left;
@@ -7039,9 +7472,9 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistCompletionInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #1A1A1A;
   background-color: #FFFFFF;
   text-align: left;
@@ -7056,9 +7489,9 @@ Floor[--------------------------------------------------]
 /* CodeAssistTemplate:*/
 .CodeAssistTemplate {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #000000;
   background-color: #FFFFFF;
   text-align: left;
@@ -7072,9 +7505,9 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistTemplateInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #000000;
   background-color: #FFFFFF;
   text-align: left;
@@ -7089,9 +7522,9 @@ Floor[--------------------------------------------------]
 /* CodeAssistSpecialCharacter:*/
 .CodeAssistSpecialCharacter {
   font-size: System`Convert`CSSDump`ToPoint[6 + Floor[Inherited]];
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #1A1A1A;
   background-color: #FFFFFF;
   text-align: left;
@@ -7105,9 +7538,9 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistSpecialCharacterInline {
   font-size: System`Convert`CSSDump`ToPoint[6 + Floor[Inherited]];
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #1A1A1A;
   background-color: #FFFFFF;
   text-align: left;
@@ -7122,9 +7555,9 @@ Floor[--------------------------------------------------]
 /* CodeAssistCompletionHighlight:*/
 .CodeAssistCompletionHighlight {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   text-decoration: underline;
   color: #1A1A1A;
   background-color: #FFFFFF;
@@ -7139,9 +7572,9 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistCompletionHighlightInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   text-decoration: underline;
   color: #1A1A1A;
   background-color: #FFFFFF;
@@ -7157,9 +7590,9 @@ Floor[--------------------------------------------------]
 /* CodeAssistVariableCompletion:*/
 .CodeAssistVariableCompletion {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #000066;
   background-color: #FFFFFF;
   text-align: left;
@@ -7173,9 +7606,9 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistVariableCompletionInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   color: #000066;
   background-color: #FFFFFF;
   text-align: left;
@@ -7190,9 +7623,9 @@ Floor[--------------------------------------------------]
 /* CodeAssistVariableCompletionHighlight:*/
 .CodeAssistVariableCompletionHighlight {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   text-decoration: underline;
   color: #000066;
   background-color: #FFFFFF;
@@ -7207,9 +7640,9 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistVariableCompletionHighlightInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   text-decoration: underline;
   color: #000066;
   background-color: #FFFFFF;
@@ -7349,7 +7782,7 @@ Floor[--------------------------------------------------]
 /* CodeAssistString:*/
 .CodeAssistString {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   color: #666666;
   background-color: #FFFFFF;
@@ -7364,7 +7797,7 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistStringInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   color: #666666;
   background-color: #FFFFFF;
@@ -7380,9 +7813,9 @@ Floor[--------------------------------------------------]
 /* CodeAssistCharCompletion:*/
 .CodeAssistCharCompletion {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   background-color: #FFFFFF;
   text-align: left;
   border: 1px;
@@ -7395,9 +7828,9 @@ Floor[--------------------------------------------------]
 }
 .CodeAssistCharCompletionInline {
   font-size: 12px;
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
-  font-weight: bold;
+  font-weight: DemiBold;
   background-color: #FFFFFF;
   text-align: left;
   border: 1px;
@@ -7407,6 +7840,15 @@ Floor[--------------------------------------------------]
   padding-right: 11px;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+/* MisspelledWord:*/
+.MisspelledWord {
+  text-decoration: none;
+  padding: 8px;
+}
+.MisspelledWordInline {
+  text-decoration: none;
+  padding: 8px;
 }
 /* CodeAssistInlineFormula:*/
 .CodeAssistInlineFormula {
@@ -7642,6 +8084,73 @@ Floor[--------------------------------------------------]
   color: #808080;
   padding: 8px;
 }
+/* OutputSizeLimit:*/
+.OutputSizeLimit {
+  background-color: #F6F9FA;
+  padding: 8px;
+}
+.OutputSizeLimitInline {
+  background-color: #F6F9FA;
+  padding: 8px;
+}
+/* OutputSizeLimit`Skeleton:*/
+.OutputSizeLimit`Skeleton {
+  padding: 8px;
+}
+.OutputSizeLimit`SkeletonInline {
+  padding: 8px;
+}
+/* OSLText:*/
+.OSLText {
+  font-size: 10px;
+  font-family: .SF NS Text;
+  font-style: normal;
+  font-weight: normal;
+  color: #808080;
+  padding: 8px;
+}
+.OSLTextInline {
+  font-size: 10px;
+  font-family: .SF NS Text;
+  font-style: normal;
+  font-weight: normal;
+  color: #808080;
+  padding: 8px;
+}
+/* OSLControl:*/
+.OSLControl {
+  font-size: 10px;
+  font-family: .SF NS Text;
+  font-style: normal;
+  font-weight: bold;
+  color: #2D4A61;
+  padding: 8px;
+}
+.OSLControlInline {
+  font-size: 10px;
+  font-family: .SF NS Text;
+  font-style: normal;
+  font-weight: bold;
+  color: #2D4A61;
+  padding: 8px;
+}
+/* OSLControlActive:*/
+.OSLControlActive {
+  font-size: 10px;
+  font-family: .SF NS Text;
+  font-style: normal;
+  font-weight: bold;
+  color: #F45F11;
+  padding: 8px;
+}
+.OSLControlActiveInline {
+  font-size: 10px;
+  font-family: .SF NS Text;
+  font-style: normal;
+  font-weight: bold;
+  color: #F45F11;
+  padding: 8px;
+}
 /* RibbonText:*/
 .RibbonText {
   font-size: 10px;
@@ -7808,6 +8317,40 @@ Floor[--------------------------------------------------]
 }
 .NonInterpretableSummaryInline {
   color: #6C6C6C;
+  padding: 8px;
+}
+/* SummaryEmbed:*/
+.SummaryEmbed {
+  color: #808080;
+  padding: 8px;
+}
+.SummaryEmbedInline {
+  color: #808080;
+  padding: 8px;
+}
+/* SummaryEmbedHover:*/
+.SummaryEmbedHover {
+  color: #1D7BBF;
+  padding: 8px;
+}
+.SummaryEmbedHoverInline {
+  color: #1D7BBF;
+  padding: 8px;
+}
+/* SummaryEmbedFailed:*/
+.SummaryEmbedFailed {
+  color: #DD1100;
+  padding: 8px;
+}
+.SummaryEmbedFailedInline {
+  color: #DD1100;
+  padding: 8px;
+}
+/* SummaryEmbedGrid:*/
+.SummaryEmbedGrid {
+  padding: 8px;
+}
+.SummaryEmbedGridInline {
   padding: 8px;
 }
 
@@ -8283,13 +8826,13 @@ Floor[--------------------------------------------------]
 }
 /* FrameLabel:Printout*/
 .FrameLabel {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: italic;
   color: #000000;
   padding: 8pt;
 }
 .FrameLabelInline {
-  font-family: Courier;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: italic;
   color: #000000;
   padding: 8pt;
