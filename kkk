@@ -1,6 +1,0 @@
-Configuration file: /Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/_config.yml
-[33m       Deprecation: The 'gems' configuration option has been renamed to
- 'plugins'. Please update your config file accordingly.[0m
-[31m  Dependency Error: Yikes! It looks like you don't have jekyll-paginatei
- or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'cannot load such file -- jekyll-paginate' If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/! [0m
-jekyll 3.7.0 | Error:  jekyll-paginate
