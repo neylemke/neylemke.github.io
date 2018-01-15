@@ -5,9 +5,197 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jan 2018 18:56:00 -0200</pubDate>
-    <lastBuildDate>Mon, 15 Jan 2018 18:56:00 -0200</lastBuildDate>
+    <pubDate>Mon, 15 Jan 2018 18:57:06 -0200</pubDate>
+    <lastBuildDate>Mon, 15 Jan 2018 18:57:06 -0200</lastBuildDate>
     <generator>Jekyll v3.7.0</generator>
+    
+      <item>
+        <title>Imersão</title>
+        <description>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en&quot; xml:lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;Imersão&lt;/title&gt;
+&lt;!-- 2018-01-15 Mon 18:54 --&gt;
+&lt;meta  http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=utf-8&quot; /&gt;
+&lt;meta  name=&quot;generator&quot; content=&quot;Org-mode&quot; /&gt;
+&lt;meta  name=&quot;author&quot; content=&quot;Ney Lemke&quot; /&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+ &lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]&gt;*/--&gt;
+&lt;/style&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+&lt;!--/*--&gt;&lt;![CDATA[/*&gt;&lt;!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = &quot;code-highlighted&quot;;
+     elem.className   = &quot;code-highlighted&quot;;
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]&gt;*///--&gt;
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;content&quot;&gt;
+&lt;h1 class=&quot;title&quot;&gt;Imersão&lt;/h1&gt;
+&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#sec-1&quot;&gt;Imersão&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&amp;#x2014;
+layout: post
+title: Imersão
+cover:  cover.jpg
+date: Mon Jan 15 18:37:36 -02 2018
+categories: Technical Paper
+&amp;#x2014;
+&lt;/p&gt;
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;Imersão&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-1-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-1-1&quot;&gt;Diagnóstico da área&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1-1&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-1-1-1&quot; class=&quot;outline-4&quot;&gt;
+&lt;h4 id=&quot;sec-1-1-1&quot;&gt;Corpo de Servidores: 280 (Sem considerar ASAs)&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;postamble&quot; class=&quot;status&quot;&gt;
+&lt;p class=&quot;author&quot;&gt;Author: Ney Lemke&lt;/p&gt;
+&lt;p class=&quot;date&quot;&gt;Created: 2018-01-15 Mon 18:54&lt;/p&gt;
+&lt;p class=&quot;creator&quot;&gt;&lt;a href=&quot;http://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; 25.3.1 (&lt;a href=&quot;http://orgmode.org&quot;&gt;Org&lt;/a&gt; mode 8.2.10)&lt;/p&gt;
+&lt;p class=&quot;validation&quot;&gt;&lt;a href=&quot;http://validator.w3.org/check?uri=referer&quot;&gt;Validate&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Mon, 15 Jan 2018 00:00:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2018/01/15/Imers%C3%A3o/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2018/01/15/Imers%C3%A3o/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Mito</title>
@@ -1564,353 +1752,6 @@ dependencies: [
         <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/28/exemplo-uso-reveal/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/exemplo-uso-reveal/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Fundibio</title>
-        <description>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot;/&gt;
-&lt;title&gt;FUNDIBIO&lt;/title&gt;
-&lt;meta name=&quot;author&quot; content=&quot;(Ney Lemke)&quot;/&gt;
-&lt;style type=&quot;text/css&quot;&gt;
-.underline { text-decoration: underline; }
-&lt;/style&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/reveal.css&quot;/&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;./local.css&quot;/&gt;
-
-&lt;!-- If the query includes 'print-pdf', include the PDF print sheet --&gt;
-&lt;script&gt;
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = '/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-&lt;/script&gt;
-&lt;meta name=&quot;description&quot; content=&quot;Org-Reveal Introduction.&quot;&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div class=&quot;reveal&quot;&gt;
-&lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;FUNDIBIO&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-02-21 Tue 07:30&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id=&quot;table-of-contents&quot;&gt;
-&lt;div id=&quot;table-of-contents&quot;&gt;
-&lt;h2&gt;Table of Contents&lt;/h2&gt;
-&lt;div id=&quot;text-table-of-contents&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orgb98b0a9&quot;&gt;Introdução&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org34da6f3&quot;&gt;Situação FUNDIBIO&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org4cca50d&quot;&gt;Objetivo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-orga668b92&quot;&gt;Definição do Fluxo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org59c76cc&quot;&gt;Próximas Ações&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-
-&lt;section&gt;
-&lt;section id=&quot;slide-orgb98b0a9&quot;&gt;
-&lt;h2 id=&quot;orgb98b0a9&quot;&gt;Introdução&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgb98b0a9&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orgbd67413&quot;&gt;
-&lt;h3 id=&quot;orgbd67413&quot;&gt;Legislação&lt;/h3&gt;
-&lt;p&gt;
-A lei que legisla sobre as fundações é
-&lt;a href=&quot;http://www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm&quot;&gt;LEI No 8.958, DE 20 DE DEZEMBRO DE 1994&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;blockquote nil&gt;
-&lt;p&gt;
-Art. 1o As Instituições Federais de Ensino Superior poderão celebrar
-convênios e contratos, por prazo determinado, com fundações
-instituídas com a finalidade de apoiar projetos de ensino, pesquisa,
-extensão, desenvolvimento institucional, científico e tecnológico e
-estímulo à inovação.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orgaf328d1&quot;&gt;
-&lt;h3 id=&quot;orgaf328d1&quot;&gt;Legislação UNESP&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-orgaf328d1&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;section id=&quot;slide-org86d96dd&quot;&gt;
-&lt;h4 id=&quot;org86d96dd&quot;&gt;Termo Aditivo&lt;/h4&gt;
-&lt;p&gt;
-Resolução Unesp nº 48/2010:
-&lt;/p&gt;
-
-&lt;p&gt;
-Artigo 2º - As propostas de Convênio, de Protocolo ou Acordo de Cooperação, bem como
- Termos Aditivos, Anexos e Termos de prorrogação de vigência desses ajustes, deverão ser instruídas com: 
-&lt;/p&gt;
-
-&lt;p&gt;
-I - exposição de motivos que justifique a celebração do ajuste;
-&lt;/p&gt;
-
-&lt;p&gt;
-II - minuta do instrumento a ser celebrado, elaborada de acordo com os requisitos formais e legais exigidos, e,
- no caso de convênio genérico, também de minuta de seu primeiro Termo Aditivo; 
-&lt;/p&gt;
-
-&lt;p&gt;
-III - indicação de Fundação interveniente, quando for o caso, com manifestação da mesma.
-&lt;/p&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orgf0fa2fe&quot;&gt;
-&lt;h3 id=&quot;orgf0fa2fe&quot;&gt;Regimento FUNDIBIO&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Contrato entre Empresa, FUNDIBIO e proponente&lt;/li&gt;
-&lt;li&gt;Prestação de Contas ao TCE&lt;/li&gt;
-&lt;li&gt;Duas Modalidades de Apoio
-&lt;ul&gt;
-&lt;li&gt;Projeto de Pesquisa
-&lt;ul&gt;
-&lt;li&gt;Permite Bolsa Docente&lt;/li&gt;
-&lt;li&gt;Exige Descrição de Gastos&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Prestação de Serviço
-&lt;ul&gt;
-&lt;li&gt;Não Permite Bolsa Docente&lt;/li&gt;
-&lt;li&gt;Não exige gastos Detalhados&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org82d15a9&quot;&gt;
-&lt;h3 id=&quot;org82d15a9&quot;&gt;Convênio IBB-UNESP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;10% Fundibio, 5% UNESP e 5% IBB&lt;/li&gt;
-&lt;li&gt;Cada Projeto e cada atividade tramitará com um termo aditivo&lt;/li&gt;
-&lt;li&gt;&quot;Termo Aditivo&quot; só é válido após sua tramitação pelos orgãos competentes.&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;p&gt;
-Legislação: &lt;a href=&quot;file:///assets/minutafundibio.pdf&quot;&gt;Termo Aditivo&lt;/a&gt;
-&lt;/p&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org4d11f51&quot;&gt;
-&lt;h3 id=&quot;org4d11f51&quot;&gt;&lt;b&gt;Case&lt;/b&gt; FEPAF&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;300 projetos ano&lt;/li&gt;
-&lt;li&gt;2/3 das bolsas de estudos da FCA são pagas pela FEPAF&lt;/li&gt;
-&lt;li&gt;Um único termo aditivo&lt;/li&gt;
-&lt;li&gt;Tramitação apenas na Unidade&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org34da6f3&quot;&gt;
-&lt;h2 id=&quot;org34da6f3&quot;&gt;Situação FUNDIBIO&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org34da6f3&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org8b6374d&quot;&gt;
-&lt;h3 id=&quot;org8b6374d&quot;&gt;Situação FUNDIBIO&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Sem projetos novos desde julho de 2016&lt;/li&gt;
-&lt;li&gt;30 bolsas de pesquisa&lt;/li&gt;
-&lt;li&gt;Tratamento diferenciado para docentes do IBB&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org988cc5b&quot;&gt;
-&lt;h3 id=&quot;org988cc5b&quot;&gt;Situação FUNDIBIO&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Troca de Banco para Santander (mesmo FEPAF e mesmo FAMESP)
-&lt;ul&gt;
-&lt;li&gt;Mudança na Prestação de Contas&lt;/li&gt;
-&lt;li&gt;Turbulências na emissão de boletos e de cobranças&lt;/li&gt;
-&lt;li&gt;Implicação no Custo Operacional&lt;/li&gt;
-
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Mudança no Escritório de Contabilidade&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org4cca50d&quot;&gt;
-&lt;h2 id=&quot;org4cca50d&quot;&gt;Objetivo&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org4cca50d&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org1168feb&quot;&gt;
-&lt;h3 id=&quot;org1168feb&quot;&gt;Objetivo&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Definir de forma clara o fluxo de tramitação visando desacoplar&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;p&gt;
-as atribuições do IBB e da Unesp.
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Garantir Certificação dos Docentes e Discentes envolvidos.&lt;/li&gt;
-&lt;li&gt;Tratamento equivalente por parte da FUNDIBIO aos  docentes do IBB&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orga668b92&quot;&gt;
-&lt;h2 id=&quot;orga668b92&quot;&gt;Definição do Fluxo&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orga668b92&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-orgf59c05e&quot;&gt;
-&lt;h3 id=&quot;orgf59c05e&quot;&gt;Fluxo Fundibio&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Contrato estabelecendo parceria.&lt;/li&gt;
-&lt;li&gt;Termo de Consentimento assinado pelo Diretor do IBB autorizando o estabelecimento da colaboração.&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org2b0b982&quot;&gt;
-&lt;h3 id=&quot;org2b0b982&quot;&gt;Fluxo IBB&lt;/h3&gt;
-&lt;p&gt;
-Elaboração do &quot;Termo Aditivo&quot; e aprovação:
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Conselho dos departamentos envolvidos (2 semanas)&lt;/li&gt;
-&lt;li&gt;CPP ou CPEU dependendo do caso (até 1 mês)&lt;/li&gt;
-&lt;li&gt;Congregação (até 1 mês)&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org1ab0e04&quot;&gt;
-&lt;h3 id=&quot;org1ab0e04&quot;&gt;Fluxo UNESP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Câmara Central de Extensão (até 1 mês)&lt;/li&gt;
-&lt;li&gt;Conselho Universitário (até 1 mês)&lt;/li&gt;
-&lt;li&gt;Assinatura Reitor (semanas)&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org8664783&quot;&gt;
-&lt;h3 id=&quot;org8664783&quot;&gt;Situação UNESP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Presidente da  Fundunesp assegurou que o fluxo de trabalho não 
-deve exigir tramitação até Reitoria&lt;/li&gt;
-&lt;li&gt;Termo de Consentimento em fase de elaboração&lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org59c76cc&quot;&gt;
-&lt;h2 id=&quot;org59c76cc&quot;&gt;Próximas Ações&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org59c76cc&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;/section&gt;
-&lt;section&gt;
-&lt;section id=&quot;slide-org3ce1d48&quot;&gt;
-&lt;h3 id=&quot;org3ce1d48&quot;&gt;Próximas Ações&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-org3ce1d48&quot;&gt;
-&lt;/div&gt;&lt;/section&gt;
-&lt;section id=&quot;slide-org8d82783&quot;&gt;
-&lt;h4 id=&quot;org8d82783&quot;&gt;Prestação de Contas 2016&lt;/h4&gt;
-&lt;/section&gt;
-&lt;section id=&quot;slide-org5898aec&quot;&gt;
-&lt;h4 id=&quot;org5898aec&quot;&gt;Foi finalizada a migração para Santander&lt;/h4&gt;
-&lt;/section&gt;
-&lt;section id=&quot;slide-org0e08b1f&quot;&gt;
-&lt;h4 id=&quot;org0e08b1f&quot;&gt;Mudança no Estatuto para Fundação Associada&lt;/h4&gt;
-&lt;/section&gt;
-&lt;section id=&quot;slide-orgb0c80fb&quot;&gt;
-&lt;h4 id=&quot;orgb0c80fb&quot;&gt;Apresentação para a Congregação&lt;/h4&gt;
-&lt;/section&gt;
-&lt;/section&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt; Created by Ney Lemke. &lt;/p&gt;
-&lt;script src=&quot;/reveal.js/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;/reveal.js/js/reveal.js&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-
-controls: true,
-progress: true,
-history: false,
-center: true,
-slideNumber: 'c',
-rollingLinks: true,
-keyboard: true,
-overview: true,
-width: 1200,
-height: 800,
-margin: 0.10,
-minScale: 0.50,
-maxScale: 2.50,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
-transitionSpeed: 'default',
-multiplex: {
-    secret: '', // null if client
-    id: '', // id, obtained from socket.io server
-    url: '' // Location of socket.io server
-},
-
-// Optional libraries used to extend on reveal.js
-dependencies: [
- { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
-});
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</description>
-        <pubDate>Wed, 25 Jan 2017 00:00:00 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2017/01/25/fundibio/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/25/fundibio/</guid>
         
         
       </item>
