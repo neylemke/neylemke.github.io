@@ -347,53 +347,45 @@ to collaborate using notebooks.</p>
 <p>The most important thing is do not use anaconda. It will be easier to install 
 everything as root. The first step is to install pi3.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install python3-pip
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-pip
+</code></pre></div></div>
 
 <p>Install nodejs/npm</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install npm nodejs-legacy
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>npm nodejs-legacy
+</code></pre></div></div>
 
 <p>Install proxy with npm</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>npm install -g configurable-http-proxy
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> configurable-http-proxy
+</code></pre></div></div>
 
 <p>Install Jupyterhub</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip3 install jupyterhub
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 <span class="nb">install </span>jupyterhub
+</code></pre></div></div>
 
 <p>Install Jupyter notebook (/upgrade)</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip3 install --upgrade notebook
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> notebook
+</code></pre></div></div>
 
 <p>Install oathauthenticator</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>pip3 install oauthenticator
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 <span class="nb">install </span>oauthenticator
+</code></pre></div></div>
 
 <p>It is essential to use secure SSL certificate file for the public facing 
 interface of the proxy. To produce personal security certificates commands are as follows:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>openssl req ­x509 ­nodes ­days 365 ­newkey rsa:1024 ­keyout mykey.key ­out mycert.pem
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl req ­x509 ­nodes ­days 365 ­newkey rsa:1024 ­keyout mykey.key ­out mycert.pem
+</code></pre></div></div>
 
 <p>You will need <code class="highlighter-rouge">mykey.out</code> and <code class="highlighter-rouge">mycert.pem</code> files in the next steps.</p>
 
 <p>Create Jupyterhub configuration file</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>jupyterhub --generate-config
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyterhub --generate-config
+</code></pre></div></div>
 <p>We will use Github OAuthentication as our Authenticator. so steps are as follows:</p>
 
 <p>Go to your Github profile &gt; Settings &gt; Oauth application</p>
@@ -408,10 +400,9 @@ interface of the proxy. To produce personal security certificates commands are a
 
 <p>You will see Client id and secret key generated above:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Github client_id = '---­­­­­­­Some cryptic string----­­­­­'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Github client_id = '---­­­­­­­Some cryptic string----­­­­­'
 Github client_secret = '­­­­­­­---­­­­­­­Some cryptic string----­­'
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You will need to use the <code class="highlighter-rouge">client_id</code> and <code class="highlighter-rouge">client_secret</code> on your configuration file.</p>
 
@@ -419,20 +410,18 @@ Github client_secret = '­­­­­­­---­­­­­­­Some cryptic string----­
 
 <p>It should be like username and admin after one space for giving admin right otherwise only username for normal user. Example:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;username&gt; admin
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;username&gt; admin
+</code></pre></div></div>
 
 <p>I am using ubuntu and using a sudo user in this step.</p>
 
 <p>Create Default Directory for your Jupyter Notebooks:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code> sudo mkdir /home/&lt;username&gt;/notebooks
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nb">sudo mkdir</span> /home/&lt;username&gt;/notebooks
+</code></pre></div></div>
 
 <p>Now Edit jupyter_config.py as follows:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>#-----------------------------------------------------------------------------------------------------------------------------------------------------
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#-----------------------------------------------------------------------------------------------------------------------------------------------------
 # Application configuration
 #-----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -449,55 +438,49 @@ c.Authenticator.admin_users = {'&lt;usernname&gt;'}
 c.Spawner.notebook_dir = '~/notebooks'
 c.JupyterHub.ssl_cert = 'mycert.pem'
 c.JupyterHub.ssl_key = 'mykey.key' 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>You have to open the 8000 door and the 8888 door on the firewall. This have to be done on your local 
 machine.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>
-gcloud compute firewall-rules create jupyternotebook  --allow tcp:8888  --source-ranges<span class="o">=</span>0.0.0.0/0 --description<span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+gcloud compute firewall-rules create jupyternotebook  <span class="nt">--allow</span> tcp:8888  <span class="nt">--source-ranges</span><span class="o">=</span>0.0.0.0/0 <span class="nt">--description</span><span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
 
 
-gcloud compute firewall-rules create jupyterhub  --allow tcp:8000  --source-ranges<span class="o">=</span>0.0.0.0/0 --description<span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
-</code></pre>
-</div>
+gcloud compute firewall-rules create jupyterhub  <span class="nt">--allow</span> tcp:8000  <span class="nt">--source-ranges</span><span class="o">=</span>0.0.0.0/0 <span class="nt">--description</span><span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
+</code></pre></div></div>
 
 <p>Now starting jupyterhub with above configuration</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>jupyterhub
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyterhub
+</code></pre></div></div>
 
 <p>Go to <code class="highlighter-rouge">http://your_ip_address:8000</code>. And it should be working. If not pay special atention to the messages 
 on the terminal. You should see at leat 2 process running the proxy and jupyterhub.</p>
 
 <p>The next challenge is to run <code class="highlighter-rouge">jupyterhub</code> as a service. Copy the <code class="highlighter-rouge">mycert.pem</code> <code class="highlighter-rouge">mykey.key</code> <code class="highlighter-rouge">jupyterhub_config.py</code>  files to <code class="highlighter-rouge">/etc/jupyter/hub</code>. You should protect the files:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo chmod og-r mycert.pem mycert.key
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod </span>og-r mycert.pem mycert.key
+</code></pre></div></div>
 
 <p>Edit <code class="highlighter-rouge">jupyterhub_config.py</code></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>c.JupyterHub.ssl_cert = '/etc/jupyterhub/mycert.pem'
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c.JupyterHub.ssl_cert = '/etc/jupyterhub/mycert.pem'
 c.JupyterHub.ssl_key = '/etc/jupyterhub/mykey.key' 
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>The next step</p>
 
 <p>Save https://gist.github.com/lambdalisue/f01c5a65e81100356379 as /etc/init.d/jupyterhub and follow</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>sudo chmod +x /etc/init.d/jupyterhub
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod +x /etc/init.d/jupyterhub
 # Start jupyterhub
 sudo service jupyterhub start
 # Stop jupyterhub
 sudo service jupyterhub stop
 # Start jupyterhub on boot
 $ sudo update-rc.d jupyterhub defaults
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>One of the challenges that I faced was to set the correct global python version, that was python 3. If everything is 
 ok after starting the service you should see 2 process running one for jupyetrhub and the other for the proxy.</p>
@@ -507,36 +490,32 @@ at <code class="highlighter-rouge">/usr/local/share/jupyter/nbextensions</code> 
 
 <p>To install <code class="highlighter-rouge">nbextensions</code></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> pip3 install --yes jupyter_contrib_nbextensions
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pip3 install --yes jupyter_contrib_nbextensions
+</code></pre></div></div>
 
 <p>A very nice aspect on this is that you can use jupyter terminal to adduser  and execute other administrative tasks
 using only your browser.</p>
 
 <p>In order to guarantee that jupyter  will work perfectly you should install LaTeX.</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install texlive-full
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>texlive-full
+</code></pre></div></div>
 
 <p>Some interesting packages for visualization:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code> pip3 install --yes mpld3
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pip3 install --yes mpld3
  pip3 install --yes numba
  pip3 install --yes seaborn
  pip3 install --yes sh
  pip3 install --yes pip
  pip3 install altair 
  jupyter nbextension enable vega --py --sys-prefix
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>pip3 install --yes -c damianavila82 rise
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip3 install --yes -c damianavila82 rise
 jupyter nbextension install rise --py --sys-prefix
 jupyter nbextension enable rise --py --sys-prefix
-</code></pre>
-</div>
+</code></pre></div></div>
 
 
             </article>
@@ -560,7 +539,7 @@ jupyter nbextension enable rise --py --sys-prefix
     
     <footer class="footer" role="contentinfo">
 	<div class="container">
-		<p class="copyright">Copyright &copy; 2014-2017 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
+		<p class="copyright">Copyright &copy; 2014-2018 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
 		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme from <a href="http://lesscss.cn/">Less</a></p>
 	</div>
 </footer>

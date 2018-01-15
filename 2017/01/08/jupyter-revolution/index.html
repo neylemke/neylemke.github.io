@@ -364,46 +364,42 @@ the 3 dots close to ssh).</p>
 <p>Before using this command you have to install  gcloud SDK (<a href="https://cloud.google.com/sdk/downloads">instructions</a>) and be sure you have
 python2 on your system.  I am using pyenv to guarantee that.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>pyenv <span class="nb">local </span>2.7.8
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyenv <span class="nb">local </span>2.7.8
 gcloud config <span class="nb">set </span>project  &lt;myproject&gt;
 gcloud auth login
 <span class="c">#This  sets the  firewall rules</span>
-gcloud compute firewall-rules create jupyternotebook  --allow tcp:8888  --source-ranges<span class="o">=</span>0.0.0.0/0 --description<span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
+gcloud compute firewall-rules create jupyternotebook  <span class="nt">--allow</span> tcp:8888  <span class="nt">--source-ranges</span><span class="o">=</span>0.0.0.0/0 <span class="nt">--description</span><span class="o">=</span><span class="s2">"allows connections to jupyter server"</span>
 <span class="c">#This is the command  you can get on GCE site</span>
-gcloud compute --project &lt;myproject&gt; ssh --zone <span class="s2">"us-central1-f"</span>  &lt;machinetype&gt;
-</code></pre>
-</div>
+gcloud compute <span class="nt">--project</span> &lt;myproject&gt; ssh <span class="nt">--zone</span> <span class="s2">"us-central1-f"</span>  &lt;machinetype&gt;
+</code></pre></div></div>
 
 <p>The next step is to install anaconda.</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>apt-get install bzip2
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apt-get <span class="nb">install </span>bzip2
 wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-sudo shell Miniconda2-latest-Linux-x86_64.sh
-conda install --yes scikit-learn
-conda install --yes pandas
-conda install --yes jupyter
-conda install --yes -c conda-forge jupyterlab
-</code></pre>
-</div>
+<span class="nb">sudo </span>shell Miniconda2-latest-Linux-x86_64.sh
+conda <span class="nb">install</span> <span class="nt">--yes</span> scikit-learn
+conda <span class="nb">install</span> <span class="nt">--yes</span> pandas
+conda <span class="nb">install</span> <span class="nt">--yes</span> jupyter
+conda <span class="nb">install</span> <span class="nt">--yes</span> <span class="nt">-c</span> conda-forge jupyterlab
+</code></pre></div></div>
 
 <p>I am also  installing some extra-packages</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>conda install --yes mpld3
-conda install --yes numba
-conda install --yes seaborn
-conda install --yes -c conda-forge jupyter_contrib_nbextensions
-conda install --yes sh
-conda install --yes pip
-conda install --yes altair --channel conda-forge
-jupyter nbextension <span class="nb">enable </span>vega --py --sys-prefix
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install</span> <span class="nt">--yes</span> mpld3
+conda <span class="nb">install</span> <span class="nt">--yes</span> numba
+conda <span class="nb">install</span> <span class="nt">--yes</span> seaborn
+conda <span class="nb">install</span> <span class="nt">--yes</span> <span class="nt">-c</span> conda-forge jupyter_contrib_nbextensions
+conda <span class="nb">install</span> <span class="nt">--yes</span> sh
+conda <span class="nb">install</span> <span class="nt">--yes</span> pip
+conda <span class="nb">install</span> <span class="nt">--yes</span> altair <span class="nt">--channel</span> conda-forge
+jupyter nbextension <span class="nb">enable </span>vega <span class="nt">--py</span> <span class="nt">--sys-prefix</span>
+</code></pre></div></div>
 
 <p>Then you can start the Jupyter Lab  using:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code>jupyter lab --ip<span class="o">=</span><span class="k">*</span>  --port<span class="o">=</span>8888 --no-browser &amp;
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter lab <span class="nt">--ip</span><span class="o">=</span><span class="k">*</span>  <span class="nt">--port</span><span class="o">=</span>8888 <span class="nt">--no-browser</span> &amp;
+</code></pre></div></div>
 
 <p>To start using the  Jupyter Lab  you have to open a browser and  type
 http://<yourgcefixedip>:8888".</yourgcefixedip></p>
@@ -430,7 +426,7 @@ http://<yourgcefixedip>:8888".</yourgcefixedip></p>
     
     <footer class="footer" role="contentinfo">
 	<div class="container">
-		<p class="copyright">Copyright &copy; 2014-2017 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
+		<p class="copyright">Copyright &copy; 2014-2018 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
 		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme from <a href="http://lesscss.cn/">Less</a></p>
 	</div>
 </footer>

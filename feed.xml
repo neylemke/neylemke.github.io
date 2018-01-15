@@ -5,9 +5,9 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Apr 2017 22:01:12 -0300</pubDate>
-    <lastBuildDate>Tue, 04 Apr 2017 22:01:12 -0300</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <pubDate>Mon, 15 Jan 2018 18:35:15 -0200</pubDate>
+    <lastBuildDate>Mon, 15 Jan 2018 18:35:15 -0200</lastBuildDate>
+    <generator>Jekyll v3.7.0</generator>
     
       <item>
         <title>Mito</title>
@@ -958,12 +958,11 @@ represents co-autorship. You can use tooltip to see the author name.&lt;/p&gt;
 
 &lt;p&gt;We will need  to install some python packages to start&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install jupyter_console 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;conda install jupyter_console 
 conda install jupyter_client
 conda install tornado
 conda update ipython
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;a id=&quot;orgc99d587&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -973,11 +972,10 @@ conda update ipython
 and &lt;code class=&quot;highlighter-rouge&quot;&gt;ox-reveal&lt;/code&gt; &lt;a href=&quot;https://github.com/yjwen/org-reveal&quot;&gt;https://github.com/yjwen/org-reveal&lt;/a&gt;. I
 have edit .spacemacs. I included a line on layer-config section&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;org (org :variables
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;org (org :variables
               org-enable-reveal-js-support t
               org-enable-github-support t)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;a id=&quot;org39aef8e&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -985,7 +983,7 @@ have edit .spacemacs. I included a line on layer-config section&lt;/p&gt;
 
 &lt;p&gt;I also included some languages to use on babel&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(org-babel-do-load-languages
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
    (latex . t)
@@ -994,8 +992,7 @@ have edit .spacemacs. I included a line on layer-config section&lt;/p&gt;
    (lisp . t)
    ))
 )
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;a id=&quot;org12cbb2c&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -1005,11 +1002,10 @@ have edit .spacemacs. I included a line on layer-config section&lt;/p&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;~/.emacs.d/layers/+emacs/org/packages.el&lt;/code&gt;. I include &lt;code class=&quot;highlighter-rouge&quot;&gt;ob-ipython&lt;/code&gt;
 on the packages variable and included a new function:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(defun org/init-ob-ipython ()
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(defun org/init-ob-ipython ()
     (use-package ob-ipython
      :defer t))
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 </description>
         <pubDate>Sat, 28 Jan 2017 23:03:00 -0200</pubDate>

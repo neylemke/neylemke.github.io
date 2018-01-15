@@ -380,12 +380,11 @@
 
 <p>We will need  to install some python packages to start</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>conda install jupyter_console 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install jupyter_console 
 conda install jupyter_client
 conda install tornado
 conda update ipython
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><a id="orgc99d587"></a></p>
 
@@ -395,11 +394,10 @@ conda update ipython
 and <code class="highlighter-rouge">ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
 have edit .spacemacs. I included a line on layer-config section</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>org (org :variables
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>org (org :variables
               org-enable-reveal-js-support t
               org-enable-github-support t)
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><a id="org39aef8e"></a></p>
 
@@ -407,7 +405,7 @@ have edit .spacemacs. I included a line on layer-config section</p>
 
 <p>I also included some languages to use on babel</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(org-babel-do-load-languages
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
    (latex . t)
@@ -416,8 +414,7 @@ have edit .spacemacs. I included a line on layer-config section</p>
    (lisp . t)
    ))
 )
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p><a id="org12cbb2c"></a></p>
 
@@ -427,11 +424,10 @@ have edit .spacemacs. I included a line on layer-config section</p>
 <code class="highlighter-rouge">~/.emacs.d/layers/+emacs/org/packages.el</code>. I include <code class="highlighter-rouge">ob-ipython</code>
 on the packages variable and included a new function:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>(defun org/init-ob-ipython ()
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(defun org/init-ob-ipython ()
     (use-package ob-ipython
      :defer t))
-</code></pre>
-</div>
+</code></pre></div></div>
 
 
             </article>
@@ -455,7 +451,7 @@ on the packages variable and included a new function:</p>
     
     <footer class="footer" role="contentinfo">
 	<div class="container">
-		<p class="copyright">Copyright &copy; 2014-2017 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
+		<p class="copyright">Copyright &copy; 2014-2018 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
 		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme from <a href="http://lesscss.cn/">Less</a></p>
 	</div>
 </footer>
