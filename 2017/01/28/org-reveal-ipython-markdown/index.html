@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Using Reveal and Ipython on OrgMode</title>
+
+	<link rel="shortcut icon" href="/styles/images/favicon.jpg">
+	<link rel="icon" href="/styles/images/favicon.jpg">
+
+	<link rel="stylesheet" href="/styles/css/index.css">
+	<link rel="stylesheet" href="/styles/css/fontawesome/css/font-awesome.min.css">
+	<link rel="canonical" href="/2017/01/28/org-reveal-ipython-markdown/">
+	<link rel="alternate" type="application/rss+xml" title="DataScience2SB" href="/feed.xml">
+	
+	<meta name="description" content="">
+
+	<script src="/styles/js/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?94be4b0f9fc5d94cc0d0415ea6761ae9";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+  	<style type="text/css">
+	  	.docs-content{
+	  		margin-bottom: 10px;
+	  	}
+  	</style>
+</head>
+
+  <body class="index">
+
+    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--
+      <a href="/" class="navbar-brand">
+        <img src="/styles/images/logo.jpg">
+      </a> -->
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">    
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/categories/">Categories</a>
+        </li>
+        <li>
+          <a href="/tag">Tags</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <!--  <li>
+          <a href="/donate/"><strong>Donate</strong></a>
+          </li> -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Info<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a rel="nofollow" target="_blank" href="https://github.com/neylemke/">Github</a></li>
+            <li><a rel="nofollow" target="_blank" href="http://lattes.cnpq.br/7977035910952141">Resume</a></li>
+            <li><a rel="nofollow" href="/books">Books</a></li>
+            <li><a rel="nofollow" href="/reference">Reference</a></li>
+            <!--   <li><a href="/feed.xml">RSS</a></li> -->
+            <li class="divider"></li>
+            <li><a rel="nofollow" target="_blank" href="https://github.com/neylemke/LessOrMore.git">GitHub Pages</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="docs-header" id="content">
+  <div class="container">
+  	
+  		<!--
+		    <h1>Using Reveal and Ipython on OrgMode</h1>
+		    <p>Post on Jan 28, 2017 by <a href="/about">Ney Lemke</a></p>
+		-->
+		    <h1>Data Science for Systems Biology</h1>
+    
+  </div>
+</div>
+
+    
+      
+<div class="banner">
+  <div class="container">
+  	
+    	<a href="/categories/#Technical-ref">Technical</a>	/
+    	<a href="/tag/#-ref"></a>
+    
+  </div>
+</div>
+
+    
+
+    <div class="container docs-container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="sidebar hidden-print" role="complementary">
+        <div id="navigation">
+  <h1>Posts</h1>
+  <ul class="nav sidenav">
+<!--
+    
+      
+      
+      
+      
+
+      
+        <li><a href="#year_2018">2018</a>
+          <ul class="nav">
+            <li><a href="#month_2018_January">January</a></li>
+      
+
+      
+        
+            </ul>
+          </li>
+          <li><a href="#year_2017">2017</a>
+            <ul class="nav">
+              <li><a href="#month_2017_April">April</a></li>
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+              <li><a href="#month_2017_March">March</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+              <li><a href="#month_2017_February">February</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+              <li><a href="#month_2017_January">January</a></li>
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            
+          
+        
+      
+    
+      
+      
+      
+      
+
+      
+
+      
+            </ul>
+          </li>
+      
+    
+-->
+  </ul>
+</div>
+ 
+      </div>
+    </div>
+    <div class="col-md-9" role="main">
+      <div class="panel docs-content">
+        <div class="wrapper">
+            <header class="post-header">
+              <h1 class="post-title">Using Reveal and Ipython on OrgMode</h1>
+              <!--
+                <p class="post-meta">Jan 28, 2017</p>
+              -->
+              <div class="meta">Posted on <span class="postdate">Jan 28, 2017</span> By <a target="_blank" href="http://www.lbbc.unesp.br">Ney Lemke</a></div>
+              <br />
+            </header>
+            <article class="post-content">
+              <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org507e90f">Pre-Installation</a></li>
+<li><a href="#orgb9fe46e">Instalation</a></li>
+</ul>
+</div>
+</div>
+
+<p><a id="org507e90f"></a></p>
+
+<h1 id="pre-installation">Pre-Installation</h1>
+
+<p><a id="org9974017"></a></p>
+
+<h2 id="environment">Environment</h2>
+
+<p>We will that assume the user has already installed these tools:</p>
+
+<ul>
+  <li>emacs</li>
+  <li>spacemacs <a href="http://https://github.com/syl20bnr/spacemacs">http://https://github.com/syl20bnr/spacemacs</a></li>
+  <li>orgmode <a href="http://http://orgmode.org">http://http://orgmode.org</a></li>
+  <li>latex</li>
+  <li>anaconda <a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a></li>
+  <li>jupyter <a href="http://http://jupyter.org">http://http://jupyter.org</a></li>
+</ul>
+
+<p><a id="orgb9fe46e"></a></p>
+
+<h1 id="instalation">Instalation</h1>
+
+<p><a id="orge1083cc"></a></p>
+
+<h2 id="python">Python</h2>
+
+<p>We will need  to install some python packages to start</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install jupyter_console 
+conda install jupyter_client
+conda install tornado
+conda update ipython
+</code></pre></div></div>
+
+<p><a id="orgc99d587"></a></p>
+
+<h2 id="emacs">Emacs</h2>
+
+<p>We will also need to install some packages on emacs: <code class="highlighter-rouge">ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
+and <code class="highlighter-rouge">ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
+have edit .spacemacs. I included a line on layer-config section</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>org (org :variables
+              org-enable-reveal-js-support t
+              org-enable-github-support t)
+</code></pre></div></div>
+
+<p><a id="org39aef8e"></a></p>
+
+<h3 id="emacs-1">Emacs</h3>
+
+<p>I also included some languages to use on babel</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   (latex . t)
+   (shell . t)
+   (ipython . t)
+   (lisp . t)
+   ))
+)
+</code></pre></div></div>
+
+<p><a id="org12cbb2c"></a></p>
+
+<h3 id="emacs-2">Emacs</h3>
+
+<p>I also included  aditional packages on layer configuration file:
+<code class="highlighter-rouge">~/.emacs.d/layers/+emacs/org/packages.el</code>. I include <code class="highlighter-rouge">ob-ipython</code>
+on the packages variable and included a new function:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(defun org/init-ob-ipython ()
+    (use-package ob-ipython
+     :defer t))
+</code></pre></div></div>
+
+
+            </article>
+        </div>
+      </div>
+      <div class="panel docs-content">
+        <article class="post-content">
+          <div class="wrapper">
+            
+
+
+
+ 
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <footer class="footer" role="contentinfo">
+	<div class="container">
+		<p class="copyright">Copyright &copy; 2014-2018 <a href="http://lattes.cnpq.br/7977035910952141"><code>Ney Lemke</code></a>.</p>
+		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme from <a href="http://lesscss.cn/">Less</a></p>
+	</div>
+</footer>
+
+<script src="/styles/js/jquery.min.js"></script>
+<script src="/styles/js/bootstrap.min.js"></script>
+<script src="/styles/js/holder.min.js"></script>
+<script src="/styles/js/application.js"></script>
+<script src="/styles/js/lessismore.js"></script>
+
+
+  </body>
+</html>

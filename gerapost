@@ -1,8 +1,0 @@
-name=`date +"%Y-%m-%d-"`$*".org" 
-echo "---" > $name
-echo "layout: post" >> $name
-echo "title: "$* | tr "-" " " >> $name 
-echo "cover:  cover.jpg" >> $name
-echo "date: "`date`  >> $name
-echo "categories: Technical Paper" >> $name  
-echo "---" >> $name
