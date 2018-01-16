@@ -5,24 +5,9 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Jan 2018 10:32:15 -0200</pubDate>
-    <lastBuildDate>Tue, 16 Jan 2018 10:32:15 -0200</lastBuildDate>
+    <pubDate>Tue, 16 Jan 2018 10:36:06 -0200</pubDate>
+    <lastBuildDate>Tue, 16 Jan 2018 10:36:06 -0200</lastBuildDate>
     <generator>Jekyll v3.7.0</generator>
-    
-      <item>
-        <title></title>
-        <description>
-</description>
-        <pubDate>Tue, 16 Jan 2018 10:31:51 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2018/01/16/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2018/01/16/</guid>
-        
-        
-        <category>Technical</category>
-        
-        <category>Paper</category>
-        
-      </item>
     
       <item>
         <title>Imersao</title>
@@ -37,9 +22,9 @@
   &lt;li&gt;Corpo de Servidores: 280 (Sem considerar ASAs&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Mon, 15 Jan 2018 00:00:00 -0200</pubDate>
-        <link>http://www.lbbc.unesp.br/2018/01/15/Imersao/</link>
-        <guid isPermaLink="true">http://www.lbbc.unesp.br/2018/01/15/Imersao/</guid>
+        <pubDate>Tue, 16 Jan 2018 00:00:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2018/01/16/Imersao/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2018/01/16/Imersao/</guid>
         
         
       </item>
@@ -1247,6 +1232,358 @@ dependencies: [
         <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
         <link>http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</link>
         <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/org-reveal-ipython/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Exemplo Uso Reveal</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;/&gt;
+&lt;title&gt;Examplo de Uso do Reveal no Orgmode&lt;/title&gt;
+&lt;meta name=&quot;author&quot; content=&quot;(Ney Lemke)&quot;/&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+.underline { text-decoration: underline; }
+&lt;/style&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/reveal.css&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/reveal.js/css/theme/moon.css&quot; id=&quot;theme&quot;/&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;./local.css&quot;/&gt;
+
+&lt;!-- If the query includes 'print-pdf', include the PDF print sheet --&gt;
+&lt;script&gt;
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+&lt;/script&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Org-Reveal Introduction.&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;reveal&quot;&gt;
+&lt;div class=&quot;slides&quot;&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Examplo de Uso do Reveal no Orgmode&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2017-01-30 Mon 17:42&lt;/p&gt;
+&lt;/section&gt;
+&lt;section id=&quot;table-of-contents&quot;&gt;
+&lt;div id=&quot;table-of-contents&quot;&gt;
+&lt;h2&gt;Table of Contents&lt;/h2&gt;
+&lt;div id=&quot;text-table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org6a7338d&quot;&gt;Geração Automática de Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+&lt;section id=&quot;slide-org6a7338d&quot;&gt;
+&lt;h2 id=&quot;org6a7338d&quot;&gt;Geração Automática de Slides&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org6a7338d&quot;&gt;
+&lt;/div&gt;&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orga09605b&quot;&gt;
+&lt;h3 id=&quot;orga09605b&quot;&gt;Objetivo&lt;/h3&gt;
+&lt;p&gt;
+O meu objetivo inicial vai ser testar se é mais eficiente gerar 
+slides usando o orgmode. 
+&lt;/p&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orga115c2e&quot;&gt;
+&lt;h3 id=&quot;orga115c2e&quot;&gt;Inicialmente vamos preparar o sistema&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-sh&quot;&gt;git clone https://github.com/ipython-books/cookbook-data.git
+&lt;span style=&quot;color: #4f97d7;&quot;&gt;cd&lt;/span&gt; cookbook-data
+unzip tennis.zip
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org1717178&quot;&gt;
+&lt;h3 id=&quot;org1717178&quot;&gt;Vamos testar o uso do python&lt;/h3&gt;
+&lt;p&gt;
+Os primeiros passos são carregar os pacotes:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; numpy &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;as&lt;/span&gt; np
+&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; pandas &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;as&lt;/span&gt; pd
+&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;as&lt;/span&gt; plt
+&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;from&lt;/span&gt;  datetime &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; *
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+datetime.datetime(2013, 3, 27, 23, 5)
+&lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org30f6fe9&quot;&gt;
+&lt;h3 id=&quot;org30f6fe9&quot;&gt;Datafile&lt;/h3&gt;
+&lt;p&gt;
+Criamos o &lt;i&gt;datafile&lt;/i&gt; usando os arquivos do item anterior. 
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;player&lt;/span&gt; = &lt;span style=&quot;color: #2d9574;&quot;&gt;'Roger Federer'&lt;/span&gt;
+&lt;span style=&quot;color: #7590db;&quot;&gt;filename&lt;/span&gt; = &lt;span style=&quot;color: #2d9574;&quot;&gt;&quot;./cookbook-data/data/{name}.csv&quot;&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;format&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;name=player.replace&lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;' '&lt;/span&gt;, &lt;span style=&quot;color: #2d9574;&quot;&gt;'-'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt; 
+&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt; = pd.read_csv&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;filename&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org722c4e6&quot;&gt;
+&lt;h3 id=&quot;org722c4e6&quot;&gt;Determinamos quem Venceu&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; = df&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'winner'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; == player
+df&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.tail&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+1174    False
+1175     True
+1176     True
+1177     True
+1178    False
+Name: win, dtype: bool
+&lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org1890136&quot;&gt;
+&lt;h3 id=&quot;org1890136&quot;&gt;Agora geramos a fração de faltas duplas&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt; = &lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'player1 double faults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt; / 
+                   df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'player1 total points total'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-orgccd1b0a&quot;&gt;
+&lt;h3 id=&quot;orgccd1b0a&quot;&gt;Podemos gerar um Report mais interessante.&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt; &lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;&quot;{player} has won {vic:.0f}% of his ATP matches.&quot;&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;format&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;
+player=player, vic=&lt;span style=&quot;color: #a45bad;&quot;&gt;100&lt;/span&gt;*df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;.mean&lt;span style=&quot;color: #bc6ec5;&quot;&gt;()&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+Roger Federer has won 82% of his ATP matches.
+&lt;/pre&gt;
+
+
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.tail&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+1174    0.018116
+1175    0.000000
+1176    0.000000
+1177    0.011561
+1178         NaN
+Name: dblfaults, dtype: float64
+&lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org1697406&quot;&gt;
+&lt;h3 id=&quot;org1697406&quot;&gt;Agrupamos os dados&lt;/h3&gt;
+&lt;p&gt;
+Inicialmente por tipo de quadra
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;df.groupby&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'surface'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'win'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.mean&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+surface
+Indoor: Carpet    0.736842
+Indoor: Clay      0.833333
+Indoor: Hard      0.836283
+Outdoor: Clay     0.779116
+Outdoor: Grass    0.871429
+Outdoor: Hard     0.842324
+Name: win, dtype: float64
+&lt;/pre&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org6720424&quot;&gt;
+&lt;h3 id=&quot;org6720424&quot;&gt;Agrupamos os dados&lt;/h3&gt;
+&lt;p&gt;
+Agora por ano 
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;gb&lt;/span&gt; = df.groupby&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'year'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org7319e08&quot;&gt;
+&lt;h3 id=&quot;org7319e08&quot;&gt;Convertendo as datas&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;&lt;span style=&quot;color: #7590db;&quot;&gt;df&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'date'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;=&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;datetime.strptime&lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;date, &lt;span style=&quot;color: #2d9574;&quot;&gt;'%d.%m.%Y'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;for&lt;/span&gt; date &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;in&lt;/span&gt; df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;
+&lt;span style=&quot;color: #7590db;&quot;&gt;dates&lt;/span&gt;=&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;datetime.strptime&lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;date, &lt;span style=&quot;color: #2d9574;&quot;&gt;'%d.%m.%Y'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt; &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;for&lt;/span&gt; date &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;in&lt;/span&gt; gb&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;max&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;()&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org6127e27&quot;&gt;
+&lt;h3 id=&quot;org6127e27&quot;&gt;Representação dos Pontos&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;%matplotlib inline
+&lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;from&lt;/span&gt; pytz &lt;span style=&quot;color: #4f97d7; font-weight: bold;&quot;&gt;import&lt;/span&gt; timezone
+&lt;span style=&quot;color: #7590db;&quot;&gt;fig&lt;/span&gt;=plt.figure&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;figsize=&lt;span style=&quot;color: #bc6ec5;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #a45bad;&quot;&gt;12&lt;/span&gt;,&lt;span style=&quot;color: #a45bad;&quot;&gt;6&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;)&lt;/span&gt;,facecolor=&lt;span style=&quot;color: #2d9574;&quot;&gt;&quot;0.8&quot;&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.plot_date&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;dates, gb&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;.mean&lt;span style=&quot;color: #bc6ec5;&quot;&gt;()&lt;/span&gt;,  &lt;span style=&quot;color: #2d9574;&quot;&gt;'-'&lt;/span&gt;, lw=&lt;span style=&quot;color: #a45bad;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.plot_date&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;, df&lt;span style=&quot;color: #bc6ec5;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'dblfaults'&lt;/span&gt;&lt;span style=&quot;color: #bc6ec5;&quot;&gt;]&lt;/span&gt;, alpha=.&lt;span style=&quot;color: #a45bad;&quot;&gt;25&lt;/span&gt;, lw=&lt;span style=&quot;color: #a45bad;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.ylabel&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'Proportion of double faults per match.'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+plt.xlabel&lt;span style=&quot;color: #4f97d7;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'Year'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;img src=&quot;/assets/pandatennis.png&quot; alt=&quot;pandatennis.png&quot; /&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org265d452&quot;&gt;
+&lt;h3 id=&quot;org265d452&quot;&gt;Detalhes do orgmode&lt;/h3&gt;
+&lt;p&gt;
+Note que o gráfico não é incluído no &lt;code&gt;exports&lt;/code&gt; apenas o código:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-EXAMPLE&quot;&gt;#+BEGIN_SRC ipython :session pandas :exports code  :file /Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png :tangle pandas.py
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+A Figura é incluída com um comando em HTML. Isso é uma gambiarra para consertar a
+ gambiarra do &lt;code&gt;jeckyll&lt;/code&gt; que exige que o path da figura comece com &lt;code&gt;/assets&lt;/code&gt;
+e não com &lt;code&gt;file://&amp;lt;path&amp;gt;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-EXAMPLE&quot;&gt;#+CAPTION: Federer Results
+#+NAME:   fig:federer-results
+#+REVEAL_HTML:  &amp;lt;img src=&quot;/assets/pandatennis.png&quot; alt=&quot;pandatennis.png&quot; /&amp;gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;section&gt;
+&lt;section id=&quot;slide-org78bc705&quot;&gt;
+&lt;h3 id=&quot;org78bc705&quot;&gt;Melhores Resultados&lt;/h3&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;pre  class=&quot;src src-ipython&quot;&gt;gb&lt;span style=&quot;color: #4f97d7;&quot;&gt;[&lt;/span&gt;&lt;span style=&quot;color: #2d9574;&quot;&gt;'start date'&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;]&lt;/span&gt;.&lt;span style=&quot;color: #4f97d7;&quot;&gt;max&lt;/span&gt;&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;.tail&lt;span style=&quot;color: #4f97d7;&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
+year
+2008    28.07.2008
+2009    31.08.2009
+2010    30.08.2010
+2011    31.10.2011
+2012    27.08.2012
+Name: start date, dtype: object
+&lt;/pre&gt;
+&lt;/section&gt;
+&lt;/section&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt; Created by Ney Lemke. &lt;/p&gt;
+&lt;script src=&quot;/reveal.js/lib/js/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/reveal.js/js/reveal.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</description>
+        <pubDate>Sat, 28 Jan 2017 00:00:00 -0200</pubDate>
+        <link>http://www.lbbc.unesp.br/2017/01/28/exemplo-uso-reveal/</link>
+        <guid isPermaLink="true">http://www.lbbc.unesp.br/2017/01/28/exemplo-uso-reveal/</guid>
         
         
       </item>
