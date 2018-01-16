@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Examplo de Uso do Reveal no Orgmode</title>
+<meta name="author" content="(Ney Lemke)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="/reveal.js/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Org-Reveal Introduction.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Examplo de Uso do Reveal no Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-30 Mon 17:49</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org69e3c91">Geração Automática de Slides</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org69e3c91">
+<h2 id="org69e3c91">Geração Automática de Slides</h2>
+<div class="outline-text-2" id="text-org69e3c91">
+</div></section>
+</section>
+<section>
+<section id="slide-org29872fb">
+<h3 id="org29872fb">Objetivo</h3>
+<p>
+O meu objetivo inicial vai ser testar se é mais eficiente gerar 
+slides usando o orgmode. 
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd1f6a5d">
+<h3 id="orgd1f6a5d">Inicialmente vamos preparar o sistema</h3>
+<div class="org-src-container">
+
+<pre  class="src src-sh">git clone https://github.com/ipython-books/cookbook-data.git
+<span style="color: #4f97d7;">cd</span> cookbook-data
+unzip tennis.zip
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf0cf4c3">
+<h3 id="orgf0cf4c3">Vamos testar o uso do python</h3>
+<p>
+Os primeiros passos são carregar os pacotes:
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython"><span style="color: #4f97d7; font-weight: bold;">import</span> numpy <span style="color: #4f97d7; font-weight: bold;">as</span> np
+<span style="color: #4f97d7; font-weight: bold;">import</span> pandas <span style="color: #4f97d7; font-weight: bold;">as</span> pd
+<span style="color: #4f97d7; font-weight: bold;">import</span> matplotlib.pyplot <span style="color: #4f97d7; font-weight: bold;">as</span> plt
+<span style="color: #4f97d7; font-weight: bold;">from</span>  datetime <span style="color: #4f97d7; font-weight: bold;">import</span> *
+</pre>
+</div>
+
+<pre class="example">
+datetime.datetime(2013, 3, 27, 23, 5)
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgba1d414">
+<h3 id="orgba1d414">Datafile</h3>
+<p>
+Criamos o <i>datafile</i> usando os arquivos do item anterior. 
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython"><span style="color: #7590db;">player</span> = <span style="color: #2d9574;">'Roger Federer'</span>
+<span style="color: #7590db;">filename</span> = <span style="color: #2d9574;">"./cookbook-data/data/{name}.csv"</span>.<span style="color: #4f97d7;">format</span><span style="color: #4f97d7;">(</span>name=player.replace<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">' '</span>, <span style="color: #2d9574;">'-'</span><span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span> 
+<span style="color: #7590db;">df</span> = pd.read_csv<span style="color: #4f97d7;">(</span>filename<span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org42935b2">
+<h3 id="org42935b2">Determinamos quem Venceu</h3>
+<div class="org-src-container">
+
+<pre  class="src src-ipython"><span style="color: #7590db;">df</span><span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'win'</span><span style="color: #4f97d7;">]</span> = df<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'winner'</span><span style="color: #4f97d7;">]</span> == player
+df<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'win'</span><span style="color: #4f97d7;">]</span>.tail<span style="color: #4f97d7;">()</span>
+</pre>
+</div>
+
+<pre class="example">
+1174    False
+1175     True
+1176     True
+1177     True
+1178    False
+Name: win, dtype: bool
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaf712df">
+<h3 id="orgaf712df">Agora geramos a fração de faltas duplas</h3>
+<div class="org-src-container">
+
+<pre  class="src src-ipython"><span style="color: #7590db;">df</span><span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'dblfaults'</span><span style="color: #4f97d7;">]</span> = <span style="color: #4f97d7;">(</span>df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'player1 double faults'</span><span style="color: #bc6ec5;">]</span> / 
+                   df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'player1 total points total'</span><span style="color: #bc6ec5;">]</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc74682e">
+<h3 id="orgc74682e">Podemos gerar um Report mais interessante.</h3>
+<div class="org-src-container">
+
+<pre  class="src src-ipython"> <span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"{player} has won {vic:.0f}% of his ATP matches."</span><span style="color: #4f97d7;">)</span>.<span style="color: #4f97d7;">format</span><span style="color: #4f97d7;">(</span>
+player=player, vic=<span style="color: #a45bad;">100</span>*df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'win'</span><span style="color: #bc6ec5;">]</span>.mean<span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+<pre class="example">
+Roger Federer has won 82% of his ATP matches.
+</pre>
+
+
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython">df<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'dblfaults'</span><span style="color: #4f97d7;">]</span>.tail<span style="color: #4f97d7;">()</span>
+</pre>
+</div>
+
+<pre class="example">
+1174    0.018116
+1175    0.000000
+1176    0.000000
+1177    0.011561
+1178         NaN
+Name: dblfaults, dtype: float64
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-org909cf20">
+<h3 id="org909cf20">Agrupamos os dados</h3>
+<p>
+Inicialmente por tipo de quadra
+</p>
+<div class="org-src-container">
+
+<pre  class="src src-ipython">df.groupby<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'surface'</span><span style="color: #4f97d7;">)[</span><span style="color: #2d9574;">'win'</span><span style="color: #4f97d7;">]</span>.mean<span style="color: #4f97d7;">()</span>
+</pre>
+</div>
+
+<pre class="example">
+surface
+Indoor: Carpet    0.736842
+Indoor: Clay      0.833333
+Indoor: Hard      0.836283
+Outdoor: Clay     0.779116
+Outdoor: Grass    0.871429
+Outdoor: Hard     0.842324
+Name: win, dtype: float64
+</pre>
+
+</section>
+</section>
+<section>
+<section id="slide-orgde2c2da">
+<h3 id="orgde2c2da">Agrupamos os dados</h3>
+<p>
+Agora por ano 
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython"><span style="color: #7590db;">gb</span> = df.groupby<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'year'</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-org9058226">
+<h3 id="org9058226">Convertendo as datas</h3>
+<div class="org-src-container">
+
+<pre  class="src src-ipython"><span style="color: #7590db;">df</span><span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'date'</span><span style="color: #4f97d7;">]</span>=<span style="color: #4f97d7;">[</span>datetime.strptime<span style="color: #bc6ec5;">(</span>date, <span style="color: #2d9574;">'%d.%m.%Y'</span><span style="color: #bc6ec5;">)</span> <span style="color: #4f97d7; font-weight: bold;">for</span> date <span style="color: #4f97d7; font-weight: bold;">in</span> df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #bc6ec5;">]</span><span style="color: #4f97d7;">]</span>
+</pre>
+</div>
+
+<p>
+ A Conversão da base <code>gb</code> é mais complicada por que cada elemento
+é uma base de dados. 
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-ipython"><span style="color: #7590db;">dates</span>=<span style="color: #4f97d7;">[</span>datetime.strptime<span style="color: #bc6ec5;">(</span>date, <span style="color: #2d9574;">'%d.%m.%Y'</span><span style="color: #bc6ec5;">)</span> <span style="color: #4f97d7; font-weight: bold;">for</span> date <span style="color: #4f97d7; font-weight: bold;">in</span> gb<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #bc6ec5;">]</span>.<span style="color: #4f97d7;">max</span><span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">]</span>
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org8fd97e5">
+<h3 id="org8fd97e5">Representação dos Pontos</h3>
+<div class="org-src-container">
+
+<pre  class="src src-ipython">%matplotlib inline
+<span style="color: #4f97d7; font-weight: bold;">from</span> pytz <span style="color: #4f97d7; font-weight: bold;">import</span> timezone
+<span style="color: #7590db;">fig</span>=plt.figure<span style="color: #4f97d7;">(</span>figsize=<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">12</span>,<span style="color: #a45bad;">6</span><span style="color: #bc6ec5;">)</span>,facecolor=<span style="color: #2d9574;">"0.8"</span><span style="color: #4f97d7;">)</span>
+plt.plot_date<span style="color: #4f97d7;">(</span>dates, gb<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'dblfaults'</span><span style="color: #bc6ec5;">]</span>.mean<span style="color: #bc6ec5;">()</span>,  <span style="color: #2d9574;">'-'</span>, lw=<span style="color: #a45bad;">3</span><span style="color: #4f97d7;">)</span>
+plt.plot_date<span style="color: #4f97d7;">(</span>df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #bc6ec5;">]</span>, df<span style="color: #bc6ec5;">[</span><span style="color: #2d9574;">'dblfaults'</span><span style="color: #bc6ec5;">]</span>, alpha=.<span style="color: #a45bad;">25</span>, lw=<span style="color: #a45bad;">0</span><span style="color: #4f97d7;">)</span>
+plt.ylabel<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'Proportion of double faults per match.'</span><span style="color: #4f97d7;">)</span>
+plt.xlabel<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'Year'</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+<img src="/assets/pandatennis.png" alt="pandatennis.png" />
+
+</section>
+</section>
+<section>
+<section id="slide-orge7801d3">
+<h3 id="orge7801d3">Detalhes do orgmode</h3>
+<p>
+Note que o gráfico não é incluído no <code>exports</code> apenas o código:
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-EXAMPLE">#+BEGIN_SRC ipython :session pandas :exports code  :file /Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png :tangle pandas.py
+</pre>
+</div>
+
+<p>
+A Figura é incluída com um comando em HTML. Isso é uma gambiarra para consertar a
+ gambiarra do <code>jeckyll</code> que exige que o path da figura comece com <code>/assets</code>
+e não com <code>file://&lt;path&gt;</code>.
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-EXAMPLE">#+CAPTION: Federer Results
+#+NAME:   fig:federer-results
+#+REVEAL_HTML:  &lt;img src="/assets/pandatennis.png" alt="pandatennis.png" /&gt;
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgd8a8ec8">
+<h3 id="orgd8a8ec8">Melhores Resultados</h3>
+<div class="org-src-container">
+
+<pre  class="src src-ipython">gb<span style="color: #4f97d7;">[</span><span style="color: #2d9574;">'start date'</span><span style="color: #4f97d7;">]</span>.<span style="color: #4f97d7;">max</span><span style="color: #4f97d7;">()</span>.tail<span style="color: #4f97d7;">()</span>
+</pre>
+</div>
+
+<pre class="example">
+year
+2008    28.07.2008
+2009    31.08.2009
+2010    30.08.2010
+2011    31.10.2011
+2012    27.08.2012
+Name: start date, dtype: object
+</pre>
+</section>
+</section>
+</div>
+</div>
+<p> Created by Ney Lemke. </p>
+<script src="/reveal.js/lib/js/head.min.js"></script>
+<script src="/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

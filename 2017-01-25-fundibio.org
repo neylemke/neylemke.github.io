@@ -1,0 +1,116 @@
+#+Title: FUNDIBIO
+#+Author: Ney Lemke
+#+Email: lemke@ibb.unesp.br
+
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: moon
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by Ney Lemke. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_EXTRA_CSS: ./local.css
+#+REVEAL_ROOT: /reveal.js 
+
+
+* Introdução
+** Legislação
+
+ A lei que legisla sobre as fundações é
+ [[http://www.planalto.gov.br/ccivil_03/leis/L8958compilado.htm][LEI No 8.958, DE 20 DE DEZEMBRO DE 1994]]
+
+ #+BEGIN_QUOTE
+   Art. 1o As Instituições Federais de Ensino Superior poderão celebrar
+   convênios e contratos, por prazo determinado, com fundações
+   instituídas com a finalidade de apoiar projetos de ensino, pesquisa,
+   extensão, desenvolvimento institucional, científico e tecnológico e
+   estímulo à inovação.
+ #+END_QUOTE
+
+
+** Legislação UNESP
+*** Termo Aditivo
+
+Resolução Unesp nº 48/2010:
+
+Artigo 2º - As propostas de Convênio, de Protocolo ou Acordo de Cooperação, bem como
+ Termos Aditivos, Anexos e Termos de prorrogação de vigência desses ajustes, deverão ser instruídas com: 
+
+I - exposição de motivos que justifique a celebração do ajuste;
+
+II - minuta do instrumento a ser celebrado, elaborada de acordo com os requisitos formais e legais exigidos, e,
+ no caso de convênio genérico, também de minuta de seu primeiro Termo Aditivo; 
+
+III - indicação de Fundação interveniente, quando for o caso, com manifestação da mesma.
+
+** Regimento FUNDIBIO
+
+- Contrato entre Empresa, FUNDIBIO e proponente
+- Prestação de Contas ao TCE
+- Duas Modalidades de Apoio
+  - Projeto de Pesquisa
+    - Permite Bolsa Docente
+    - Exige Descrição de Gastos
+  - Prestação de Serviço
+    - Não Permite Bolsa Docente
+    - Não exige gastos Detalhados
+
+** Convênio IBB-UNESP
+- 10% Fundibio, 5% UNESP e 5% IBB
+- Cada Projeto e cada atividade tramitará com um termo aditivo
+- "Termo Aditivo" só é válido após sua tramitação pelos orgãos competentes.
+
+Legislação: [[/assets/minutafundibio.pdf][Termo Aditivo]]
+** *Case* FEPAF
+- 300 projetos ano
+- 2/3 das bolsas de estudos da FCA são pagas pela FEPAF
+- Um único termo aditivo
+- Tramitação apenas na Unidade
+* Situação FUNDIBIO
+** Situação FUNDIBIO
+- Sem projetos novos desde julho de 2016
+- 30 bolsas de pesquisa
+- Tratamento diferenciado para docentes do IBB 
+
+** Situação FUNDIBIO
+- Troca de Banco para Santander (mesmo FEPAF e mesmo FAMESP)
+  - Mudança na Prestação de Contas
+  - Turbulências na emissão de boletos e de cobranças
+  - Implicação no Custo Operacional
+- Mudança no Escritório de Contabilidade
+
+* Objetivo
+** Objetivo
+- Definir de forma clara o fluxo de tramitação visando desacoplar 
+as atribuições do IBB e da Unesp.
+- Garantir Certificação dos Docentes e Discentes envolvidos.
+- Tratamento equivalente por parte da FUNDIBIO aos  docentes do IBB  
+* Definição do Fluxo
+** Fluxo Fundibio
+- Contrato estabelecendo parceria.
+- Termo de Consentimento assinado pelo Diretor do IBB autorizando o estabelecimento da colaboração.
+** Fluxo IBB
+Elaboração do "Termo Aditivo" e aprovação:
+- Conselho dos departamentos envolvidos (2 semanas)
+- CPP ou CPEU dependendo do caso (até 1 mês)
+- Congregação (até 1 mês)
+** Fluxo UNESP
+- Câmara Central de Extensão (até 1 mês)
+- Conselho Universitário (até 1 mês)
+- Assinatura Reitor (semanas)
+** Situação UNESP
+ -  Presidente da  Fundunesp assegurou que o fluxo de trabalho não 
+    deve exigir tramitação até Reitoria
+ -  Termo de Consentimento em fase de elaboração 
+* Próximas Ações
+** Próximas Ações
+- Prestação de Contas 2016
+- Foi finalizada a migração para Santander
+- Mudança no Estatuto para Fundação Associada
+- Apresentação para a Congregação

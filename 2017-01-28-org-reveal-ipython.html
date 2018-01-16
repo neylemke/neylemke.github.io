@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Using Reveal and Ipython in Orgmode</title>
+<meta name="author" content="(Ney Lemke)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="/reveal.js/css/theme/moon.css" id="theme"/>
+
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="Org-Reveal Introduction.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Using Reveal and Ipython in Orgmode</h1><h2 class="author">Ney Lemke</h2><p class="date">Created: 2017-01-29 Sun 01:28</p>
+</section>
+<section id="table-of-contents">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-orga5dc608">Pre-Installation</a></li>
+<li><a href="#/slide-orge94c172">Instalation</a></li>
+</ul>
+</div>
+</div>
+</section>
+<p>
+:EXPORT<sub>FILE</sub><sub>NAME</sub>: /Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/<sub>posts</sub>/2017-01-28-org-reveal-ipython.html
+</p>
+
+<section>
+<section id="slide-orga5dc608">
+<h2 id="orga5dc608">Pre-Installation</h2>
+<div class="outline-text-2" id="text-orga5dc608">
+</div></section>
+</section>
+<section>
+<section id="slide-orgfb62c1d">
+<h3 id="orgfb62c1d">Environment</h3>
+<p>
+We will that assume the user has already installed these tools:
+</p>
+
+<ul>
+<li>emacs</li>
+<li>spacemacs <a href="http://https//github.com/syl20bnr/spacemacs">http://https//github.com/syl20bnr/spacemacs</a></li>
+<li>orgmode <a href="http://http//orgmode.org">http://http//orgmode.org</a></li>
+<li>latex</li>
+<li>anaconda <a href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a></li>
+<li>jupyter <a href="http://http//jupyter.org">http://http//jupyter.org</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orge94c172">
+<h2 id="orge94c172">Instalation</h2>
+<div class="outline-text-2" id="text-orge94c172">
+</div></section>
+</section>
+<section>
+<section id="slide-org1548286">
+<h3 id="org1548286">Python</h3>
+<p>
+We will need  to install some python packages to start
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-sh">conda install jupyter_console 
+conda install jupyter_client
+conda install tornado
+conda update ipython
+</pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb5ff84a">
+<h3 id="orgb5ff84a">Emacs</h3>
+<p>
+We will also need to install some packages on emacs: <code>ob-python</code> <a href="https://github.com/gregsexton/ob-ipython">https://github.com/gregsexton/ob-ipython</a> 
+and <code>ox-reveal</code> <a href="https://github.com/yjwen/org-reveal">https://github.com/yjwen/org-reveal</a>. I
+have edit .spacemacs. I included a line on layer-config section
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-elisp">org <span style="color: #4f97d7;">(</span>org <span style="color: #4f97d7;">:variables</span>
+              org-enable-reveal-js-support t
+              org-enable-github-support t<span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+
+</section>
+<section id="slide-org9f5e336">
+<h4 id="org9f5e336">Emacs</h4>
+<p>
+I also included some languages to use on babel
+</p>
+
+<pre  class="example">
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((python . t)
+   (latex . t)
+   (shell . t)
+   (ipython . t)
+   (lisp . t)
+   ))
+)
+</pre>
+
+</section>
+<section id="slide-orgb228c9a">
+<h4 id="orgb228c9a">Emacs</h4>
+<p>
+I also included  aditional packages on layer configuration file:
+<code>~/.emacs.d/layers/+emacs/org/packages.el</code>. I include <code>ob-ipython</code>
+on the packages variable and included a new function:
+</p>
+
+<div class="org-src-container">
+
+<pre  class="src src-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">defun</span> <span style="color: #bc6ec5; font-weight: bold;">org/init-ob-ipython</span> <span style="color: #bc6ec5;">()</span>
+    <span style="color: #bc6ec5;">(</span>use-package ob-ipython
+     <span style="color: #4f97d7;">:defer</span> t<span style="color: #bc6ec5;">)</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+</section>
+</section>
+</div>
+</div>
+<p> Created by Ney Lemke. </p>
+<script src="/reveal.js/lib/js/head.min.js"></script>
+<script src="/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: true,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

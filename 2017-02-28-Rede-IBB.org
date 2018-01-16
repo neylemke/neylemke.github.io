@@ -1,0 +1,69 @@
+#  Rede Internet do IBB
+
+A Rede da Unesp é  complexa e reflete a natureza de nossa instituição. 
+No que concerne ao IB os aspectos mais relevante que podem ser avaliados pelo desenho abaixo, são:
+
+- Temos um Link único de 1 Gbit/S com São Paulo
+- Existe Redundância na ligação com a Internet, pois temos duas conexões
+uma na Reitoria e outro no NCC na Barra Funda
+- Existe um anel ligando os Campus mais populados do qual não fazemos parte. 
+![/assets/unespnetv5.png](Rede da UNESP)
+
+O contrato da UNESP prevê uma disponibilidade de 99.4% para nosso link. Isso implica 
+que em um curso de 60 horas podemos esperar algo como 20 minutos de internet não operante. 
+Ao longo dos últimos 30 dias tivemos uma taxa de inoperância muitas vezes superior. 
+
+Os problemas recentes com a internet  se dividem em duas grandes classes: 
+Falhas Intermitentes Não Identificadas (FINI) e Falhas Físicas na rede. As falhas físicas
+são causadas por fatores claramente identificados e que são externos ao sistema de computação,
+recentemente tivemos duas falhas dessa natureza:
+- 22/2/17 falta de luz na Reitoria e falha no abastecimento do gerador ocasionando uma
+ pane de quase três horas
+- 23/2/17 a fibra foi cortada entre Jaú e Brotas e teve de ser reparada
+
+Esses eventos estão totalmente descorrelacionados, o segundo caso é incontrolável 
+e não pode ser prevenido. 
+
+Paralelalmente a esses acidentes temos um problema sério com os FINIs que já foram detectados
+e estão sendo avaliados pela Telefônica. Cabendo apenas ao Grupo de Redes da Reitoria contactar a
+empresa e solicitar os ressarcimentos cabíveis. Essas falhas ocorreram posteriormente a 
+instalação do novo link de dados, o que aumentou nossa capacidade de operação, mas pode 
+estar ocasionando essas falhas. 
+
+OS FINIs afetam as 4 unidades de Botucatu igualmente, ou seja não estão relacionados a questões
+ gerenciais internas e nem adimitem uma solução local. A Telefônica admitiu que os problemas com 
+a internet estão relacionados com a infra-estrutura física sob sua responsabilidade. O novo contrato 
+com a Telefônica exigiu que fossem trocados vários equipamentos de rede por equipamentos que 
+permitam a multiplexação do sinal. Essa solução permitiu a expansão da capacidade de nossa rede, 
+mas reduziu a redundância e implicou na diminuição da resiliência. Ainda não está claro se 
+os novos equipamentos estão causando as FINIs, mas de qualquer forma a Telefônica se comprometeu a 
+apresentar um plano de ação para resolver o problema até 9/3/2017 e a rede de Botucatu irá receber 
+"máxima prioridade". 
+
+Até que o plano seja apresentado não temos como prever em que momento esses problemas serão sanados.  
+Essas falhas podem seguir se manifestando até que o plano de ação da Telefonica seja executado.
+Os serviços que são afetados são:
+
+- acesso a páginas e serviços externos às 4 unidades de Botucatu
+- telefonia externa às 4 unidades
+- video conferências
+- wfu devido a necessidade de autenticação centralizada
+- o serviço local de email não é afetado, mas aqueles que redirecionam 
+suas mensagens podem ficar sem o serviço, mensagens de fora de Botucatu 
+não são recebidas. 
+
+Existe uma forma simplificada de testar se o problem com a rede é local ou externo 
+ao nosso sistema. Se for possível acessar a página do IB, FCA ou FMB, mas não a
+páginas externas como www.google.com, isso implica em um problema externo. 
+
+
+Existem algumas soluções paliativas para mitigar esses problemas, como 
+manter uma conta externa de email. Alguns modelos de celulares permitem 
+que sejam configuradas redes wifi, o que pode garantir acesso 
+a internet em casos de pane. Mas essa alternativa exige que o cliente 
+possua pacotes de dados. 
+
+Enquanto persistir a atual situação recomendamos que sempre que possível 
+o usuário busque alternativas para panes de intenet, enquanto não for possível
+garantir a qualidade do serviço de internet.  
+

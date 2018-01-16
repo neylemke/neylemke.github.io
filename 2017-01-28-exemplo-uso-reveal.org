@@ -1,0 +1,218 @@
+#+Title: Examplo de Uso do Reveal no Orgmode
+#+Author:  Ney Lemke
+#+Email: lemke@ibb.unesp.br
+
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:1
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: moon
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by Ney Lemke. </p>
+#+REVEAL_PLUGINS: (markdown notes)
+#+REVEAL_EXTRA_CSS: ./local.css
+#+REVEAL_ROOT: /reveal.js
+
+* Geração Automática de Slides
+
+** Objetivo
+O meu objetivo inicial vai ser testar se é mais eficiente gerar 
+slides usando o orgmode. 
+
+** Inicialmente vamos preparar o sistema
+#+BEGIN_SRC sh
+git clone https://github.com/ipython-books/cookbook-data.git
+cd cookbook-data
+unzip tennis.zip
+#+END_SRC
+
+#+RESULTS:
+| Archive:   | tennis.zip              |
+| inflating: | data/Andy-Murray.csv    |
+| inflating: | data/Novak-Djokovic.csv |
+| inflating: | data/Rafael-Nadal.csv   |
+| inflating: | data/Roger-Federer.csv  |
+
+** Vamos testar o uso do python
+ Os primeiros passos são carregar os pacotes:
+
+ #+BEGIN_SRC ipython :session pandas :tangle pandas.py
+   import numpy as np
+   import pandas as pd
+   import matplotlib.pyplot as plt
+   from  datetime import *
+ #+END_SRC
+
+ #+RESULTS:
+#+BEGIN_SRC ipython :session pandas
+from datetime import datetime
+from datetime import tzinfo
+test = '2013-03-27 23:05'
+test2 = datetime.strptime(test,'%Y-%m-%d %H:%M')
+test2
+#+END_SRC
+
+#+RESULTS:
+: datetime.datetime(2013, 3, 27, 23, 5)
+
+** Datafile
+
+Criamos o /datafile/ usando os arquivos do item anterior. 
+
+ #+BEGIN_SRC ipython :session pandas :tangle pandas.py
+   player = 'Roger Federer'
+   filename = "./cookbook-data/data/{name}.csv".format(name=player.replace(' ', '-')) 
+   df = pd.read_csv(filename)
+ #+END_SRC
+
+ #+RESULTS:
+
+** Determinamos quem Venceu
+ #+BEGIN_SRC ipython :session pandas :exports both :tangle pandas.py
+ df['win'] = df['winner'] == player
+ df['win'].tail()
+ #+END_SRC
+
+ #+RESULTS:
+ : 1174    False
+ : 1175     True
+ : 1176     True
+ : 1177     True
+ : 1178    False
+ : Name: win, dtype: bool
+
+** Agora geramos a fração de faltas duplas
+ #+BEGIN_SRC ipython :session pandas :output :tangle pandas.py
+ df['dblfaults'] = (df['player1 double faults'] / 
+                    df['player1 total points total'])
+ #+END_SRC
+
+ #+RESULTS:
+
+** Podemos gerar um Report mais interessante. 
+
+ #+BEGIN_SRC ipython :session pandas :exports both :tangle pandas.py
+ ("{player} has won {vic:.0f}% of his ATP matches.").format(
+player=player, vic=100*df['win'].mean())
+ #+END_SRC
+
+ #+RESULTS:
+ : Roger
+
+
+
+ #+RESULTS:
+
+ #+BEGIN_SRC ipython :session pandas :exports both :tangle pandas.py
+ df['dblfaults'].tail()
+ #+END_SRC
+
+ #+RESULTS:
+ : 1174    0.018116
+ : 1175    0.000000
+ : 1176    0.000000
+ : 1177    0.011561
+ : 1178         NaN
+ : Name: dblfaults, dtype: float64
+
+** Agrupamos os dados
+
+Inicialmente por tipo de quadra
+ #+BEGIN_SRC ipython :session pandas :exports both :tangle pandas.py
+ df.groupby('surface')['win'].mean()
+ #+END_SRC
+
+ #+RESULTS:
+ : surface
+ : Indoor: Carpet    0.736842
+ : Indoor: Clay      0.833333
+ : Indoor: Hard      0.836283
+ : Outdoor: Clay     0.779116
+ : Outdoor: Grass    0.871429
+ : Outdoor: Hard     0.842324
+ : Name: win, dtype: float64
+
+** Agrupamos os dados
+
+Agora por ano 
+
+ #+BEGIN_SRC ipython :session pandas :exports both :tangle pandas.py
+ gb = df.groupby('year')
+ #+END_SRC
+
+ #+RESULTS:
+
+
+
+** Convertendo as datas
+
+#+BEGIN_SRC ipython :session pandas :exports both :tangle pandas.py
+df['date']=[datetime.strptime(date, '%d.%m.%Y') for date in df['start date']]
+#+END_SRC
+
+ A Conversão da base =gb= é mais complicada por que cada elemento
+é uma base de dados. 
+
+#+BEGIN_SRC ipython :session pandas :exports both :tangle pandas.py
+dates=[datetime.strptime(date, '%d.%m.%Y') for date in gb['start date'].max()]
+#+END_SRC
+
+#+RESULTS:
+
+** Representação dos Pontos
+ #+BEGIN_SRC ipython :session pandas :exports code  :file /Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png :tangle pandas.py
+ %matplotlib inline
+ from pytz import timezone
+ fig=plt.figure(figsize=(12,6),facecolor="0.8")
+ plt.plot_date(dates, gb['dblfaults'].mean(),  '-', lw=3)
+ plt.plot_date(df['start date'], df['dblfaults'], alpha=.25, lw=0)
+ plt.ylabel('Proportion of double faults per match.')
+ plt.xlabel('Year')
+ #+END_SRC
+
+ #+RESULTS:
+ [[file:/Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png]]
+
+#+CAPTION: Federer Results
+#+NAME:   fig:federer-results
+#+REVEAL_HTML:  <img src="/assets/pandatennis.png" alt="pandatennis.png" />
+
+** Detalhes do orgmode
+
+Note que o gráfico não é incluído no =exports= apenas o código:
+
+#+BEGIN_SRC EXAMPLE
+ #+BEGIN_SRC ipython :session pandas :exports code  :file /Users/neylemke/Dropbox/laptop/bloggithub/LessOrMore-master/assets/pandatennis.png :tangle pandas.py
+#+END_SRC
+
+A Figura é incluída com um comando em HTML. Isso é uma gambiarra para consertar a
+ gambiarra do =jeckyll= que exige que o path da figura comece com =/assets=
+e não com =file://<path>=.
+
+#+BEGIN_SRC EXAMPLE
+#+CAPTION: Federer Results
+#+NAME:   fig:federer-results
+#+REVEAL_HTML:  <img src="/assets/pandatennis.png" alt="pandatennis.png" />
+#+END_SRC  
+
+** Melhores Resultados
+ #+BEGIN_SRC ipython :exports both :session pandas :output pp
+ gb['start date'].max().tail()
+ #+END_SRC
+
+ #+RESULTS:
+ : year
+ : 2008    28.07.2008
+ : 2009    31.08.2009
+ : 2010    30.08.2010
+ : 2011    31.10.2011
+ : 2012    27.08.2012
+ : Name: start date, dtype: object
+
+
+
