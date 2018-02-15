@@ -5,8 +5,8 @@
     <description>Data Science for Systems Biology</description>
     <link>http://www.lbbc.unesp.br/</link>
     <atom:link href="http://www.lbbc.unesp.br/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Feb 2018 17:00:27 -0200</pubDate>
-    <lastBuildDate>Thu, 15 Feb 2018 17:00:27 -0200</lastBuildDate>
+    <pubDate>Thu, 15 Feb 2018 17:01:04 -0200</pubDate>
+    <lastBuildDate>Thu, 15 Feb 2018 17:01:04 -0200</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
     
       <item>
@@ -41,41 +41,32 @@
 &lt;body&gt;
 &lt;div class=&quot;reveal&quot;&gt;
 &lt;div class=&quot;slides&quot;&gt;
-&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Imersão&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2018-02-15 Thu 16:48&lt;/p&gt;
+&lt;section id=&quot;sec-title-slide&quot;&gt;&lt;h1 class=&quot;title&quot;&gt;Imersão&lt;/h1&gt;&lt;h2 class=&quot;author&quot;&gt;Ney Lemke&lt;/h2&gt;&lt;p class=&quot;date&quot;&gt;Created: 2018-02-15 Thu 16:59&lt;/p&gt;
 &lt;/section&gt;
 &lt;section id=&quot;table-of-contents&quot;&gt;
 &lt;div id=&quot;table-of-contents&quot;&gt;
 &lt;h2&gt;Table of Contents&lt;/h2&gt;
 &lt;div id=&quot;text-table-of-contents&quot;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#/slide-org703e541&quot;&gt;Imersão&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#/slide-org7dbf238&quot;&gt;Imersão&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/section&gt;
-&lt;p&gt;
-&amp;#x2014;
-layout: post
-title: Imersão
-cover:  cover.jpg
-date: Mon Jan 15 18:37:36 -02 2018
-categories: Technical Paper
-&amp;#x2014;
-&lt;/p&gt;
 
 &lt;section&gt;
-&lt;section id=&quot;slide-org703e541&quot;&gt;
-&lt;h2 id=&quot;org703e541&quot;&gt;Imersão&lt;/h2&gt;
-&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org703e541&quot;&gt;
+&lt;section id=&quot;slide-org7dbf238&quot;&gt;
+&lt;h2 id=&quot;org7dbf238&quot;&gt;Imersão&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org7dbf238&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
 &lt;/section&gt;
 &lt;section&gt;
-&lt;section id=&quot;slide-org911b810&quot;&gt;
-&lt;h3 id=&quot;org911b810&quot;&gt;Diagnóstico da área&lt;/h3&gt;
-&lt;div class=&quot;outline-text-3&quot; id=&quot;text-org911b810&quot;&gt;
+&lt;section id=&quot;slide-org380eaa3&quot;&gt;
+&lt;h3 id=&quot;org380eaa3&quot;&gt;Diagnóstico da área&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-org380eaa3&quot;&gt;
 &lt;/div&gt;&lt;/section&gt;
-&lt;section id=&quot;slide-org16f4bc0&quot;&gt;
-&lt;h4 id=&quot;org16f4bc0&quot;&gt;Corpo de Servidores: 280 (Sem considerar ASAs)&lt;/h4&gt;
+&lt;section id=&quot;slide-org16f5480&quot;&gt;
+&lt;h4 id=&quot;org16f5480&quot;&gt;Corpo de Servidores: 280 (Sem considerar ASAs)&lt;/h4&gt;
 &lt;/section&gt;
 &lt;/section&gt;
 &lt;/div&gt;
